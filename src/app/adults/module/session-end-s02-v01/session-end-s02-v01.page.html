@@ -1,0 +1,165 @@
+<!-- page content -->
+<div class="right_col ml0 red_pink_w6 p0_important" role="main">				
+  <!-- Class -->  
+  <div class="cw100p">
+    <div class="row center_flex">
+      <div class="col-md-6 col-sm-8 col-xs-12 p0">
+        <div class="x_panel p0">
+          <div class="x_content c_white fwunset tcenter p0 m0px">
+            <form>                
+              
+              <div class="row se_box">
+                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <a>
+                      <button (click)="routeJournal()" type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                        <img src="assets/svgs/icons/session_end_journal_02.svg" alt="">
+                      </button>
+                    </a>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <h1 class="txt22 tcenter pt10px_so">
+                      Fill your journal
+                    </h1>           
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <a>
+                      <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                        <img src="assets/svgs/icons/session_end_join_discussion.svg" alt="">
+                      </button>
+                    </a>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <h1 class="txt22 tcenter pt10px_so">
+                      Join a discussion
+                    </h1>           
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <a>
+                      <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                        <img src="assets/svgs/icons/session_end_consult_coach.svg" alt="">
+                      </button>
+                    </a>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <h1 class="txt22 tcenter pt10px_so">
+                      Consult a coach
+                    </h1>           
+                  </div>
+                </div>
+
+                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <a>
+                      <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                        <img src="assets/svgs/icons/session_end_share.svg" alt="">
+                      </button>
+                    </a>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <h1 class="txt22 tcenter pt10px_so">
+                      Share with friends
+                    </h1>           
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <!-- radial progress bar  -->                
+              <div class="row tcenter pt60px">
+                <div class="col-md-12 col-sm-12 col-xs-12 prelative">  
+                  <a routerLink="/adults/adult-dashboard">
+                    <circle-progress
+                      [percent]="comparisonP"
+                      [radius]="56"
+                      [space]="-10"
+                      [outerStrokeWidth]="10"
+                      [innerStrokeWidth]="10"
+                      [outerStrokeColor]="'#FFC455'"
+                      [innerStrokeColor]="'rgba(255,255,255,0.2)'"
+                      [animation]="true"
+                      [animationDuration]="300"                      
+                      [imageSrc]="'assets/images/background/session_end/session_end_mask_02.png'"               
+                    >
+                    </circle-progress> 
+                    <h4 class="txt82 absolute_flex_center">
+                      1/9
+                    </h4>   
+                  </a>                                                            
+                </div>
+              </div>
+              <!-- /radial progress bar --> 
+
+              <div class="row plr25px pt20px">
+                <div class="col-md-12 col-sm-12 col-xs-12 tcenter">
+                  <button type="button" class="btn btn-success mb0 btn_se" data-dismiss="modal">Continue to the next session</button>
+                </div>
+              </div>
+
+              <div class="row plr25px pt20px">
+                <div class="col-md-12 col-sm-12 col-xs-12 tcenter">
+                  <h4 class="txt81">
+                    #2 Understanding the Ways of Comparison
+                  </h4>    
+                </div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Class --> 
+</div>
+<!-- /page content -->
+
+<div class="sidebar-footer ifooter">  
+  <div class="row center_flex">
+    <div class="col-md-6 col-sm-12 col-xs-12 center_flex">
+      
+      <a class="footer_index"> 
+        <img src="assets/svgs/icons/footer/dashboard/home.svg" alt="">
+        <p class="mb0px">
+            Home
+        </p>
+      </a>
+    
+      <a class="footer_index">
+        <img src="assets/svgs/icons/footer/dashboard/search.svg" alt="">
+        <p class="mb0px">
+            Search
+        </p>
+      </a>
+    
+      <a (click)="routeJournal()" class="footer_index">        
+        <img src="assets/svgs/icons/footer/dashboard/journal.svg" alt="">
+        <p class="mb0px">
+            Journal
+        </p>
+      </a>
+    
+      <a class="footer_index">        
+        <img src="assets/svgs/icons/footer/dashboard/forum.svg" alt="">
+        <p class="mb0px">
+            Forum
+        </p>
+      </a>
+
+      <a class="footer_index">
+        <img src="assets/svgs/icons/footer/dashboard/more.svg" alt="">
+        <p class="mb0px">
+            More
+        </p>
+      </a>
+
+    </div>
+  </div>  
+</div>

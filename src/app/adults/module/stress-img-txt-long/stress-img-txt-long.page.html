@@ -1,0 +1,28 @@
+<app-course-header [toc]="toc" [bookmark]="bookmark" (sendBookmark)="receiveBookmark($event)" [path]="path"></app-course-header>
+
+<!-- page content -->
+<div class="right_col ml0 stress_overlay2" role="main">
+  <!-- Class --> 
+  <div class="cw100p cabsolute">
+    <div class="row center_flex">
+      <div class="col-md-6 col-sm-8 col-xs-12 p0">
+        <div class="x_panel cxpanel center_flex">            
+          <div class="x_content c_white fwunset tcenter p0">
+            
+            <form>
+              <h1 class="txt68 tleft">
+                This reaction from our thinking is automatic, and very fast, faster than a bullet coming out of a gun. We are not aware of this.
+              </h1>
+              <div class="clearfix"></div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Class --> 
+</div>
+<!-- /page content -->
+
+<app-course-footer (nextEmitter)="submitProgress()" (previousEmitter)="prev()"></app-course-footer>

@@ -1,0 +1,203 @@
+<!-- top navigation -->
+<div class="top_nav ml0 ctopnav">
+  <div class="nav_menu cnav_menu p20px mb0px tn_padding">
+      <nav class="flex_ai">          
+        <ul class="nav navbar-nav navbar-right cnav navleft w40p no_bg">
+          <li class="">
+            <a (click)="goToDash()" class="cuser-profile dropdown-toggle p0" data-toggle="dropdown" aria-expanded="false">              
+              <img src="assets/svgs/icons/dashboard.svg" alt="" class="p0">
+            </a>                  
+          </li>
+          <li class="">
+            <a (click)="goToToc()" class="cuser-profile dropdown-toggle p0" data-toggle="dropdown" aria-expanded="false">              
+              <img src="assets/svgs/icons/toc.svg" alt="" class="p0">
+            </a>                  
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right cnav navcenter w20p nbg_white">
+          <li class="mr0px">
+            <a (click)="goToTranscript()" class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">              
+              <img src="assets/svgs/icons/transcript.svg" alt="" class="p0">
+            </a>                  
+          </li>          
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right cnav w40p no_bg">
+          <li class="">                        
+            <a href="javascript:;" class="cuser-profile dropdown-toggle p0" data-toggle="modal" data-target="#exampleModalCenter">              
+              <img src="assets/svgs/icons/edit.svg" alt="" class="p0">
+            </a>  
+          </li>
+          <li class="mr0px">                    
+            <a *ngIf="!bookmark" href="javascript:;" class="cuser-profile dropdown-toggle p0" data-toggle="dropdown" aria-expanded="false" (click)="toggleBookmark()">              
+              <img src="assets/svgs/icons/bookmark_course.svg" alt="" class="p0">
+            </a> 
+            <a *ngIf="bookmark" href="javascript:;" class="cuser-profile dropdown-toggle p0" data-toggle="dropdown" aria-expanded="false" (click)="toggleBookmark()">                        
+              <img src="assets/svgs/icons/bookmark_course_active.svg" alt="" class="p0">
+            </a>                    
+          </li>
+        </ul>
+      </nav>
+  </div>
+</div>
+<!-- /top navigation --> 
+
+<!-- modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal_note_journal" role="document">
+    <div class="modal-content">      
+      <div class="modal-body">        
+        <form>
+          <div class="row pt20px pb30px">
+            <div class="col-md-12 col-sm-12 col-xs-12 p0">
+              <textarea id="message" required="required" class="form-control txt19 p30_20px" name="message" rows="12" placeholder="Write your answer here" [(ngModel)]="note"></textarea>
+            </div>
+          </div>          
+          
+          <div class="row center_flex flex_wrap">
+            <div class="col-md-3 col-sm-3 col-xs-12 tcenter"> 
+              <a routerLink="/adults/framework/cm-p973">
+                <button type="button" class="btn btn-success mb0 btn_add_note_journal" data-dismiss="modal" (click)="addNote()">Add Note to Journal</button>
+              </a>
+            </div>
+          </div>                    
+
+          <br>
+
+          <div class="row center_flex flex_wrap">
+            <div class="col-md-3 col-sm-3 col-xs-12 tcenter">                    
+              <a>
+                <button type="button" class="btn btn-default mb0 w100 btn_skip txt5 tcenter" data-dismiss="modal">Skip</button>
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>      
+    </div>
+  </div>
+</div>
+<!-- /modal -->
+
+<!-- page content -->
+<div class="right_col ml0 cright_col purple_blue_w9" role="main">				
+  <!-- Class -->  
+  <div class="cw100p cabsolutet">
+    <div class="row center_flex">
+      <div class="col-md-6 col-sm-8 col-xs-12 p0">
+        <div class="x_panel p0 dflexblock_pyramid">
+          <div class="x_content c_white fwunset tcenter pt0px mt0px">
+            <form class="p0">
+
+              <h1 class="txt1 tcenter">
+                5 circles of wisdom
+              </h1>             
+
+              <!-- jquery audio player plugin  -->
+              <!-- <div class="row tcenter">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <div #playerContainer id="playerContainer" class=""></div>
+                </div>
+              </div> -->
+              <!-- /jquery audio player plugin -->
+
+              <!-- angular audio player plugin  -->                              
+              <div class="row tcenter">
+                <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
+                  <ngx-circular-player id="aud2" radius="90" innerStroke="transparent"  [innerStrokeColor]="transparent" [strokeColor]="yellow" [source]="audioLink" (click)="getTime()" #audio ></ngx-circular-player>                  
+                </div>
+              </div>
+              <!-- /angular audio player plugin -->     
+
+              <div class='circle-container'>
+                <a href='#' class='deg78'>
+                  <button type="button" class="btn btn-primary btn_5circles_01">
+                    <h6 class="btn_5circles_txt1 mtb0px">  
+                      01
+                    </h6>
+                
+                    <h6 class="btn_5circles_txt2 mtb0px">  
+                      Nurture a quiet mind
+                    </h6>
+                  </button>
+                </a>    
+            
+                <a href='#' class='deg55'>
+                  <button type="button" class="btn btn-primary btn_5circles_03">
+                    <h6 class="btn_5circles_txt1 mtb0px">  
+                      03
+                    </h6>
+                
+                    <h6 class="btn_5circles_txt2 mtb0px">  
+                      How the mind works
+                    </h6>
+                  </button>
+                </a>    
+            
+                <a href='#' class='deg157'>
+                  <button type="button" class="btn btn-primary btn_5circles_04">
+                    <h6 class="btn_5circles_txt1 mtb0px">  
+                      04
+                    </h6>
+                
+                    <h6 class="btn_5circles_txt2 mtb0px">  
+                      Understand emotions
+                    </h6>
+                  </button>
+                </a>    
+            
+                <a href='#' class='deg210'>
+                  <button type="button" class="btn btn-primary btn_5circles_05">
+                    <h6 class="btn_5circles_txt1 mtb0px">  
+                      05
+                    </h6>
+                
+                    <h6 class="btn_5circles_txt2 mtb0px">  
+                      Living with wisdom
+                    </h6>
+                  </button>
+                </a>    
+            
+                <a href='#' class='deg312'>
+                  <button type="button" class="btn btn-primary btn_5circles_02">
+                    <h6 class="btn_5circles_txt1 mtb0px">  
+                      02
+                    </h6>
+                
+                    <h6 class="btn_5circles_txt2 mtb0px">  
+                      Art of enquiry
+                    </h6>
+                  </button>
+                </a>    
+              </div>  
+
+            </form>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Class --> 
+</div>
+<!-- /page content -->
+
+<!-- footer  -->
+<div class="sidebar-footer hidden-small">
+  <div class="row lh5rem">
+    <div class="col-md-12 col-sm-12 col-xs-12 tcenter center_flex">      
+      <div class="col-md-2 col-sm-2 col-xs-4 btn_p0">
+        <a (click)="previous()">
+          <button type="button" class="btn w100 mb0 btn_prev">Previous</button>          
+        </a>        
+      </div>
+      <div class="col-md-2 col-sm-2 col-xs-6 p0">
+        <a (click)="next()">
+          <button type="button" class="btn btn-default w100 mb0 btn_next">Next</button>
+        </a>
+      </div>    
+      <div class="col-md-2 col-sm-2 col-xs-4">        
+      </div>  
+    </div>
+  </div>
+</div>
+<!-- /footer -->
