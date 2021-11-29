@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'stress-img-txt-short',
     loadChildren: () => import('./stress-img-txt-short/stress-img-txt-short.module').then( m => m.StressImgTxtShortPageModule)
   },
+  {
+    path: 'index-wisdom-stories',
+    loadChildren: () => import('./index-wisdom-stories/index-wisdom-stories.module').then( m => m.IndexWisdomStoriesPageModule)
+  },
 ];
 
 @NgModule({

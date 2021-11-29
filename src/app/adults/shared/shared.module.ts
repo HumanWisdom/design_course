@@ -66,6 +66,7 @@ import { AudioDiagramComponent } from './component/audio-diagram/audio-diagram.c
 import { TocHeaderComponent } from '../shared/component/toc-header/toc-header.component';
 import { TocTopnavComponent } from '../shared/component/toc-topnav/toc-topnav.component';
 import { TnHwpProjectComponent } from '../shared/component/tn-hwp-project/tn-hwp-project.component';
+import { RelatedWisdomStoriesComponent } from './component/related-wisdom-stories/related-wisdom-stories.component';
 
 @NgModule({
   declarations: [
@@ -127,7 +128,8 @@ import { TnHwpProjectComponent } from '../shared/component/tn-hwp-project/tn-hwp
     //TopnavComponent,
     TocHeaderComponent,
     TocTopnavComponent,
-    TnHwpProjectComponent
+    TnHwpProjectComponent,
+    RelatedWisdomStoriesComponent
   ],
   imports: [
     CommonModule,
@@ -210,7 +212,8 @@ import { TnHwpProjectComponent } from '../shared/component/tn-hwp-project/tn-hwp
     //TopnavComponent,
     TocHeaderComponent,
     TocTopnavComponent,
-    TnHwpProjectComponent
+    TnHwpProjectComponent,
+    RelatedWisdomStoriesComponent
   ]
 })
 export class SharedModule { }
