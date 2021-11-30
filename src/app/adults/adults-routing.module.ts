@@ -59,6 +59,10 @@ const routes: Routes = [
     path: "wisdom-stories",
     loadChildren: () => import("./wisdom-stories/wisdom-stories.module").then( m => m.WisdomStoriesModule)
   },
+  {
+    path: "search",
+    loadChildren: () => import("./search/search.module").then( m => m.SearchModule)
+  },
 ];
 
 @NgModule({

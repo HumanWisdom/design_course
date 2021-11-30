@@ -23198,3 +23198,164 @@ a
 {
   padding: 0 !important;
 }
+
+.bg_monte_carlo 
+{
+  background: #70C6BD;
+}
+
+.nav_search 
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    /* width: 100%; */
+
+    z-index: 99;
+    padding: 20px;
+    height: 60px;
+}
+
+.div_search 
+{
+  margin-top: 6rem;
+  margin-bottom: 0;
+  background: #EBEBEB;
+  opacity: 0.5;
+  height: 60px;
+}
+
+#searchtxt_01 
+{
+  background: #EBEBEB;
+  /* opacity: 0.5; */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  /* identical to box height, or 16px */
+  color: #000000 !important;
+  text-align: left;
+}
+
+#searchtxt_01::-webkit-input-placeholder 
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 130%;
+  /* identical to box height, or 16px */
+  color: #5D5D5D;
+  text-align: left;
+}
+
+#searchtxt_01::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/close_black_01.svg) no-repeat 50% 50%;
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+}
+
+#searchtxt_01:focus::-webkit-search-cancel-button {
+  /* opacity: .3; */
+  pointer-events: all;
+}
+
+#searchtxt_01.dark::-webkit-search-cancel-button {
+  filter: invert(1);
+}
+
+.dsearch_result 
+{
+  margin-top: 20px;
+  margin-bottom: 36px;
+  padding: 0 10px;
+}
+
+.search_nav_tabs
+{
+  border-bottom: 1px solid #ADADAD;
+}
+
+.search_nav_tabs>li.active>a, 
+.search_nav_tabs>li.active>a:focus, 
+.search_nav_tabs>li.active>a:hover
+{
+  border: 0;
+  border-bottom: 3px solid #1092A7;
+  color: #1092A7;
+}
+
+.search_nav_tabs>li
+{
+  margin-bottom: 0px;
+  width: 33.3%;
+  margin-bottom: -2px;
+}
+
+.search_nav_tabs>li>a
+{
+  border: 0;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+
+.maxh15px 
+{
+  max-height: 15px;
+}
+
+.tab_lfj .tab-content
+{
+  margin-top: 18px;
+}
+
+.hr_style_10 
+{
+  border: 1px solid #DADADA;
+}
+
+.flexai_baseline 
+{
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.capitalize 
+{
+  text-transform: capitalize;
+}
+
+.mtb15px 
+{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.mb15px 
+{
+  margin-bottom: 15px;
+}
+
+.panel_search 
+{
+  background: #FFFFFF;
+  opacity: 0.9;
+  border: 1px solid #DADADA;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.opacity_pt5
+{
+  opacity: 0.5;
+}
