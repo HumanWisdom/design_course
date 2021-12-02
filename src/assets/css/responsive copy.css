@@ -86,7 +86,7 @@
 @media (max-width: 767px)
 {
     .nav_menu_01,
-    .nav_menu_02 
+    .nav_menu_02
     {
         width: 100%
     }
@@ -143,22 +143,6 @@
     {
         background: #000000;
         padding: 0;
-    }
-
-    .navbar_01 
-    {
-        /* top: 7%; */
-        margin-top: 16%;
-    }
-
-    ::-webkit-scrollbar 
-    {
-    display: none;
-    }
-
-    .img_google_playstore 
-    {
-        max-width: 65%;
     }
 }
 
@@ -254,9 +238,14 @@
         margin-left: 0px;
     }
 
-    .img_google_playstore 
+    .plr_01 
     {
-        max-width: 55%;
+        padding: 0;
+    }
+
+    .plr_02
+    {
+        padding: 0 10px;
     }
 }
 
@@ -303,12 +292,6 @@
         background: transparent;
         padding: 0 5px;
     }
-
-    .navbar_01 
-    {
-        /* top: 5.5%; */
-        margin-top: 7.5%;
-    }
 }
 
 @media (min-width: 1024px)
@@ -354,45 +337,6 @@
         background: transparent;
         padding: 0 10px;
     }
-
-    .navbar_01 
-    {
-        /* top: 4%; */
-        margin-top: 5.5%;
-    }
-
-    /* width */
-    .cw100p::-webkit-scrollbar 
-    {
-    width: 10px;
-    }
-
-    /* track */
-    .cw100p::-webkit-scrollbar-track 
-    {
-    background: rgba(255,255,255,0.25); 
-    /* box-shadow: inset 0 0 5px grey;  */
-    /* border-radius: 10px; */
-    }
-    
-    /* handle */
-    .cw100p::-webkit-scrollbar-thumb 
-    {
-    background: rgba(255,255,255,0.50); 
-    border-radius: 10px;
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-clip: content-box;
-    }
-
-    /* handle on hover */
-    .cw100p::-webkit-scrollbar-thumb:hover 
-    {
-    background: rgba(255,255,255,1);
-    border: 2px solid transparent;
-    border-radius: 10px;
-    background-clip: content-box;
-    }
 }
 
 @media (min-width: 1025px)
@@ -433,12 +377,6 @@
     {
         top: 9.5%;
         bottom: 9%;
-    }
-
-    .navbar_01 
-    {
-        /* top: 7.5%; */
-        margin-top: 4%;
     }
 }
 
