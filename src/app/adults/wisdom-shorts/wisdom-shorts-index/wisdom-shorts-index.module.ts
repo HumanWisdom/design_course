@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { BlogArticlePageRoutingModule } from './blog-article-routing.module';
+import { WisdomShortsIndexPageRoutingModule } from './wisdom-shorts-index-routing.module';
 
-import { BlogArticlePage } from './blog-article.page';
+import { WisdomShortsIndexPage } from './wisdom-shorts-index.page';
 
 import {SharedModule} from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BlogArticlePageRoutingModule,
+    WisdomShortsIndexPageRoutingModule,
     SharedModule
   ],
-  declarations: [BlogArticlePage]
+  declarations: [WisdomShortsIndexPage]
 })
-export class BlogArticlePageModule {}
+export class WisdomShortsIndexPageModule {}

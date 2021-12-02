@@ -1840,3 +1840,25 @@
     text-decoration-line: underline;
     color: #1092A7;
 }
+
+.txt225 
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    color: #000000;
+}
+
+.txt226 
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+    color: #5D5D5D;
+}
