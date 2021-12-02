@@ -78,6 +78,18 @@ const routes: Routes = [
     path: 'subscription-s10-v03',
     loadChildren: () => import('./subscription-s10-v03/subscription-s10-v03.module').then( m => m.SubscriptionS10V03PageModule)
   },
+  {
+    path: 'activate-subscription-code',
+    loadChildren: () => import('./activate-subscription-code/activate-subscription-code.module').then( m => m.ActivateSubscriptionCodePageModule)
+  },
+  {
+    path: 'activate-subscription-msg',
+    loadChildren: () => import('./activate-subscription-msg/activate-subscription-msg.module').then( m => m.ActivateSubscriptionMsgPageModule)
+  },
+  {
+    path: 'activate-subscription-signup',
+    loadChildren: () => import('./activate-subscription-signup/activate-subscription-signup.module').then( m => m.ActivateSubscriptionSignupPageModule)
+  },
 ];
 
 @NgModule({

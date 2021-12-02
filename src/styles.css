@@ -23597,3 +23597,100 @@ a
 {
   background: #EBEBEB;
 }
+
+.as_title 
+{
+  margin: 0 0 26px 0;
+}
+
+.hr_style_13
+{
+  border: 1px solid #FFFFFF;
+  margin: 40px 0 24px 0;
+}
+
+.congratulations_desc
+{
+  margin: 10px 0 36px 0;
+}
+
+.as_signup 
+{
+  margin: 40px 0 113px 0;
+}
+
+.as_signup_desc 
+{
+  margin: 17px 0 23px 0;
+}
+
+.mb56px 
+{
+  margin-bottom: 56px;
+}
+
+.cfc11::-webkit-input-placeholder 
+{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;  
+  color: #5D5D5D;
+  text-align: left;
+}
+
+.cfc11
+{
+  height: 50px;
+  border: 0;
+  background: #FFFFFF;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;  
+  color: #5D5D5D;
+  text-align: left;
+  letter-spacing: 0.2em;
+}
+
+.cfc12 
+{
+  height: 50px;
+  border: 0;
+  background: #FFFFFF;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 100%;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;  
+  color: #5D5D5D;
+  text-align: left;
+}
+
+.cfc12:disabled::-webkit-input-placeholder
+{
+  color: #ADADAD;
+}
+
+.btn_ms_submit:disabled
+{
+  background: #EBEBEB;
+  color: #ADADAD;
+  opacity: 1;
+}
