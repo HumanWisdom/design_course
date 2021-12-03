@@ -23836,3 +23836,112 @@ a
   box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
+
+.bg_chathams_blue
+{
+  background: #13547A;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.content_top 
+{
+  margin-top: 6rem;
+  padding-top: 40px;
+}
+
+/* wisdom points tabs */
+.wisdom_points_nav_tabs
+{
+  border-bottom: 1px solid #ADADAD;
+  margin-bottom: 20px;
+}
+
+.wisdom_points_nav_tabs>li.active>a, 
+.wisdom_points_nav_tabs>li.active>a:focus, 
+.wisdom_points_nav_tabs>li.active>a:hover
+{
+  border: 0;
+  border-bottom: 3px solid #1092A7;
+  color: #1092A7;
+}
+
+.wisdom_points_nav_tabs>li
+{
+  margin-bottom: 0px;
+  width: 50%;
+  margin-bottom: -2px;
+}
+
+.wisdom_points_nav_tabs>li>a
+{
+  border: 0;
+  padding: 0 0 15px 0;
+  text-align: center;
+}
+/* /wisdom points tabs */
+
+.wpts_date
+{
+  margin: 0 0 7px 0;
+}
+
+.hr_style_14
+{
+  border: 1px solid #EBEBEB;
+  margin: 18px 0 20px 0;
+}
+
+.absolute_rwpts 
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rwpts_index_title
+{
+  margin: 20px 0 15px 0;
+}
+
+.rwpts_index_view_history
+{
+  margin: 12px 0 20px 0;
+}
+
+/* wisdom points redeem tiles  */
+.img_rwpts
+{
+  border-radius: 20px 20px 0 0;
+  width: 100%;
+}
+
+.rwpts_panel.panel-default
+{
+  background-color: transparent;
+  border: 0;
+  border-radius: 20px;
+  box-shadow: unset;
+}
+
+.rwpts_panel.panel-default>.panel-heading
+{
+  background-color: transparent;
+  border-color: unset;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.rwpts_panel .panel-body
+{
+  background: white;
+  padding: 16px 18px 17px 18px !important;
+  border-radius: 0 0 20px 20px;
+}
+/* /wisdom points redeem tiles */
