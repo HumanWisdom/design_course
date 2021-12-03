@@ -75,6 +75,10 @@ const routes: Routes = [
     path: 'treesisters',
     loadChildren: () => import('./treesisters/treesisters.module').then( m => m.TreesistersPageModule)
   },
+  {
+    path: 'faq',
+    loadChildren: () => import('./faq/faq.module').then( m => m.FaqModule)
+  },
 ];
 
 @NgModule({
