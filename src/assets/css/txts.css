@@ -1862,3 +1862,27 @@
     /* identical to box height */
     color: #5D5D5D;
 }
+
+.txt227 
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    /* or 34px */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.txt228  
+{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+    text-align: center;
+    color: #243949;
+}

@@ -71,6 +71,10 @@ const routes: Routes = [
     path: "wisdom-shorts",
     loadChildren: () => import("./wisdom-shorts/wisdom-shorts.module").then( m => m.WisdomShortsModule)
   },
+  {
+    path: 'treesisters',
+    loadChildren: () => import('./treesisters/treesisters.module').then( m => m.TreesistersPageModule)
+  },
 ];
 
 @NgModule({

@@ -23729,3 +23729,23 @@ a
 {
   line-height: 0;
 }
+
+.treesisters_desc 
+{
+  background: #FFFFFF;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 40px 30px;
+  width: 295px;
+  margin: 32px auto auto auto;
+}
+
+.img_treesisters 
+{
+  margin-top: 26px;
+}
+
+.mhvh_treesisters
+{
+  min-height: 90vh;
+}
