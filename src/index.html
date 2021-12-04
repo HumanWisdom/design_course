@@ -117,6 +117,24 @@
     });
     </script>
 
+    <!-- redeem wisdom points-transparent + montecarlo header -->
+    <script>
+    $(window).on("scroll", function()
+    {
+      if($(window).scrollTop() > 5)
+      {
+        $(".onscrollbg_transparent").addClass("onscrollbg_transparent_active");
+        $(".onscrollbg_montecarlo").addClass("onscrollbg_montecarlo_active");
+      }
+      else
+      {
+        $(".onscrollbg_transparent").removeClass("onscrollbg_transparent_active");
+        $(".onscrollbg_montecarlo").removeClass("onscrollbg_montecarlo_active");
+      }
+    });
+    </script>
+    <!-- /redeem wisdom points-transparent + montecarlo header -->
+
     <!-- <script type="text/javascript">
     $(window).on('load', function() {      
       $('#modal_cookie').modal('show');
