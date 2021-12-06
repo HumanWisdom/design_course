@@ -90,6 +90,26 @@ const routes: Routes = [
     path: 'activate-subscription-signup',
     loadChildren: () => import('./activate-subscription-signup/activate-subscription-signup.module').then( m => m.ActivateSubscriptionSignupPageModule)
   },
+  {
+    path: 'activate-subscription-guest',
+    loadChildren: () => import('./activate-subscription-guest/activate-subscription-guest.module').then( m => m.ActivateSubscriptionGuestPageModule)
+  },
+  {
+    path: 'activate-subscription-code-invalid',
+    loadChildren: () => import('./activate-subscription-code-invalid/activate-subscription-code-invalid.module').then( m => m.ActivateSubscriptionCodeInvalidPageModule)
+  },
+  {
+    path: 'activate-subscription-successful',
+    loadChildren: () => import('./activate-subscription-successful/activate-subscription-successful.module').then( m => m.ActivateSubscriptionSuccessfulPageModule)
+  },
+  {
+    path: 'activate-subscription-congratulations',
+    loadChildren: () => import('./activate-subscription-congratulations/activate-subscription-congratulations.module').then( m => m.ActivateSubscriptionCongratulationsPageModule)
+  },
+  {
+    path: 'activate-subscription-logged-in',
+    loadChildren: () => import('./activate-subscription-logged-in/activate-subscription-logged-in.module').then( m => m.ActivateSubscriptionLoggedInPageModule)
+  },
 ];
 
 @NgModule({
