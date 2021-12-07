@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'index-wisdom-stories',
     loadChildren: () => import('./index-wisdom-stories/index-wisdom-stories.module').then( m => m.IndexWisdomStoriesPageModule)
   },
+  {
+    path: 'index-wisdom-stories-tiles',
+    loadChildren: () => import('./index-wisdom-stories-tiles/index-wisdom-stories-tiles.module').then( m => m.IndexWisdomStoriesTilesPageModule)
+  },
 ];
 
 @NgModule({

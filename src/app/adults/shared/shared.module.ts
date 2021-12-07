@@ -67,6 +67,7 @@ import { TocHeaderComponent } from '../shared/component/toc-header/toc-header.co
 import { TocTopnavComponent } from '../shared/component/toc-topnav/toc-topnav.component';
 import { TnHwpProjectComponent } from '../shared/component/tn-hwp-project/tn-hwp-project.component';
 import { RelatedWisdomStoriesComponent } from './component/related-wisdom-stories/related-wisdom-stories.component';
+import { RelatedWisdomStoriesTilesComponent } from './component/related-wisdom-stories-tiles/related-wisdom-stories-tiles.component';
 
 @NgModule({
   declarations: [
@@ -129,7 +130,8 @@ import { RelatedWisdomStoriesComponent } from './component/related-wisdom-storie
     TocHeaderComponent,
     TocTopnavComponent,
     TnHwpProjectComponent,
-    RelatedWisdomStoriesComponent
+    RelatedWisdomStoriesComponent,
+    RelatedWisdomStoriesTilesComponent
   ],
   imports: [
     CommonModule,
@@ -213,7 +215,8 @@ import { RelatedWisdomStoriesComponent } from './component/related-wisdom-storie
     TocHeaderComponent,
     TocTopnavComponent,
     TnHwpProjectComponent,
-    RelatedWisdomStoriesComponent
+    RelatedWisdomStoriesComponent,
+    RelatedWisdomStoriesTilesComponent
   ]
 })
 export class SharedModule { }

@@ -24269,3 +24269,37 @@ a
 {
   padding: 0 !important;
 }
+
+.index_rwst_title
+{
+  margin: 34px 0 37px 0;
+}
+
+.index_rwst
+{
+  margin: 0 -10px 0 -10px;
+}
+
+.absolute_index_rwst_title 
+{
+  position: absolute;
+  bottom: 11px;
+  right: 20px;
+  left: 20px;
+  margin: 0 auto;
+}
+
+.img_index_rwst
+{
+  border-radius: 10px;
+}
+
+.index_rwst_view_more 
+{
+  margin: 26px 0 315px 0;
+}
+
+.mb20px 
+{
+  margin-bottom: 20px;
+}
