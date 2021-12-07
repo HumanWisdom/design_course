@@ -18862,10 +18862,12 @@ ngx-circular-player svg
   height: auto !important;
   overflow: auto;
   border: 0 !important;  
-  background: #EBEBEB;
+  /* background: #EBEBEB; */
   color: #5D5D5D;
   border-radius: 0;
-  padding: 25px 25px !important;
+  padding: 40px 30px !important;
+  background: #1092A7;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .plr25px 
@@ -24302,4 +24304,68 @@ a
 .mb20px 
 {
   margin-bottom: 20px;
+}
+
+.me_box .txt22 
+{
+  color: #FFFFFF !important;
+}
+
+.me_continue_msg
+{
+  margin: 40px 0 37px 0;
+}
+
+.me_orm
+{
+  margin: 40px 0 13px 0;
+  padding: 0 10px;
+}
+
+.me_rtd
+{
+  margin: 30px 0 43px 0;
+}
+
+.col_orm 
+{
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 5px 0 5px;
+}
+
+.img_orm 
+{
+  border-radius: 5px;
+}
+
+.div_orm 
+{
+  margin: 0 5px 0 5px;
+}
+
+.me_next_module
+{
+  padding: 0 20px;
+}
+
+.me_continue_msg_videos
+{
+  margin: 41px 0 21px 0;
+  padding: 0 10px 0 10px;
+}
+
+.mev_rws
+{
+  margin: 29px 0 17px 0;
+}
+
+.mev_rtd
+{
+  margin: 50px 0 61px 0;
+}
+
+.mev_rwst
+{
+  margin: 0 10px 0 10px;
 }

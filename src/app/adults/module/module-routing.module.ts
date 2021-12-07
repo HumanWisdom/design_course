@@ -66,6 +66,14 @@ const routes: Routes = [
     path: 'index-wisdom-stories-tiles',
     loadChildren: () => import('./index-wisdom-stories-tiles/index-wisdom-stories-tiles.module').then( m => m.IndexWisdomStoriesTilesPageModule)
   },
+  {
+    path: 'module-end-related-modules',
+    loadChildren: () => import('./module-end-related-modules/module-end-related-modules.module').then( m => m.ModuleEndRelatedModulesPageModule)
+  },
+  {
+    path: 'module-end-videos',
+    loadChildren: () => import('./module-end-videos/module-end-videos.module').then( m => m.ModuleEndVideosPageModule)
+  },
 ];
 
 @NgModule({
