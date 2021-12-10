@@ -110,6 +110,22 @@ const routes: Routes = [
     path: 'activate-subscription-logged-in',
     loadChildren: () => import('./activate-subscription-logged-in/activate-subscription-logged-in.module').then( m => m.ActivateSubscriptionLoggedInPageModule)
   },
+  {
+    path: 'activate-subscription-unregistered',
+    loadChildren: () => import('./activate-subscription-unregistered/activate-subscription-unregistered.module').then( m => m.ActivateSubscriptionUnregisteredPageModule)
+  },
+  {
+    path: 'activate-subscription-registered',
+    loadChildren: () => import('./activate-subscription-registered/activate-subscription-registered.module').then( m => m.ActivateSubscriptionRegisteredPageModule)
+  },
+  {
+    path: 'activate-subscription-otp',
+    loadChildren: () => import('./activate-subscription-otp/activate-subscription-otp.module').then( m => m.ActivateSubscriptionOtpPageModule)
+  },
+  {
+    path: 'activate-subscription-logged-in-submit',
+    loadChildren: () => import('./activate-subscription-logged-in-submit/activate-subscription-logged-in-submit.module').then( m => m.ActivateSubscriptionLoggedInSubmitPageModule)
+  },
 ];
 
 @NgModule({

@@ -24369,3 +24369,48 @@ a
 {
   margin: 0 10px 0 10px;
 }
+
+.as_unregistered
+{
+  margin: 30px 0 145px 0;
+}
+
+.as_registered
+{
+  margin: 32px 0 20px 0;
+}
+
+.as_register_login
+{
+  margin: 9px 0 0px 0;
+}
+
+.as_register_login_input
+{
+  margin: 18px 0 12px 0;
+}
+
+.otp_username
+{
+  margin: 39px 0 26px 0;
+}
+
+.otp_desc 
+{
+  margin: 0 0 19px 0;
+}
+
+.otp_rvc 
+{
+  margin: 18px 0 15px 0;
+}
+
+.as_confirm_otp
+{
+  margin: 120px 0 41px 0;
+}
+
+.as_submit_login
+{
+  margin: 140px 0 41px 0;
+}
