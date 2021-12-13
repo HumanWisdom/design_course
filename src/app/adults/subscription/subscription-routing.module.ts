@@ -126,6 +126,18 @@ const routes: Routes = [
     path: 'activate-subscription-logged-in-submit',
     loadChildren: () => import('./activate-subscription-logged-in-submit/activate-subscription-logged-in-submit.module').then( m => m.ActivateSubscriptionLoggedInSubmitPageModule)
   },
+  {
+    path: 'activate-subscription-logged-in-code',
+    loadChildren: () => import('./activate-subscription-logged-in-code/activate-subscription-logged-in-code.module').then( m => m.ActivateSubscriptionLoggedInCodePageModule)
+  },
+  {
+    path: 'activate-subscription-logged-in-code-valid',
+    loadChildren: () => import('./activate-subscription-logged-in-code-valid/activate-subscription-logged-in-code-valid.module').then( m => m.ActivateSubscriptionLoggedInCodeValidPageModule)
+  },
+  {
+    path: 'activate-subscription-logged-in-code-invalid',
+    loadChildren: () => import('./activate-subscription-logged-in-code-invalid/activate-subscription-logged-in-code-invalid.module').then( m => m.ActivateSubscriptionLoggedInCodeInvalidPageModule)
+  },
 ];
 
 @NgModule({
