@@ -83,6 +83,10 @@ const routes: Routes = [
     path: 'wisdom-points',
     loadChildren: () => import('./wisdom-points/wisdom-points.module').then( m => m.WisdomPointsModule)
   },
+  {
+    path: 'account',
+    loadChildren: () => import('./account/account.module').then( m => m.AccountModule)
+  },
 ];
 
 @NgModule({
