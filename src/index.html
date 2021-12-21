@@ -2,8 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="utf-8"/>
-    <title>HumanWisdom</title>
     <base href="/"/>
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link
+      rel="apple-touch-startup-image"
+      href="assets/images/splash.jpg"
+    />
+
+    <title>HumanWisdom</title>
+    
+    <!-- <meta name="description" content=""> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, viewport-fit=cover, user-scalable = no">
 
@@ -20,6 +33,19 @@
     <meta name="theme-color" content="#1976d2">
     <link rel="manifest" href="manifest.webmanifest">
     <meta name="theme-color" content="#1976d2">
+
+    <!-- google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta name="google-site-verification" content="buM8gRBCbgoR1Mzr06i_CWNtSYhwRsmPTow7XhIDCYk" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-211149613-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-211149613-1');
+    </script>
+    <!-- /google analytics -->
   </head>
 
   <body class="nav-md">
@@ -109,37 +135,161 @@
       if($(window).scrollTop() > 5)
       {
         $(".onscrollbg").addClass("onscrollbg_active");
+        $(".onscrollbs").addClass("onscrollbs_active");
+        $(".onscrollws").addClass("onscrollws_active");
       }
       else
       {
         $(".onscrollbg").removeClass("onscrollbg_active");
+        $(".onscrollbs").removeClass("onscrollbs_active");
+        $(".onscrollws").removeClass("onscrollws_active");
       }
     });
     </script>
-
-    <!-- redeem wisdom points-transparent + montecarlo header -->
-    <script>
-    $(window).on("scroll", function()
-    {
-      if($(window).scrollTop() > 5)
-      {
-        $(".onscrollbg_transparent").addClass("onscrollbg_transparent_active");
-        $(".onscrollbg_montecarlo").addClass("onscrollbg_montecarlo_active");
-      }
-      else
-      {
-        $(".onscrollbg_transparent").removeClass("onscrollbg_transparent_active");
-        $(".onscrollbg_montecarlo").removeClass("onscrollbg_montecarlo_active");
-      }
-    });
-    </script>
-    <!-- /redeem wisdom points-transparent + montecarlo header -->
 
     <!-- <script type="text/javascript">
     $(window).on('load', function() {      
       $('#modal_cookie').modal('show');
     });
     </script> -->
+
+    <!-- hide google playstore div -->
+    <script>
+    $(document).on('click', '#google_playstore_hide', function()
+    {
+      $("#div_google_playstore").fadeOut(500);
+      $(".navbar-static-top").attr("style", "top: 0 !important");
+      $(".pt3_2rem").attr("style", "padding-top: 5rem");
+    });
+    </script>
+    <!-- /hide google playstore div -->
+
+    <!-- hide userguide div -->
+    <script>
+    $(document).on('click', '#user_guide_hide', function()
+    {
+      $("#div_user_guide").hide();
+      $(".on_user_guide_pt").attr("style", "padding-top: 1rem");
+    });
+    </script>
+    <!-- /hide userguide div -->
+
+    <!--
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) 
+          { 
+            $('#div_google_playstore').fadeOut(500);
+            $(".navbar-static-top").attr("style", "top: 0");
+          } 
+          else 
+          {
+            $('#div_google_playstore').fadeIn(500);
+            $(".navbar-static-top").addClass("navbar_01");
+          }
+        });
+      });
+      </script>
+      -->
+
+      <script type="text/javascript">
+      $(document).ready(function() {
+        $(document).on('click', '.rm_01', function()
+        {
+          var elem = $(".rm_01").text();
+          if (elem == "read more") 
+          {
+            //Stuff to do when btn is in the read more state
+            $(".rm_01").text("read less");
+            $(".rm_txt_01").slideDown();
+          } 
+          else 
+          {
+            //Stuff to do when btn is in the read less state
+            $(".rm_01").text("read more");
+            $(".rm_txt_01").slideUp();
+          }
+        });
+
+        $(document).on('click', '.rmd_01', function()
+        {
+          var elem = $(".rmd_01").text();
+          if (elem == "read more") 
+          {
+            //Stuff to do when btn is in the read more state
+            $(".rmd_01").text("read less");
+            $(".rmd_txt_01").slideDown();
+          } 
+          else 
+          {
+            //Stuff to do when btn is in the read less state
+            $(".rmd_01").text("read more");
+            $(".rmd_txt_01").slideUp();
+          }
+        });
+
+        $(document).on('click', '.rm_02', function()
+        {
+          var elem = $(".rm_02").text();
+          if (elem == "read more") 
+          {
+            //Stuff to do when btn is in the read more state
+            $(".rm_02").text("read less");
+            $(".rm_txt_02").slideDown();
+          } 
+          else 
+          {
+            //Stuff to do when btn is in the read less state
+            $(".rm_02").text("read more");
+            $(".rm_txt_02").slideUp();
+          }
+        });
+
+        $(document).on('click', '.rmd_02', function()
+        {
+          var elem = $(".rmd_02").text();
+          if (elem == "read more") 
+          {
+            //Stuff to do when btn is in the read more state
+            $(".rmd_02").text("read less");
+            $(".rmd_txt_02").slideDown();
+          } 
+          else 
+          {
+            //Stuff to do when btn is in the read less state
+            $(".rmd_02").text("read more");
+            $(".rmd_txt_02").slideUp();
+          }
+        });
+
+        $(document).on('click', '.rm_03', function()
+        {
+          var elem = $(".rm_03").text();
+          if (elem == "read more") 
+          {
+            //Stuff to do when btn is in the read more state
+            $(".rm_03").text("read less");
+            $(".rm_txt_03").slideDown();
+          } 
+          else 
+          {
+            //Stuff to do when btn is in the read less state
+            $(".rm_03").text("read more");
+            $(".rm_txt_03").slideUp();
+          }
+        });
+      });
+
+      // $(document).on('click', '#rm_01', function(){
+      //   $('#rm_txt_01').slideToggle();
+      //   if ($('#rm_01').text() == "read more") {
+      //     $(this).text("read less")
+      //   } else {
+      //     $(this).text("read more")
+      //   }
+      // });
+      </script>
     
     <noscript>Please enable JavaScript to continue using this application.</noscript>
   </body>
