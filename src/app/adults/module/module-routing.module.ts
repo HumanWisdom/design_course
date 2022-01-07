@@ -74,6 +74,10 @@ const routes: Routes = [
     path: 'module-end-videos',
     loadChildren: () => import('./module-end-videos/module-end-videos.module').then( m => m.ModuleEndVideosPageModule)
   },
+  {
+    path: 'add-to-homescreen-ios',
+    loadChildren: () => import('./add-to-homescreen-ios/add-to-homescreen-ios.module').then( m => m.AddToHomescreenIosPageModule)
+  },
 ];
 
 @NgModule({

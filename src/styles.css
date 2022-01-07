@@ -24807,3 +24807,32 @@ a
 {
   margin-right: 0 !important;
 }
+
+.pr5pxi 
+{
+  padding-right: 5px !important;
+}
+
+.absolute_05 
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.aths 
+{
+  margin: 30px 0 0 0;
+}
+
+.img_aths 
+{
+  margin: 0px 0 0px 0;
+}
+
+a
+{
+  cursor: pointer !important;
+}
