@@ -87,6 +87,10 @@ const routes: Routes = [
     path: 'account',
     loadChildren: () => import('./account/account.module').then( m => m.AccountModule)
   },
+  {
+    path: 'introductory',
+    loadChildren: () => import('./introductory/introductory.module').then( m => m.IntroductoryModule)
+  },
 ];
 
 @NgModule({
