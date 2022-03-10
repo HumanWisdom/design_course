@@ -91,6 +91,10 @@ const routes: Routes = [
     path: 'introductory',
     loadChildren: () => import('./introductory/introductory.module').then( m => m.IntroductoryModule)
   },
+  {
+    path: 'daily-practice',
+    loadChildren: () => import('./daily-practice/daily-practice.module').then( m => m.DailyPracticePageModule)
+  },
 ];
 
 @NgModule({
