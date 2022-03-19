@@ -18,6 +18,10 @@ const routes: Routes = [
     path: "dashboard-resume",
     loadChildren: () => import("./dashboard-resume/dashboard-resume.module").then( m => m.DashboardResumePageModule)
   },
+  {
+    path: 'dashboard-main',
+    loadChildren: () => import('./dashboard-main/dashboard-main.module').then( m => m.DashboardMainPageModule)
+  },
 ];
 
 @NgModule({

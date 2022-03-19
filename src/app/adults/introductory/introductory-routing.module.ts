@@ -14,6 +14,10 @@ const routes: Routes = [
     path: "subscription-options",
     loadChildren: () => import("./subscription-options/subscription-options.module").then(m => m.SubscriptionOptionsPageModule)  
   },
+  {
+    path: 'personalised-for-you-search',
+    loadChildren: () => import('./personalised-for-you-search/personalised-for-you-search.module').then( m => m.PersonalisedForYouSearchPageModule)
+  },
 ];
 
 @NgModule({

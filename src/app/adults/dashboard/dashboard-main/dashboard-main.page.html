@@ -1,0 +1,3161 @@
+<!-- top navigation -->
+<div class="row center_flex header_pfy fnavbar onscrollbg">
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 flex_ai plr20px">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 p0">
+      <a class="" href="#">
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/logo/hwp_logo_01.svg" class="img-responsive" alt="HumanWisdom">
+      </a>
+    </div>
+    <!-- guest -->
+    
+    <!-- /guest -->
+
+    <!-- subscribed + unsubscribed -->
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 p0 flex_ai">
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 p0 tright col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+        <a routerLink="/adults/bookmarks">
+          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/bookmark_grey.svg" class="img-responsive" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 p0 tright">
+        <a>
+          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/notifications_grey.svg" class="img-responsive" alt="">
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 p0 tright">
+        <nav class="lh0">
+          <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+          <label class="m-menu__toggle m0px" for="menu">                    
+            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/hamburger_grey.svg" class="img-responsive" alt="">
+          </label>
+          <label class="m-menu__overlay" for="menu"></label> 
+          <!-- submenu -->
+          <div class="m-menu">
+            <div class="m-menu__header">
+              <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12 flex_ai">
+                  <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 p0 tleft">
+                    <img src="{{url === '' || url === undefined ? 'https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/user/profile_default.svg'  : 'https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/UsersAvatar/' + url}}" alt="" class="img_profile">
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ws_nowrap">
+                    <h4 class="txt187 mtb0px tleft">
+                      {{name}}
+                    </h4>
+                    <a routerLink="/onboarding/user-profile">
+                      <h4 class="txt158 mt5pxi mb0px tleft" *ngIf="isloggedIn">
+                        View Profile
+                      </h4>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <ul class="dh_ul">
+              <!-- <li>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/01.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                      <h4 class="txt188 mtb0px">
+                        Get a Wisdom Coach
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+      
+              <!-- <li *ngIf="isloggedIn">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/02.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                      <h4 class="txt188 mtb0px">
+                        My Progress
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+      
+              <li>
+                <a routerLink="/adults/wisdom-survey" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/03.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          Wisdom Survey
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li *ngIf="isloggedIn && roleid === 8">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                    <!-- 
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/04.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0 flex_ai" *ngIf="roleid !== 8">
+                      <h4 class="txt188 mtb0px mw75p">
+                        Redeem Wisdom Points
+                        <span class="fs_12px">
+                          (Coming Soon)
+                        </span>
+                      </h4>
+                      <div class="prelative center_flex pl5px">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_points_circle_05.png" alt="" class="prelative">
+                        <h6 class="txt209 wpts_count">
+                          9999
+                        </h6>
+                      </div>
+                    </div> 
+                    -->
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/04.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0" >
+                      <h4 class="txt188 mtb0px" (click)="routeAffiliate()">
+                        Affiliate Revenue Report
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </li>
+      
+              <li>
+                <a routerLink="/adults/framework-v1/podcast-toc" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/05.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          HumanWisdom Podcast
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li *ngIf="isloggedIn  && subscriber">
+                <a routerLink="/onboarding/myprogram" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/06.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          My Subscriptions
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li>
+                <a routerLink="/onboarding/add-to-cart" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/07.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px" (click)="giftwisdom()">
+                          Give the gift of Wisdom
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li>
+                <a routerLink="/adults/framework-v1/refer-friend" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/08.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px" data-toggle="modal" data-target="#refer_popup">
+                          Refer a Friend
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <!-- <li>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/09.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                      <h4 class="txt188 mtb0px">
+                        Become a Coach
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </li> -->
+      
+              <li>
+                <a routerLink="/adults/framework-v1/hwp-project" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/10.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          HumanWisdom Project
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li>
+                <a routerLink="/adults/treesisters" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/11.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          Tree Planting Program
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+
+              <li *ngIf="!subscriber">
+                <a routerLink="/onboarding/add-to-cart" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/06.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          Subscribe
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <!-- multilayer li -->
+              <li>
+                <label class="a-label__chevron" for="item-2">
+                  <!-- Item 2 -->
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-8 col-sm-8 col-xs-8 p0">
+                        <h4 class="txt188 mtb0px">
+                          Help & Support
+                        </h4>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 tright">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/chevron_right_white.svg" alt="" class="img-responsive">
+                      </div>
+                    </div>
+                  </div>
+                </label>
+                <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+      
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-2">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/chevron_right_white.svg" alt="" class="img-responsive r180deg">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Help & Support
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <ul class="dh_ul">
+                    <!-- <li>
+                      <a (click)="routeGuide()" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                User Guides
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li> -->
+      
+                    <li>
+                      <a routerLink="/adults/faq" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                FAQ
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+      
+                    <!-- <li>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Help Centre
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </li> -->
+      
+                    <li>
+                      <a routerLink="/adults/support" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                Contact Us
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+      
+                    <li>
+                      <a routerLink="/adults/framework-v1/terms-conditions" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                Terms & Conditions
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a routerLink="/adults/framework-v1/privacy-policy" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                Privacy Policy
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- /multilayer li -->
+      
+              <!-- multilayer li -->
+              <!-- <li>
+                <label class="a-label__chevron" for="item-3">                            
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/13.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-8 col-sm-8 col-xs-8 p0">
+                        <h4 class="txt188 mtb0px">
+                          Settings
+                        </h4>
+                      </div>
+                      <div class="col-md-2 col-sm-2 col-xs-2 tright">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/chevron_right_white.svg" alt="" class="img-responsive">
+                      </div>
+                    </div>
+                  </div>
+                </label>
+                <input type="checkbox" id="item-3" name="item-3" class="m-menu__checkbox">
+      
+                <div class="m-menu">
+                  <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="item-3">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/chevron_right_white.svg" alt="" class="img-responsive r180deg">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Settings
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <ul class="dh_ul">
+                    <li>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/13.svg" alt="" class="img-responsive">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Account Settings
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <a routerLink="/adults/framework-v1/terms-conditions" class="p0 b0px">
+                        <div class="row">
+                          <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/13.svg" alt="" class="img-responsive">
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                              <h4 class="txt188 mtb0px">
+                                Privacy Policy
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+      
+                    <li>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/13.svg" alt="" class="img-responsive">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Report a Problem
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                          <div class="col-md-2 col-sm-2 col-xs-2">
+                            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/13.svg" alt="" class="img-responsive">
+                          </div>
+                          <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                            <h4 class="txt188 mtb0px">
+                              Security
+                            </h4>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li> -->
+              <!-- /multilayer li -->
+
+              <li *ngIf="platform.IOS">
+                <a routerLink="/adults/add-to-home-screen-ios" class="p0 b0px">
+                  <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                      <div class="col-md-2 col-sm-2 col-xs-2">
+                        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/12.svg" alt="" class="img-responsive">
+                      </div>
+                      <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                        <h4 class="txt188 mtb0px">
+                          Add to Home Screen
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+      
+              <li (click)="logout()" *ngIf="isloggedIn">
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0 flex_ai">
+                    <div class="col-md-2 col-sm-2 col-xs-2">
+                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/dhamburger/14.svg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-10 col-sm-10 col-xs-10 p0">
+                      <h4 class="txt188 mtb0px">
+                        Logout
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </li>
+      
+              <div class="pagebreak"></div>
+            </ul>      
+          </div>
+          <!-- /submenu -->
+        </nav>
+      </div>
+    </div>
+    <!-- /subscribed + unsubscribed -->
+  </div>
+</div>
+<!-- /top navigation -->
+
+<!-- page content -->
+<div class="right_col bg_white safari pb5_5rem pt0px" role="main">
+  <!-- Class -->
+  <div class="cw100p">
+
+    <div class="row center_flex safari_dflex">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0">
+        <div class="x_panel p0">
+          <div class="x_content p0 mt0px">
+            <form>
+
+              <!-- introduction -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row mt20p">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_i" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Hi, Nidhi! Let’s get started
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_i" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeDiscoveringWisdom(0)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/01.png" alt="Discovering Wisdom" class="ctimg">
+                                  <h4 class="tcenter txt31 attitle">Discovering Wisdom</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="discoveringP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeBenefits(0)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/02.png" alt="Benefits of Wisdom" class="ctimg">
+                                  <h4 class="tcenter txt31 attitle">Benefits of Wisdom</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="benefitsWisdomP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeCircles(0)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/03.png" alt="5 Circles of Wisdom" class="ctimg">
+                                  <h4 class="tcenter txt31 attitle">5 Circles of Wisdom</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="fiveCirclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeIdeas(0)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/04.png" alt="Key Ideas" class="ctimg">
+                                  <h4 class="tcenter txt31 attitle">Key Ideas</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="keyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeGuide(0)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/05.png" alt="User Guide" class="ctimg">
+                                  <h4 class="tcenter txt31 attitle">User Guide</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="guideP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_i" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeDiscoveringWisdom(0)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/01.png" alt="Discovering Wisdom" class="ctimg">
+                                    <h4 class="tcenter txt31 attitle">Discovering Wisdom</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="discoveringP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeBenefits(0)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/02.png" alt="Benefits of Wisdom" class="ctimg">
+                                    <h4 class="tcenter txt31 attitle">Benefits of Wisdom</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="benefitsWisdomP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeCircles(0)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/03.png" alt="5 Circles of Wisdom" class="ctimg">
+                                    <h4 class="tcenter txt31 attitle">5 Circles of Wisdom</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="fiveCirclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeIdeas(0)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/04.png" alt="Key Ideas" class="ctimg">
+                                    <h4 class="tcenter txt31 attitle">Key Ideas</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="keyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeGuide(0)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/05.png" alt="User Guide" class="ctimg">
+                                    <h4 class="tcenter txt31 attitle">User Guide</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="guideP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_i" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_i" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /introduction -->
+
+              <!-- daily practice -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#adp" aria-expanded="true">
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    My daily practice
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="adp" class="panel-collapse collapse in">
+                        <div class="panel-body p0">
+
+                          <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12 p0">
+            
+                              <div class="col-md-2 col-sm-2 col-xs-2 w20p">
+                                <a routerLink="">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/mdp_video_01.svg" alt="Wisdom Stories" class="crimg">
+                                  <h4 class="tcenter txt291 mdpd_title">
+                                    Breathing exercise
+                                  </h4>
+                                </a>
+                              </div>
+            
+                              <div class="col-md-2 col-sm-2 col-xs-2 w20p">
+                                <a routerLink="">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/mdp_journal_01.svg" alt="Journal" class="crimg">
+                                  <h4 class="tcenter txt291 mdpd_title">
+                                    Question of the day
+                                  </h4>
+                                </a>
+                              </div>
+            
+                              <div class="col-md-2 col-sm-2 col-xs-2 w20p">
+                                <a routerLink="">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/mdp_quotation_01.svg" alt="Testimonials" class="crimg">
+                                  <h4 class="tcenter txt291 mdpd_title">
+                                    Daily inspiration
+                                  </h4>
+                                </a>
+                              </div>
+            
+                              <div class="col-md-2 col-sm-2 col-xs-2 w20p">
+                                <a routerLink="" >
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/mdp_audio_01.svg" alt="Forum" class="crimg">
+                                  <h4 class="tcenter txt291 mdpd_title">
+                                    Audio meditation
+                                  </h4>
+                                </a>
+                              </div>
+            
+                              <div class="col-md-2 col-sm-2 col-xs-2 w20p">
+                                <a routerLink="" >
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/mdp_exercise_01.svg" alt="Forum" class="crimg">
+                                  <h4 class="tcenter txt291 mdpd_title">
+                                    Try this today
+                                  </h4>
+                                </a>
+                              </div>
+            
+                            </div>
+                          </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /daily practice -->
+
+              <!-- pfy button -->
+              <div class="row center_flex mdpd_pfy">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                  <button type="submit" class="btn btn-default btn_mdpd_pfy">
+                    Personalised for you
+                  </button> 
+                </div>
+              </div>
+              <!-- /pfy button -->
+
+              <!-- tray -->
+              <div class="row cmr-10px mdpd_tray cmobile">
+                <div class="col-md-12 col-sm-12 col-xs-12 tray_btns">
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/life_stories.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Life Stories
+                    </span>
+                  </button>
+                  
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/guided_journaling.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Guided journaling
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/forum.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Forum
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/blog.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Blog
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_shorts.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Wisdom shorts
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/podcasts.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Podcasts
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_score.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Wisdom score
+                    </span>
+                  </button>
+
+                  <button type="submit" class="btn btn-default btn_mdpd_tray">
+                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/testimonials.svg" alt="" class="prelative">
+                    <span class="ml10px">
+                      Testimonials
+                    </span>
+                  </button>
+                 
+                </div>
+              </div>
+
+              <!-- desktop  -->
+              <div class="carousel slide cdesktop dcctrl dmdpd_tray" id="c_tray" data-interval="false">
+              
+                <ol class="carousel-indicators">
+                  <li data-target="#c_tray" data-slide-to="0" class="active"></li>
+                  <li data-target="#c_tray" data-slide-to="1"></li>
+                  <li data-target="#c_tray" data-slide-to="2"></li>
+                </ol>
+                
+                <div class="carousel-inner">
+                  <div class="item active ">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 gtc_2columns_50p">
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/life_stories.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Life Stories
+                          </span>
+                        </button>
+                        
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/guided_journaling.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Guided journaling
+                          </span>
+                        </button>
+      
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/forum.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Forum
+                          </span>
+                        </button>
+      
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/blog.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Blog
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+            
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12 col-xs-12 gtc_2columns_50p">
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_shorts.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Wisdom shorts
+                          </span>
+                        </button>
+      
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/podcasts.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Podcasts
+                          </span>
+                        </button>
+      
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_score.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Wisdom score
+                          </span>
+                        </button>
+      
+                        <button type="submit" class="btn btn-default btn_mdpd_tray">
+                          <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/testimonials.svg" alt="" class="prelative">
+                          <span class="ml10px">
+                            Testimonials
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+                <a class="left carousel-control" href="#c_tray" data-slide="prev">
+                  <span class="fa fa-angle-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#c_tray" data-slide="next">
+                  <span class="fa fa-angle-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <!-- /desktop -->
+              <!-- /tray -->
+
+              <!-- get help now -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_ghn" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Get help now!
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_ghn" class="panel-collapse collapse in">
+                        <div class="panel-body p0">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 ghn dinline_box">
+                              <div class="col-md-6 col-sm-7 col-xs-7 pl0pxi">
+                                <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/01.svg" alt="Stress Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Stress
+                                  </h4>
+                                </a>
+                              </div>
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/02.svg" alt="Solution for Anxiety" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Anxiety
+                                  </h4>
+                                </a>
+                              </div>
+
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/03.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Anger
+                                  </h4>
+                                </a>
+                              </div> 
+                              
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/04.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Dealing with Loss
+                                  </h4>
+                                </a>
+                              </div> 
+
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/05.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Conflict in Relationships
+                                  </h4>
+                                </a>
+                              </div> 
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c2_w50 p0" id="c_ghn" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/02.svg" alt="Stress Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Stress
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/02.svg" alt="Solution for Anxiety" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Anxiety
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/03.svg" alt="Anger Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Anger
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/04.svg" alt="Anger Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Dealing with Loss
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/get_help_now/05.svg" alt="Anger Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Conflict in Relationships
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_ghn" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_ghn" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /get help now -->
+
+              <!-- continue where you left -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_cwyl" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Continue where you left
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_cwyl" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNature(0)">
+                                <div class="img-gradient">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                </div>
+                                <h4 class="tcenter txt31 attitle">Nature</h4>
+                                <div class="progress dprogress">
+                                  <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeBreathing(0)">
+                                <div class="img-gradient">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/07.png" alt="Breathing" class="ctimg">
+                                </div>
+                                <h4 class="tcenter txt31 attitle">Breathing</h4>
+                                <div class="progress dprogress">
+                                  <div class="progress-bar" role="progressbar" [style.width]="breathingP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNoticingThoughts(0)">
+                                <div class="img-gradient">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/08.png" alt="Noticing Thoughts" class="ctimg">
+                                </div>
+                                <h4 class="tcenter txt31 attitle">Noticing Thoughts</h4>
+                                <div class="progress dprogress">
+                                  <div class="progress-bar" role="progressbar" [style.width]="ntP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeGuidedMeditation(0)">
+                                <div class="img-gradient">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/10.png" alt="Guided Audio Meditation" class="ctimg">
+                                </div>
+                                <h4 class="tcenter txt31 attitle">Guided Audio Meditation</h4>
+                                <div class="progress dprogress">
+                                  <div class="progress-bar" role="progressbar" [style.width]="gamP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeMeditation(0)">
+                                <div class="img-gradient">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/09.png" alt="Meditation" class="ctimg">
+                                </div>
+                                <h4 class="tcenter txt31 attitle">Meditation</h4>
+                                <div class="progress dprogress">
+                                  <div class="progress-bar" role="progressbar" [style.width]="meditationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_wyl" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNature(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Nature</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeBreathing(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/07.png" alt="Breathing" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Breathing</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="breathingP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNoticingThoughts(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/08.png" alt="Noticing Thoughts" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Noticing Thoughts</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="ntP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeGuidedMeditation(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/10.png" alt="Guided Audio Meditation" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Guided Audio Meditation</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="gamP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeMeditation(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/09.png" alt="Meditation" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Meditation</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="meditationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_wyl" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_wyl" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /continue where you left -->
+
+              <!-- life stories -->
+               <!-- accordion -->
+               <div class="row mlr-10px_01 accordion_row ">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_ls" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="col-md-8 col-sm-8 col-xs-8 p0">
+                                  <h2 class="txt290 mtb0px">
+                                    Life stories
+                                  </h2>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 p0">
+                                  <a >
+                                    <h2 class="txt292 underline mtb0px tright">
+                                      View all
+                                    </h2>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_ls" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv dinline_box">
+                              <!-- story 1 -->
+                              <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 center_flex p0 life_stories">
+                                <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                  <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/luke-southern-gW7QRXDSvec-unsplash.jpg"  alt="" class="w100 c150px">
+                                </div>
+                                
+                                <div class="col-md-9 col-sm-10 col-xs-9">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt69 mtb0px capitalize">
+                                          The well-being of an alcoholic
+                                        </h6>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                      <h6 class="txt70 ellipsis">
+                                        When I was just 3 years old my parents, Elliot and Josephine split. They did ...
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /story 1 -->
+
+                              <!-- story 2 -->
+                              <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 center_flex p0 life_stories">
+                                <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                  <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/kelly-sikkema-k0o-cw5Y_9s-unsplash.jpg"  alt="" class="w100 c150px">
+                                </div>
+                                
+                                <div class="col-md-9 col-sm-10 col-xs-9">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt69 mtb0px capitalize">
+                                          My stepmother humiliated me
+                                        </h6>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                      <h6 class="txt70 ellipsis">
+                                        Jeff does not know the full story behind what happened when he was just 11 ...
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /story 2 -->
+
+                              <!-- story 3 -->
+                              <div class="col-lg-9 col-md-10 col-sm-10 col-xs-10 center_flex p0 life_stories">
+                                <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                  <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/gregory-pappas-rUc9hVE-L-E-unsplash.jpg"  alt="" class="w100 c150px">
+                                </div>
+                                
+                                <div class="col-md-9 col-sm-10 col-xs-9">
+                                  <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt69 mtb0px capitalize">
+                                          An apple a day is an eating disorder
+                                        </h6>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 col-xs-12">
+                                      <h6 class="txt70 ellipsis">
+                                        I’m sure there were losses before, but one of the earliest ones I can recall ...
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /story 3 -->
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dcctrl" id="c_ls" data-interval="false">
+                          
+                            <ol class="carousel-indicators">
+                              <li data-target="#c_ls" data-slide-to="0" class="active"></li>
+                              <li data-target="#c_ls" data-slide-to="1"></li>
+                              <li data-target="#c_ls" data-slide-to="2"></li>
+                            </ol>
+                            
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <!-- story 1 -->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_flex dlife_stories">
+                                  <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                    <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/luke-southern-gW7QRXDSvec-unsplash.jpg"  alt="" class="w100 c150px">
+                                  </div>
+                                  
+                                  <div class="col-md-9 col-sm-10 col-xs-9">
+                                    <div class="row">
+                                      <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                          <h6 class="txt69 mtb0px capitalize">
+                                            The well-being of an alcoholic
+                                          </h6>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt70 ellipsis">
+                                          When I was just 3 years old my parents, Elliot and Josephine split. They did ...
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /story 1 -->
+                              </div>
+                        
+                              <div class="item">
+                                <!-- story 2 -->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_flex dlife_stories">
+                                  <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                    <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/kelly-sikkema-k0o-cw5Y_9s-unsplash.jpg"  alt="" class="w100 c150px">
+                                  </div>
+                                  
+                                  <div class="col-md-9 col-sm-10 col-xs-9">
+                                    <div class="row">
+                                      <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                          <h6 class="txt69 mtb0px capitalize">
+                                            My stepmother humiliated me
+                                          </h6>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt70 ellipsis">
+                                          Jeff does not know the full story behind what happened when he was just 11 ...
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /story 2 -->
+                              </div>
+                            
+                              <div class="item">
+                                <!-- story 3 -->
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_flex dlife_stories">
+                                  <div class="col-md-3 col-sm-2 col-xs-3 p0">
+                                    <img src="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/wisdom_stories/gregory-pappas-rUc9hVE-L-E-unsplash.jpg"  alt="" class="w100 c150px">
+                                  </div>
+                                  
+                                  <div class="col-md-9 col-sm-10 col-xs-9">
+                                    <div class="row">
+                                      <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                          <h6 class="txt69 mtb0px capitalize">
+                                            An apple a day is an eating disorder
+                                          </h6>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <h6 class="txt70 ellipsis">
+                                          I’m sure there were losses before, but one of the earliest ones I can recall ...
+                                        </h6>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!-- /story 3 -->
+                              </div>
+                            </div>
+                        
+                            <a class="left carousel-control" href="#c_ls" data-slide="prev">
+                              <span class="fa fa-angle-left"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#c_ls" data-slide="next">
+                              <span class="fa fa-angle-right"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /life stories -->
+
+              <!-- wisdom shorts -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_ws" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Wisdom shorts
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_ws" class="panel-collapse collapse in">
+                        <div class="panel-body p0">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 ghn dinline_box">
+                              <div class="col-md-6 col-sm-7 col-xs-7 pl0pxi">
+                                <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Stress Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Overcoming stress
+                                  </h4>
+                                </a>
+                              </div>
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Solution for Anxiety" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Emotional intelligence and stress
+                                  </h4>
+                                </a>
+                              </div>
+
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Guided meditation
+                                  </h4>
+                                </a>
+                              </div>                              
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c2_w50 p0" id="c_ws" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Stress Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Overcoming stress
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Solution for Anxiety" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Emotional intelligence and stress
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="img-responsive">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Guided meditation
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_ws" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_ws" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /wisdom shorts -->
+
+              <!-- live with wisdom -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row ">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_lww" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Live with wisdom
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_lww" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv lww">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeStress(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/34.png" alt="Stress" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Stress</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="stressP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeRelationships(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/35.png" alt="Relationships" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Relationships</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="relationshipsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeLove(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/36.png" alt="Love" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Love</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="loveP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeCriticism(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/37.png" alt="Criticism" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Criticism</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="criticismP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeOpinionsAndBeliefs(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/43.png" alt="Opinions and Beliefs" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Opinions and Beliefs</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="opinionsandbeliefsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>                              
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeSelfEsteem(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/38.png" alt="Self Esteem" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Self-Esteem</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="seP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeLivingWithPeace(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/39.png" alt="Living with Peace" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Living with Peace</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="livingwithpeaceP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeDealingWithDeath(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/40.png" alt="Dealing with Death" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Dealing with Death</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="dealingwithdeathP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeHappiness(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/41.png" alt="Happiness" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Happiness</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeCommunication(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/42.png" alt="Communication" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Communication</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeSuccessAndFailure(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/44.png" alt="Success and Failure" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Success and Failure</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="successandfailureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeAddiction(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/45.png" alt="Addiction" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Addiction</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="addictionP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeFood(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/46.png" alt="Food" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Food and Health</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="foodP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeMoney(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/47.png" alt="Money" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Money</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="moneyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeWork(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/54.png" alt="Work" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Work</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="wP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeLeadership(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/48.png" alt="Leadership" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Leadership</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="lP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dcctrl" id="c_lww" data-interval="false">
+                            <div class="carousel-inner">
+
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeStress(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/34.png" alt="Stress" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Stress</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="stressP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeRelationships(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/35.png" alt="Relationships" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Relationships</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="relationshipsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeLove(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/36.png" alt="Love" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Love</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="loveP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeHappiness(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/41.png" alt="Happiness" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Happiness</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeCommunication(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/42.png" alt="Communication" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Communication</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeSuccessAndFailure(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/44.png" alt="Success and Failure" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Success and Failure</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="successandfailureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeCriticism(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/37.png" alt="Criticism" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Criticism</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="criticismP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeOpinionsAndBeliefs(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/43.png" alt="Opinions and Beliefs" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Opinions and Beliefs</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="opinionsandbeliefsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeSelfEsteem(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/38.png" alt="Self Esteem" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Self-Esteem</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="seP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeAddiction(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/45.png" alt="Addiction" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Addiction</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="addictionP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeFood(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/46.png" alt="Food" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Food and Health</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="foodP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeMoney(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/47.png" alt="Money" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Money</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="moneyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeLivingWithPeace(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/39.png" alt="Living with Peace" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Living with Peace</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="livingwithpeaceP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeDealingWithDeath(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/40.png" alt="Dealing with Death" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Dealing with Death</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="dealingwithdeathP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeWork(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/54.png" alt="Work" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Work</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="wP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeLeadership(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/48.png" alt="Leadership" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Leadership</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="lP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              
+                            </div>
+                            <a class="left carousel-control" href="#c_lww" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_lww" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /live with wisdom -->
+
+              <!-- manage your emotions -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row ">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_mye" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Manage your emotions
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_mye" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeFearAnxiety(0)" >
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/29.png" alt="Fear & Anxiety" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Fear & Anxiety</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="fearP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routePleasure(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/30.png" alt="Pleasure" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Pleasure</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="pleasureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeSorrowandLoss(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/31.png" alt="Sorrow and Loss" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Sorrow and Loss</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="sorrowandlossP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeLoneliness(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/32.png" alt="Loneliness" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Loneliness</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="lonelinessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeAnger(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/33.png" alt="Anger" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Anger</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="angerP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+                              
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_mye" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeFearAnxiety(0)" >
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/29.png" alt="Fear & Anxiety" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Fear & Anxiety</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="fearP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routePleasure(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/30.png" alt="Pleasure" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Pleasure</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="pleasureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeSorrowandLoss(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/31.png" alt="Sorrow and Loss" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Sorrow and Loss</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="sorrowandlossP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeLoneliness(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/32.png" alt="Loneliness" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Loneliness</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="lonelinessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeAnger(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/33.png" alt="Anger" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Anger</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="angerP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_mye" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_mye" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /manage your emotions -->
+
+              <!-- develop a calm mind  -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_dacm" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Develop a calm mind
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_dacm" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNature(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Nature</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeBreathing(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/07.png" alt="Breathing" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Breathing</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="breathingP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNoticingThoughts(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/08.png" alt="Noticing Thoughts" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Noticing Thoughts</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="ntP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeMeditation(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/09.png" alt="Meditation" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Meditation</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="meditationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeGuidedMeditation(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/10.png" alt="Guided Audio Meditation" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Guided Audio Meditation</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="gamP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_dacm" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNature(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Nature</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeBreathing(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/07.png" alt="Breathing" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Breathing</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="breathingP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNoticingThoughts(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/08.png" alt="Noticing Thoughts" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Noticing Thoughts</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="ntP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeMeditation(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/09.png" alt="Meditation" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Meditation</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="meditationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeGuidedMeditation(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/10.png" alt="Guided Audio Meditation" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Guided Audio Meditation</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="gamP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_dacm" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_dacm" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /develop a calm mind -->
+
+              <!-- explore how your mind works -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_ehymw" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Explore how your mind works
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_ehymw" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNature(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Past Influences</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeComparison(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/21.png" alt="Comparison & Envy" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Comparison & Envy</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="comparisonP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeReactiveMind(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/22.png" alt="Reactive Mind" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Reactive Mind</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="rmP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeSelfImage(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/23.png" alt="Self Image" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Self Image</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="siP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeSelfInterest(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/24.png" alt="Self Interest" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Self Interest</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="sinP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeIdentity(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/25.png" alt="Identity" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Identity</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="identityP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeEmotionalNeeds(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/26.png" alt="Emotional Needs" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Emotional Needs</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="enP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeInnerBoredom(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/27.png" alt="Inner Boredom" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Inner Boredom</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="ibP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNatureOfI(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/28.png" alt="The Nature of the ‘I’" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">The Nature of the ‘I’</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="niP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_ehymw" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNature(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="Nature" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Past Influences</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeComparison(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/21.png" alt="Comparison & Envy" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Comparison & Envy</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="comparisonP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeReactiveMind(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/22.png" alt="Reactive Mind" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Reactive Mind</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="rmP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeSelfImage(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/23.png" alt="Self Image" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Self Image</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="siP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeSelfInterest(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/24.png" alt="Self Interest" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Self Interest</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="sinP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeIdentity(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/25.png" alt="Identity" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Identity</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="identityP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeEmotionalNeeds(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/26.png" alt="Emotional Needs" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Emotional Needs</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="enP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeInnerBoredom(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/27.png" alt="Inner Boredom" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Inner Boredom</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="ibP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNatureOfI(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/28.png" alt="The Nature of the ‘I’" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">The Nature of the ‘I’</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="niP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_ehymw" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_ehymw" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /explore how your mind works -->
+
+              <!-- understand yourself  -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_uy" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Understand yourself
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_uy" class="panel-collapse collapse in">
+                        <div class="panel-body p0 m-1px">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 odiv">
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeBenefitsEnquiry(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/11.png" alt="Benefits of Enquiry" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Benefits of Enquiry</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="benefitsEnquiryP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeHowToBegin(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/12.png" alt="How to Begin?" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">How to begin?</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="beginP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeThreeSteps(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/13.png" alt="Three Steps to Enquiry" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Three Steps to Enquiry</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="threeStepsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeInsights(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/14.png" alt="Insight" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Insight</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="insightP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeAwareness(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/15.png" alt="Awareness" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Awareness</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="awarenessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeNoJudgement(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/16.png" alt="No Judgement" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">No Judgement</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="noJudgementP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeQuestionsAreKey(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/17.png" alt="Questions are Key" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Questions are Key</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="questionsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeLookWithoutLanguage(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/18.png" alt="Look without Language" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Look without Language</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="withoutLanguageP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                              <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                <a (click)="routeObstacles(0)">
+                                  <div class="img-gradient">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/19.png" alt="Obstacles to Enquiry" class="ctimg">
+                                  </div>
+                                  <h4 class="tcenter txt31 attitle">Obstacles to Enquiry</h4>
+                                  <div class="progress dprogress">
+                                    <div class="progress-bar" role="progressbar" [style.width]="obstaclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </a>
+                              </div>
+
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c1_w33" id="c_uy" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeBenefitsEnquiry(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/11.png" alt="Benefits of Enquiry" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Benefits of Enquiry</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="benefitsEnquiryP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeHowToBegin(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/12.png" alt="How to Begin?" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">How to begin?</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="beginP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeThreeSteps(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/13.png" alt="Three Steps to Enquiry" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Three Steps to Enquiry</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="threeStepsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeInsights(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/14.png" alt="Insight" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Insight</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="insightP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeAwareness(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/15.png" alt="Awareness" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Awareness</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="awarenessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeNoJudgement(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/16.png" alt="No Judgement" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">No Judgement</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="noJudgementP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeQuestionsAreKey(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/17.png" alt="Questions are Key" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Questions are Key</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="questionsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeLookWithoutLanguage(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/18.png" alt="Look without Language" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Look without Language</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="withoutLanguageP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-4 col-sm-4 col-xs-4 ip">
+                                  <a (click)="routeObstacles(0)">
+                                    <div class="img-gradient">
+                                      <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/19.png" alt="Obstacles to Enquiry" class="ctimg">
+                                    </div>
+                                    <h4 class="tcenter txt31 attitle">Obstacles to Enquiry</h4>
+                                    <div class="progress dprogress">
+                                      <div class="progress-bar" role="progressbar" [style.width]="obstaclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_uy" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_uy" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /understand yourself -->
+
+              <!-- make the world a better place  -->
+              <!-- accordion -->
+              <div class="row mlr-10px_01 accordion_row">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                  <div class="panel-group dpanelgroup" id="accordion">
+                    <div class="panel panel-default dpanel dpanel_01">
+                      <div class="panel-heading p0">
+                        <h4 class="panel-title dpaneltitle">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#ca_mtwabp" aria-expanded="true">
+
+                            <div class="row">
+                              <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                                <div class="">
+                                  <h2 class="txt290 mtb0px">
+                                    Make the world a better place
+                                  </h2>
+                                </div>
+                              </div>
+                            </div>
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="ca_mtwabp" class="panel-collapse collapse in">
+                        <div class="panel-body p0">
+
+                          <div class="row cmr-10px cmobile">
+                            <div class="col-md-12 col-sm-12 col-xs-12 ghn dinline_box">
+                              <div class="col-md-6 col-sm-7 col-xs-7 pl0pxi">
+                                <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Stress Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Tackling racism
+                                  </h4>
+                                </a>
+                              </div>
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Solution for Anxiety" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Climate change
+                                  </h4>
+                                </a>
+                              </div>
+
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Global health challenges
+                                  </h4>
+                                </a>
+                              </div> 
+                              
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Ending conflict
+                                  </h4>
+                                </a>
+                              </div> 
+
+                              <div class="col-md-6 col-sm-7 col-xs-7">
+                                <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                  <h4 class="txt202 tile_title whitespace_preline">
+                                    Transforming education
+                                  </h4>
+                                </a>
+                              </div> 
+                            </div>
+                          </div>
+
+                          <!-- desktop  -->
+                          <div class="carousel slide cdesktop dc c2_w50 p0" id="c_mtwabp" data-interval="false">
+                            <div class="carousel-inner">
+                              <div class="item active">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71001', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Stress Management" class="crimg">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Tackling racism
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71002', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Solution for Anxiety" class="crimg">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Climate change
+                                    </h4>
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Global health challenges
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Ending conflict
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                              <div class="item">
+                                <div class="col-md-6 col-sm-6 col-xs-6">
+                                  <a (click)="getsupport('/adults/get-support-now/s71003', 71)">
+                                    <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/wisdom_shorts/default_video.svg" alt="Anger Management" class="crimg">
+                                    <h4 class="txt202 tile_title whitespace_preline">
+                                      Transforming education
+                                    </h4>
+                                  </a>
+                                </div> 
+                              </div>
+                            </div>
+                            <a class="left carousel-control" href="#c_mtwabp" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#c_mtwabp" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                          </div>
+                          <!-- /desktop -->
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /accordion -->
+              <!-- /make the world a better place -->
+
+              <div class="pagebreak"></div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/Class -->
+</div>
+<!-- /page content -->
+
+<!-- footer  -->
+<div class="sidebar-footer ifooter">  
+  <div class="row center_flex">
+    <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tcenter center_flex">
+      
+      <a (click)="routeDash()" class="footer_index">
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/home.svg" alt="">
+        <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/home_active.svg" alt="">  -->
+        <p class="mb0px">
+          Home
+        </p>
+      </a>
+    
+      <!-- <a class="footer_index">
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/search.svg" alt=""> -->
+        <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/search_active.svg" alt=""> -->
+        <!-- <p class="mb0px">
+          Search
+        </p>
+      </a> -->
+    
+      <a (click)="routeJournal()" class="footer_index">        
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/journal.svg" alt="">
+        <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/journal_active.svg" alt=""> -->
+        <p class="mb0px">
+          Journal
+        </p>
+      </a>
+    
+      <a (click)="routeForum()" class="footer_index"> 
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/forum.svg" alt="">
+        <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/forum_active.svg" alt=""> -->
+        <p class="mb0px">
+          Forum
+        </p>
+      </a>
+
+      <!--
+      <a class="footer_index"> 
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/more.svg" alt="">        
+        <p class="mb0px">
+          More
+        </p>
+      </a>
+      -->
+
+      <a class="footer_index" (click)="profileclickevent()"> 
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/login.svg" alt="">
+        
+        <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/profile_active.svg" alt="">
+        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/profile_inactive.svg" alt=""> -->
+      
+        <p class="mb0px">
+          Login
+        </p>
+        <!-- <p class="mb0px" *ngIf="isloggedIn">
+          Profile
+        </p> -->
+      </a>
+
+    </div>
+  </div>  
+</div>
+<!-- /footer -->

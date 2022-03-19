@@ -504,6 +504,19 @@
     }
 }
 
+@media (max-width: 1099px)
+{
+    .cdesktop 
+    {
+        display: none;
+    }
+
+    .cmobile
+    {
+        display: block;
+    }
+}
+
 @media (min-width: 1200px)
 {
 
@@ -584,5 +597,15 @@
     .mlr-10px {
         margin-left: -4px;
         margin-right: -4px;
+    }
+
+    .cdesktop 
+    {
+        display: block;
+    }
+
+    .cmobile
+    {
+        display: none;
     }
 }

@@ -56,7 +56,6 @@
 	  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
     <!-- jQuery Tags Input -->
     <script src="assets/vendors/jquery.tagsinput/src/jquery.tagsinput.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3/roundslider.js'></script>
@@ -193,104 +192,104 @@
       </script>
       -->
 
-      <script type="text/javascript">
-      $(document).ready(function() {
-        $(document).on('click', '.rm_01', function()
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $(document).on('click', '.rm_01', function()
+      {
+        var elem = $(".rm_01").text();
+        if (elem == "read more") 
         {
-          var elem = $(".rm_01").text();
-          if (elem == "read more") 
-          {
-            //Stuff to do when btn is in the read more state
-            $(".rm_01").text("read less");
-            $(".rm_txt_01").slideDown();
-          } 
-          else 
-          {
-            //Stuff to do when btn is in the read less state
-            $(".rm_01").text("read more");
-            $(".rm_txt_01").slideUp();
-          }
-        });
-
-        $(document).on('click', '.rmd_01', function()
+          //Stuff to do when btn is in the read more state
+          $(".rm_01").text("read less");
+          $(".rm_txt_01").slideDown();
+        } 
+        else 
         {
-          var elem = $(".rmd_01").text();
-          if (elem == "read more") 
-          {
-            //Stuff to do when btn is in the read more state
-            $(".rmd_01").text("read less");
-            $(".rmd_txt_01").slideDown();
-          } 
-          else 
-          {
-            //Stuff to do when btn is in the read less state
-            $(".rmd_01").text("read more");
-            $(".rmd_txt_01").slideUp();
-          }
-        });
-
-        $(document).on('click', '.rm_02', function()
-        {
-          var elem = $(".rm_02").text();
-          if (elem == "read more") 
-          {
-            //Stuff to do when btn is in the read more state
-            $(".rm_02").text("read less");
-            $(".rm_txt_02").slideDown();
-          } 
-          else 
-          {
-            //Stuff to do when btn is in the read less state
-            $(".rm_02").text("read more");
-            $(".rm_txt_02").slideUp();
-          }
-        });
-
-        $(document).on('click', '.rmd_02', function()
-        {
-          var elem = $(".rmd_02").text();
-          if (elem == "read more") 
-          {
-            //Stuff to do when btn is in the read more state
-            $(".rmd_02").text("read less");
-            $(".rmd_txt_02").slideDown();
-          } 
-          else 
-          {
-            //Stuff to do when btn is in the read less state
-            $(".rmd_02").text("read more");
-            $(".rmd_txt_02").slideUp();
-          }
-        });
-
-        $(document).on('click', '.rm_03', function()
-        {
-          var elem = $(".rm_03").text();
-          if (elem == "read more") 
-          {
-            //Stuff to do when btn is in the read more state
-            $(".rm_03").text("read less");
-            $(".rm_txt_03").slideDown();
-          } 
-          else 
-          {
-            //Stuff to do when btn is in the read less state
-            $(".rm_03").text("read more");
-            $(".rm_txt_03").slideUp();
-          }
-        });
+          //Stuff to do when btn is in the read less state
+          $(".rm_01").text("read more");
+          $(".rm_txt_01").slideUp();
+        }
       });
 
-      // $(document).on('click', '#rm_01', function(){
-      //   $('#rm_txt_01').slideToggle();
-      //   if ($('#rm_01').text() == "read more") {
-      //     $(this).text("read less")
-      //   } else {
-      //     $(this).text("read more")
-      //   }
-      // });
-      </script>
-    
+      $(document).on('click', '.rmd_01', function()
+      {
+        var elem = $(".rmd_01").text();
+        if (elem == "read more") 
+        {
+          //Stuff to do when btn is in the read more state
+          $(".rmd_01").text("read less");
+          $(".rmd_txt_01").slideDown();
+        } 
+        else 
+        {
+          //Stuff to do when btn is in the read less state
+          $(".rmd_01").text("read more");
+          $(".rmd_txt_01").slideUp();
+        }
+      });
+
+      $(document).on('click', '.rm_02', function()
+      {
+        var elem = $(".rm_02").text();
+        if (elem == "read more") 
+        {
+          //Stuff to do when btn is in the read more state
+          $(".rm_02").text("read less");
+          $(".rm_txt_02").slideDown();
+        } 
+        else 
+        {
+          //Stuff to do when btn is in the read less state
+          $(".rm_02").text("read more");
+          $(".rm_txt_02").slideUp();
+        }
+      });
+
+      $(document).on('click', '.rmd_02', function()
+      {
+        var elem = $(".rmd_02").text();
+        if (elem == "read more") 
+        {
+          //Stuff to do when btn is in the read more state
+          $(".rmd_02").text("read less");
+          $(".rmd_txt_02").slideDown();
+        } 
+        else 
+        {
+          //Stuff to do when btn is in the read less state
+          $(".rmd_02").text("read more");
+          $(".rmd_txt_02").slideUp();
+        }
+      });
+
+      $(document).on('click', '.rm_03', function()
+      {
+        var elem = $(".rm_03").text();
+        if (elem == "read more") 
+        {
+          //Stuff to do when btn is in the read more state
+          $(".rm_03").text("read less");
+          $(".rm_txt_03").slideDown();
+        } 
+        else 
+        {
+          //Stuff to do when btn is in the read less state
+          $(".rm_03").text("read more");
+          $(".rm_txt_03").slideUp();
+        }
+      });
+    });
+
+    // $(document).on('click', '#rm_01', function(){
+    //   $('#rm_txt_01').slideToggle();
+    //   if ($('#rm_01').text() == "read more") {
+    //     $(this).text("read less")
+    //   } else {
+    //     $(this).text("read more")
+    //   }
+    // });
+    </script>
+
     <noscript>Please enable JavaScript to continue using this application.</noscript>
   </body>
 </html>
