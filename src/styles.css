@@ -8804,7 +8804,8 @@ ul.project_files li a i {
     transition-delay: 0.1s
 }
 .form-group.has-feedback span {
-    display: block !important;
+    /* display: block !important; */
+    display: block;
 }
 .form-group .btn {
     margin-bottom: -6px;
@@ -19255,7 +19256,12 @@ share-buttons button
 }
 
 /* increment decrement input group */
-span {cursor:pointer; }
+span,
+a 
+{
+  cursor:pointer; 
+}
+
 .number{
   margin:100px;
 }
@@ -25794,7 +25800,8 @@ h1
   height: auto;
 }
 
-#mdp_carousel .carousel-indicators 
+#mdp_carousel .carousel-indicators,
+#ic_carousel .carousel-indicators
 {
   /* position: absolute;
   bottom: -24px; */
@@ -25809,7 +25816,8 @@ h1
   align-items: center;
 }
 
-#mdp_carousel .carousel-indicators .active 
+#mdp_carousel .carousel-indicators .active,
+#ic_carousel .carousel-indicators .active
 {
   width: 24px;
   height: 8px;
@@ -25820,7 +25828,8 @@ h1
   border: 0;
 }
 
-#mdp_carousel .carousel-indicators li
+#mdp_carousel .carousel-indicators li,
+#ic_carousel .carousel-indicators li
 {
   width: 8px;
   height: 8px;
@@ -26227,7 +26236,7 @@ h1
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) 
 {
-  .carousel .item .col-xs-12:nth-last-child(-n+2) 
+  .dc .carousel .item .col-xs-12:nth-last-child(-n+2) 
   {
      display: none;
   }
@@ -26555,4 +26564,181 @@ all and (min-width: 992px) and (-webkit-transform-3d)
 #c_lww .ip  
 {
   margin-bottom: 5px;
+}
+
+.ic_title
+{
+  margin: 57px 0 18px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* #ic_carousel
+{
+  height: 100vh;
+} */
+
+#ic_carousel .carousel-inner 
+{
+  height: 100vh;
+}
+
+#ic_carousel .carousel-control 
+{
+  /* position: fixed;
+  top: auto;
+  bottom: 12%;
+  padding: 0 66px;
+  margin: 0;
+  justify-content: center; */
+  display: flex;
+  align-items: center;
+  
+}
+
+#ic_carousel .carousel-control h4 
+{
+  text-shadow: 0 0 black;
+}
+
+.jc_flexstart 
+{
+  justify-content: flex-start;
+}
+
+#ic_carousel .carousel-indicators a.active 
+{
+  height: unset;
+}
+
+.hr_01 
+{
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  margin: 18px 0;
+  width: 221px;
+}
+
+.activity_title
+{
+  margin-left: 12px;
+  width: 20%;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.atrow 
+{
+  margin: 50px 0 0 0;
+}
+
+.atable
+{
+  width: 50%;
+}
+
+.atable tr 
+{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.atable tr td
+{
+  padding: 18px 0px;
+}
+
+.pfy_search_icon
+{
+  color: #5D5D5D;
+  font-size: 20px;
+  left: 20px !important;
+  text-align: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.pfy_search
+{
+  background: #EBEBEB;
+  border-radius: 100px;
+}
+
+.pfy_search::placeholder,
+.pfy_search
+{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #5D5D5D !important;
+  height: 50px;
+}
+
+input[type="search"].pfy_search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 1em;
+  width: 1em;
+  border-radius: 50em;
+  background: url(https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/close.png) no-repeat 50% 50%;
+  /* filter: opacity(0.5) drop-shadow(0 0 0 #5D5D5D); */
+  filter: invert(100%);
+  background-size: contain;
+  opacity: 1;
+  pointer-events: none;
+}
+
+input[type="search"].pfy_search:focus::-webkit-search-cancel-button {
+  /* opacity: .3; */
+  pointer-events: all;
+}
+
+input[type="search"].pfy_search.dark::-webkit-search-cancel-button {
+  filter: invert(1);
+}
+
+.btn_pfy_search 
+{
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #5D5D5D;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  color: #5D5D5D;
+}
+
+.btn_pfy_search:hover,
+.btn_pfy_search:active,
+.btn_pfy_search:focus
+{
+  background: #70C6BD;
+  border: 0;
+  color: #FFFFFF;
+}
+
+.pfys_title
+{
+  margin: 38px 0 0 0;
+}
+
+.pfys_desc
+{
+  margin: 13px 0 26px 0;
+}
+
+.pfys_sub_title
+{
+  margin: 36px 0 24px 0;
 }

@@ -18,6 +18,14 @@ const routes: Routes = [
     path: 'personalised-for-you-search',
     loadChildren: () => import('./personalised-for-you-search/personalised-for-you-search.module').then( m => m.PersonalisedForYouSearchPageModule)
   },
+  {
+    path: 'intro-carousel',
+    loadChildren: () => import('./intro-carousel/intro-carousel.module').then( m => m.IntroCarouselPageModule)
+  },
+  {
+    path: 'activity',
+    loadChildren: () => import('./activity/activity.module').then( m => m.ActivityPageModule)
+  },
 ];
 
 @NgModule({

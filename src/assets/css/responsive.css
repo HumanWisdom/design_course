@@ -187,6 +187,11 @@
     {
         margin-top: 16%;
     }
+
+    .activity_title
+    {
+        width: 30%;
+    }
 }
 
 @media (min-width: 768px)
@@ -289,6 +294,11 @@
     .cmr-10px 
     {
         margin-right: 0px;
+    }
+
+    #ic_carousel .carousel-indicators
+    {
+        width: 50%
     }
 }
 
@@ -607,5 +617,25 @@
     .cmobile
     {
         display: none;
+    }
+
+    #ic_carousel .carousel-indicators
+    {
+        width: 25%
+    }
+
+    #ic_carousel .carousel-indicators
+    {
+        bottom: 8%;
+    }
+
+    .mpfy
+    {
+        margin: 50px 0 18px 0;
+    }
+
+    .activity_title
+    {
+        width: 20%;
     }
 }
