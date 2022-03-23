@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'activity',
     loadChildren: () => import('./activity/activity.module').then( m => m.ActivityPageModule)
   },
+  {
+    path: 'bubbles',
+    loadChildren: () => import('./bubbles/bubbles.module').then( m => m.BubblesPageModule)
+  },
 ];
 
 @NgModule({

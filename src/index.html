@@ -63,6 +63,7 @@
     <script src="https://js.stripe.com/v3/"></script>
 
 
+    <!-- video -->
     <script>
     $(document).on('click', '.video26', function()
     {
@@ -136,12 +137,20 @@
         $(".onscrollbg").addClass("onscrollbg_active");
         $(".onscrollbs").addClass("onscrollbs_active");
         $(".onscrollws").addClass("onscrollws_active");
+        $(".ws_dnone").addClass("ws_dblock");
+        $(".ws_unsrolled").addClass("ws_dnone");
+        $(".unscroll").addClass("display_none");
+        $(".scroll").addClass("display_flex");
       }
       else
       {
         $(".onscrollbg").removeClass("onscrollbg_active");
         $(".onscrollbs").removeClass("onscrollbs_active");
         $(".onscrollws").removeClass("onscrollws_active");
+        $(".ws_dnone").removeClass("ws_dblock");
+        $(".ws_unsrolled").removeClass("ws_dnone");
+        $(".unscroll").removeClass("display_none");
+        $(".scroll").removeClass("display_flex");
       }
     });
     </script>
@@ -175,22 +184,22 @@
 
     <!--
     <script>
-      $(document).ready(function () {
-        $(window).scroll(function () {
-          if ($(this).scrollTop() > 100) 
-          { 
-            $('#div_google_playstore').fadeOut(500);
-            $(".navbar-static-top").attr("style", "top: 0");
-          } 
-          else 
-          {
-            $('#div_google_playstore').fadeIn(500);
-            $(".navbar-static-top").addClass("navbar_01");
-          }
-        });
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) 
+        { 
+          $('#div_google_playstore').fadeOut(500);
+          $(".navbar-static-top").attr("style", "top: 0");
+        } 
+        else 
+        {
+          $('#div_google_playstore').fadeIn(500);
+          $(".navbar-static-top").addClass("navbar_01");
+        }
       });
-      </script>
-      -->
+    });
+    </script>
+    -->
 
     <script type="text/javascript">
     $(document).ready(function() {
