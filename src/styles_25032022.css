@@ -21493,17 +21493,16 @@ input[type="search"]:focus::-webkit-search-cancel-button
 
 #jdqcarousel .carousel-indicators
 {
-  /* margin-bottom: 5px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: center;
-  align-items: center; */
-  display: none;
+  align-items: center;
 }
 
 #jdqcarousel .carousel-control.left,
 #jdqcarousel .carousel-control.right
 {
-  display: none;
+  /* display: none; */
 }
 
 #jdqcarousel .carousel-control .fa-chevron-right,
@@ -22839,14 +22838,13 @@ ul.dh_ul li
 /* wisdom stories */
 .dabsolute_05
 {
-  /* overflow: auto; */
-  overflow: inherit;
+  overflow: auto;
   position: absolute;
   top: 5%;
   left: 0;
   right: 0;
   bottom: 5%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 .dabsolute_06
@@ -22890,14 +22888,13 @@ ul.dh_ul li
 /* forum */
 .dabsolute_09
 {
-  /* overflow: auto; */
-  overflow: inherit;
+  overflow: auto;
   position: absolute;
   top: 0%;
   left: 0;
   right: 0;
   bottom: 30%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 /* /forum */
 
@@ -25959,8 +25956,7 @@ h1
 
 .mdpd_pfy
 {
-  /* margin: 37px 0 0 0; */
-  margin: 37px -10px 0 -10px;
+  margin: 37px 0 0 0;
 }
 
 .btn_mdpd_tray
@@ -27608,93 +27604,4 @@ body
 .display_flex
 {
   display: flex;
-}
-
-.btn_ficons 
-{
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  color: #1092A7;
-  margin: 0;
-  border: 0;
-  background: transparent;
-  padding: 0;
-  width: 100%;
-}
-
-.btn_ficons:focus
-{
-  background: transparent;
-  box-shadow: unset;  
-}
-
-.btn_ficons i 
-{
-  font-size: 15px;
-  margin-right: 5px;
-}
-
-.txtarea_fl_comment
-{
-  width: 100%;
-  background: #EBEBEB;
-  box-shadow: inset 1px 1px 2px rgb(0 0 0 / 10%);
-  border-radius: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 14px;
-  display: flex;
-  align-items: center;
-  text-align: left;
-  color: #5D5D5D;
-  border: 0;
-}
-
-.txtarea_fl_comment:focus,
-.txtarea_fl_comment:hover
-{
-  outline: none !important;
-  /* border: 1px solid #DADADA;
-  box-shadow: unset; */
-}
-
-.btn_mdpd_pfy_01
-{
-  margin: 0;
-  border: 0;
-  height: 80px;
-  background: linear-gradient(180deg, #61C0C0 0%, #4491A5 100%);
-  border-radius: 0;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-  padding: 16px 21px;
-  white-space: inherit;
-}
-
-.btn_mdpd_pfy_br 
-{
-  border-right: 1px solid white;
-}
-
-.btn_mdpd_pfy_bl 
-{
-  border-left: 1px solid white;
-}
-
-.mdpfy_col
-{
-  padding: 0px;
 }
