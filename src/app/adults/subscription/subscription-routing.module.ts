@@ -138,6 +138,10 @@ const routes: Routes = [
     path: 'activate-subscription-logged-in-code-invalid',
     loadChildren: () => import('./activate-subscription-logged-in-code-invalid/activate-subscription-logged-in-code-invalid.module').then( m => m.ActivateSubscriptionLoggedInCodeInvalidPageModule)
   },
+  {
+    path: 'subscription-payment',
+    loadChildren: () => import('./subscription-payment/subscription-payment.module').then( m => m.SubscriptionPaymentPageModule)
+  },
 ];
 
 @NgModule({

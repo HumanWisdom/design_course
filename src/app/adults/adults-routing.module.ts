@@ -99,6 +99,10 @@ const routes: Routes = [
     path: 'test',
     loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
   },
+  {
+    path: 'refer-friend',
+    loadChildren: () => import('./refer-friend/refer-friend.module').then( m => m.ReferFriendPageModule)
+  },
 ];
 
 @NgModule({

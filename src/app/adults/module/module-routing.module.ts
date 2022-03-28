@@ -78,6 +78,26 @@ const routes: Routes = [
     path: 'add-to-homescreen-ios',
     loadChildren: () => import('./add-to-homescreen-ios/add-to-homescreen-ios.module').then( m => m.AddToHomescreenIosPageModule)
   },
+  {
+    path: 'nature-of-i-s01',
+    loadChildren: () => import('./nature-of-i-s01/nature-of-i-s01.module').then( m => m.NatureOfIS01PageModule)
+  },
+  {
+    path: 'nature-of-i-s02',
+    loadChildren: () => import('./nature-of-i-s02/nature-of-i-s02.module').then( m => m.NatureOfIS02PageModule)
+  },
+  {
+    path: 'toc-audio-title',
+    loadChildren: () => import('./toc-audio-title/toc-audio-title.module').then( m => m.TocAudioTitlePageModule)
+  },
+  {
+    path: 'screen-progress-bar',
+    loadChildren: () => import('./screen-progress-bar/screen-progress-bar.module').then( m => m.ScreenProgressBarPageModule)
+  },
+  {
+    path: 'toc-resume',
+    loadChildren: () => import('./toc-resume/toc-resume.module').then( m => m.TocResumePageModule)
+  },
 ];
 
 @NgModule({

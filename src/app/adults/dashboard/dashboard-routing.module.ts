@@ -7,6 +7,10 @@ const routes: Routes = [
     loadChildren: () => import("./dashboard-v01/dashboard-v01.module").then( m => m.DashboardV01PageModule)
   },
   {
+    path: "hamburger",
+    loadChildren: () => import("./hamburger/hamburger.module").then( m => m.HamburgerPageModule)
+  },
+  {
     path: "dashboard-v01",
     loadChildren: () => import("./dashboard-v01/dashboard-v01.module").then( m => m.DashboardV01PageModule)
   },

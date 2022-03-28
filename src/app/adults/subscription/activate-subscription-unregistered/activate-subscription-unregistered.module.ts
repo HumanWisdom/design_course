@@ -7,7 +7,6 @@ import { IonicModule } from '@ionic/angular';
 import { ActivateSubscriptionUnregisteredPageRoutingModule } from './activate-subscription-unregistered-routing.module';
 
 import { ActivateSubscriptionUnregisteredPage } from './activate-subscription-unregistered.page';
-
 @NgModule({
   imports: [
     CommonModule,

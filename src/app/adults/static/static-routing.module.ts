@@ -34,6 +34,10 @@ const routes: Routes = [
     path: "webpage-landing-v01",
     loadChildren: () => import('./webpage-landing-v01/webpage-landing-v01.module').then( m => m.WebpageLandingV01PageModule)
   },
+  {
+    path: 'support',
+    loadChildren: () => import('./support/support.module').then( m => m.SupportPageModule)
+  },
 ];
 
 @NgModule({
