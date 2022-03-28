@@ -306,6 +306,11 @@
     {
         width: 50%
     }
+
+    .activity_title
+    {
+        width: 35%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1023px)
@@ -640,9 +645,10 @@
         margin: 50px 0 18px 0;
     }
 
-    .activity_title
+    .mica,
+    .micb
     {
-        width: 20%;
+        margin: 50px 0 0 0;
     }
 
     #bubble_wrap 
