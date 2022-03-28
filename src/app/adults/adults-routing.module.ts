@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'daily-practice',
     loadChildren: () => import('./daily-practice/daily-practice.module').then( m => m.DailyPracticePageModule)
   },
+  {
+    path: 'test',
+    loadChildren: () => import('./test/test.module').then( m => m.TestPageModule)
+  },
 ];
 
 @NgModule({

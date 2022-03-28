@@ -68,6 +68,8 @@ import { TocTopnavComponent } from '../shared/component/toc-topnav/toc-topnav.co
 import { TnHwpProjectComponent } from '../shared/component/tn-hwp-project/tn-hwp-project.component';
 import { RelatedWisdomStoriesComponent } from './component/related-wisdom-stories/related-wisdom-stories.component';
 import { RelatedWisdomStoriesTilesComponent } from './component/related-wisdom-stories-tiles/related-wisdom-stories-tiles.component';
+import { TnDashboardV03Component } from './component/tn-dashboard-v03/tn-dashboard-v03.component';
+import { HamburgerComponent } from './component/hamburger/hamburger.component';
 
 @NgModule({
   declarations: [
@@ -131,7 +133,9 @@ import { RelatedWisdomStoriesTilesComponent } from './component/related-wisdom-s
     TocTopnavComponent,
     TnHwpProjectComponent,
     RelatedWisdomStoriesComponent,
-    RelatedWisdomStoriesTilesComponent
+    RelatedWisdomStoriesTilesComponent,
+    TnDashboardV03Component,
+    HamburgerComponent
   ],
   imports: [
     CommonModule,
@@ -216,7 +220,9 @@ import { RelatedWisdomStoriesTilesComponent } from './component/related-wisdom-s
     TocTopnavComponent,
     TnHwpProjectComponent,
     RelatedWisdomStoriesComponent,
-    RelatedWisdomStoriesTilesComponent
+    RelatedWisdomStoriesTilesComponent,
+    TnDashboardV03Component,
+    HamburgerComponent
   ]
 })
 export class SharedModule { }
