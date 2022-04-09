@@ -70,6 +70,7 @@ import { RelatedWisdomStoriesComponent } from './component/related-wisdom-storie
 import { RelatedWisdomStoriesTilesComponent } from './component/related-wisdom-stories-tiles/related-wisdom-stories-tiles.component';
 import { TnDashboardV03Component } from './component/tn-dashboard-v03/tn-dashboard-v03.component';
 import { HamburgerComponent } from './component/hamburger/hamburger.component';
+import { TnCloseComponent } from './component/tn-close/tn-close.component';
 
 @NgModule({
   declarations: [
@@ -135,7 +136,8 @@ import { HamburgerComponent } from './component/hamburger/hamburger.component';
     RelatedWisdomStoriesComponent,
     RelatedWisdomStoriesTilesComponent,
     TnDashboardV03Component,
-    HamburgerComponent
+    HamburgerComponent,
+    TnCloseComponent
   ],
   imports: [
     CommonModule,
@@ -222,7 +224,8 @@ import { HamburgerComponent } from './component/hamburger/hamburger.component';
     RelatedWisdomStoriesComponent,
     RelatedWisdomStoriesTilesComponent,
     TnDashboardV03Component,
-    HamburgerComponent
+    HamburgerComponent,
+    TnCloseComponent
   ]
 })
 export class SharedModule { }

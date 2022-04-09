@@ -98,6 +98,10 @@ const routes: Routes = [
     path: 'toc-resume',
     loadChildren: () => import('./toc-resume/toc-resume.module').then( m => m.TocResumePageModule)
   },
+  {
+    path: 'video',
+    loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
+  },
 ];
 
 @NgModule({

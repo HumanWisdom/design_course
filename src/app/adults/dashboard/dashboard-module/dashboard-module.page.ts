@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,OnDestroy,Input,ViewChild,  ElementRef,AfterViewInit,Output,EventEmitter} from '@angular/core';
 declare var $: any;
 
 @Component({
@@ -7,6 +7,11 @@ declare var $: any;
   styleUrls: ['./dashboard-module.page.scss'],
 })
 export class DashboardModulePage implements OnInit {
+
+  yellow="#FFC455"
+  // @Input() audioLink: string;
+  mediaAudio=JSON.parse(localStorage.getItem("mediaAudio"))
+  audioLink='https://humanwisdoms3.s3.eu-west-2.amazonaws.com/anger/audios/anger+1.1.mp3';
 
   constructor() { }
 
