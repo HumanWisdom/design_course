@@ -103,6 +103,10 @@ const routes: Routes = [
     path: 'refer-friend',
     loadChildren: () => import('./refer-friend/refer-friend.module').then( m => m.ReferFriendPageModule)
   },
+  {
+    path: 'guided-questions',
+    loadChildren: () => import('./guided-questions/guided-questions.module').then( m => m.GuidedQuestionsModule)
+  },
 ];
 
 @NgModule({
