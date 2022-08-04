@@ -142,6 +142,10 @@ const routes: Routes = [
     path: 'subscription-payment',
     loadChildren: () => import('./subscription-payment/subscription-payment.module').then( m => m.SubscriptionPaymentPageModule)
   },
+  {
+    path: 'humanwisdom-premium',
+    loadChildren: () => import('./humanwisdom-premium/humanwisdom-premium.module').then( m => m.HumanwisdomPremiumPageModule)
+  },
 ];
 
 @NgModule({

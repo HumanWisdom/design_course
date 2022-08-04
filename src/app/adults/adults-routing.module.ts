@@ -107,6 +107,14 @@ const routes: Routes = [
     path: 'guided-questions',
     loadChildren: () => import('./guided-questions/guided-questions.module').then( m => m.GuidedQuestionsModule)
   },
+  {
+    path: 'partnership-webpage',
+    loadChildren: () => import('./partnership-webpage/partnership-webpage.module').then( m => m.PartnershipWebpageModule)
+  },
+  {
+    path: 'partnership-app',
+    loadChildren: () => import('./partnership-app/partnership-app.module').then( m => m.PartnershipAppModule)
+  },
 ];
 
 @NgModule({
