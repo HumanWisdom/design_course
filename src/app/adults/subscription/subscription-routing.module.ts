@@ -146,6 +146,10 @@ const routes: Routes = [
     path: 'humanwisdom-premium',
     loadChildren: () => import('./humanwisdom-premium/humanwisdom-premium.module').then( m => m.HumanwisdomPremiumPageModule)
   },
+  {
+    path: 'hwp-premium-congratulations',
+    loadChildren: () => import('./hwp-premium-congratulations/hwp-premium-congratulations.module').then( m => m.HwpPremiumCongratulationsPageModule)
+  },
 ];
 
 @NgModule({

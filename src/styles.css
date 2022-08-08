@@ -29655,7 +29655,8 @@ svg path
   box-shadow: unset;
 }
 
-.btn_sub_unsubp.disabled 
+.btn_sub_unsubp.disabled,
+.btn_jhwpp.disabled
 {
   background: #EBEBEB !important;
   color: #ADADAD !important;
