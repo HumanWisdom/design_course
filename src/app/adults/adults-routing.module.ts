@@ -115,6 +115,10 @@ const routes: Routes = [
     path: 'partnership-app',
     loadChildren: () => import('./partnership-app/partnership-app.module').then( m => m.PartnershipAppModule)
   },
+  {
+    path: 'partnership-report',
+    loadChildren: () => import('./partnership-report/partnership-report.module').then( m => m.PartnershipReportModule)
+  },
 ];
 
 @NgModule({
