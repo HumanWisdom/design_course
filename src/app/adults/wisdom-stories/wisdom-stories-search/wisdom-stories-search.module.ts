@@ -8,12 +8,14 @@ import { WisdomStoriesSearchPageRoutingModule } from './wisdom-stories-search-ro
 
 import { WisdomStoriesSearchPage } from './wisdom-stories-search.page';
 
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WisdomStoriesSearchPageRoutingModule
+    WisdomStoriesSearchPageRoutingModule,
+    SharedModule
   ],
   declarations: [WisdomStoriesSearchPage]
 })

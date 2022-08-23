@@ -1,31 +1,83 @@
 <!-- top navigation -->
-<div class="top_nav ml0">
+<!-- <div class="top_nav ml0">
   <div class="nav_menu cnav_menu nav_menu_01">
-      <nav>          
-          <ul class="nav navbar-nav navbar-right cnav">
-              <!-- <li class="pr20px"> -->
-              <li class="">
-                  <a class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false" (click)="goToPage()"> 
-                    <h6 class="txt18a">
-                      Skip
-                    </h6>  
-                  </a>                  
-              </li>              
-          </ul>
-      </nav>
+    <nav>          
+      <ul class="nav navbar-nav navbar-right cnav">
+        <li class="">
+          <a class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false" (click)="goToPage()"> 
+            <h6 class="txt18a">
+              Skip
+            </h6>  
+          </a>                  
+        </li>              
+      </ul>
+    </nav>
   </div>
-</div>
+</div> -->
 <!-- /top navigation -->  
 
+<!-- top navigation -->
+<div class="row center_flex">
+  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 tn_fs">
+    <a class=""> 
+      <h6 class="txt18a">
+        Skip
+      </h6>  
+    </a> 
+  </div>
+</div>
+<!-- /top navigation -->
+
 <!-- page content -->
-<div class="right_col bg_light_gray" role="main">				
+<div class="right_col mc_01">				
   <!-- Class -->  
-  <div class="cw100p dabsolute_02">
+  <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0">
-        <div class="x_panel xpanel_01">                        
-          <div class="x_content tleft">
-            <ng-content></ng-content>
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 bg_light_gray">
+        <div class="x_panel p0">                        
+          <div class="x_content p0">
+            
+            <form>
+              <h2 class="mtb0px txt13">
+                Feedback Survey
+              </h2>
+          
+              <h4 class="mt0px txt14">
+                Anger Module
+              </h4>
+          
+             
+              <div id="svg_wrap"></div>                
+          
+              <section>
+                <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p0">
+                    <a class="sb_anchor">
+                      <div class="box textarea_box">
+                        <h4 class="pt1rem txt15">
+                         reflection question
+                        </h4>    
+          
+                        <hr>
+          
+                        <textarea id="message" required="required" class="form-control b0 p0 txt19" name="message" rows="15" name="p1" placeholder="Write your answer here"></textarea>
+          
+                        <br>
+          
+                      </div>                    
+                    </a>
+                  </div>
+                </div>                    
+          
+              
+              </section>
+          
+              <section></section>
+              <section></section>
+              <section></section>
+              <!-- /multistep wizard -->
+            </form>
+
           </div>
         </div>
       </div>
@@ -34,7 +86,3 @@
   <!--/Class --> 
 </div>
 <!-- /page content -->
-
-<!-- bottom navigation -->
-<app-botnav></app-botnav>
-<!-- /bottom navigation -->

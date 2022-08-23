@@ -1,18 +1,18 @@
 <!-- page content -->
-<div class="right_col ml0 bg_white p0_important" role="main">				
+<div class="right_col mc_03">				
   <!-- Class -->  
   <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-md-6 col-sm-8 col-xs-12 p0">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 p0 bg_white">
         <div class="x_panel p0">
-          <div class="x_content c_white fwunset tcenter p0 m0px">
+          <div class="x_content tcenter p0">
             <form>                
               
               <div class="row me_box">
                 <div class="col-md-3 col-sm-3 col-xs-3 p0">
                   <div class="col-md-12 col-sm-12 col-xs-12 p0">
                     <a>
-                      <button (click)="routeJournal()" type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                      <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
                         <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/session_end_journal_02.svg" alt="">
                       </button>
                     </a>
@@ -85,7 +85,7 @@
 
               <div class="row p20px center_flex">
                 <div class="col-md-9 col-sm-12 col-xs-12 tcenter p0 prelative">
-                  <img src="assets/images/background/module_end/00.png" alt="">
+                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/background/module_end/00.png" alt="">
                   <div class="me_overlay me_max_width"></div>
 
                   <h6 class="txt84 me_module_title">
@@ -111,7 +111,9 @@
                     </span>
                   </h6>
                 </div>
-              </div>            
+              </div>   
+              
+              <div class="pagebreak"></div>
               
             </form>
           </div>
@@ -123,45 +125,4 @@
 </div>
 <!-- /page content -->
 
-<div class="sidebar-footer ifooter">  
-  <div class="row center_flex">
-    <div class="col-md-6 col-sm-12 col-xs-12 center_flex">
-      
-      <a class="footer_index"> 
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/home.svg" alt="">
-        <p class="mb0px">
-            Home
-        </p>
-      </a>
-    
-      <a class="footer_index">
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/search.svg" alt="">
-        <p class="mb0px">
-            Search
-        </p>
-      </a>
-    
-      <a (click)="routeJournal()" class="footer_index">        
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/journal.svg" alt="">
-        <p class="mb0px">
-            Journal
-        </p>
-      </a>
-    
-      <a class="footer_index">        
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/forum.svg" alt="">
-        <p class="mb0px">
-            Forum
-        </p>
-      </a>
-
-      <a class="footer_index">
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/footer/dashboard/more.svg" alt="">
-        <p class="mb0px">
-            More
-        </p>
-      </a>
-
-    </div>
-  </div>  
-</div>
+<app-bottom-navigation></app-bottom-navigation>

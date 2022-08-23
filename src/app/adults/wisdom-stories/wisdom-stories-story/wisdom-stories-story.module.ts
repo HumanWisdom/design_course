@@ -8,12 +8,14 @@ import { WisdomStoriesStoryPageRoutingModule } from './wisdom-stories-story-rout
 
 import { WisdomStoriesStoryPage } from './wisdom-stories-story.page';
 
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WisdomStoriesStoryPageRoutingModule
+    WisdomStoriesStoryPageRoutingModule,
+    SharedModule
   ],
   declarations: [WisdomStoriesStoryPage]
 })

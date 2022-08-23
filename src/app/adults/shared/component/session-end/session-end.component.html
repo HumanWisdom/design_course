@@ -1,18 +1,18 @@
 <!-- page content -->
-<div class="right_col p0_important" [ngClass]="bg" role="main">				
+<div class="right_col mc_03" role="main">				
   <!-- Class -->  
-  <div class="cw100p dabsolute_03">
+  <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0 h100p">
-        <div class="x_panel xpanel_01 p0">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 p0" [ngClass]="bg">
+        <div class="x_panel p0">
           <div class="x_content p0 tcenter">
             <form>                
               
               <div class="row se_box">
-                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                <div class="col-md-4 col-sm-4 col-xs-4 p0">
                   <div class="col-md-12 col-sm-12 col-xs-12 p0">
                     <a>
-                      <button (click)="routeJournal()" type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
+                      <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
                         <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/session_end_journal_02.svg" alt="">
                       </button>
                     </a>
@@ -24,7 +24,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                <div class="col-md-4 col-sm-4 col-xs-4 p0">
                   <div class="col-md-12 col-sm-12 col-xs-12 p0">
                     <a>
                       <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
@@ -39,7 +39,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                <!-- <div class="col-md-3 col-sm-3 col-xs-3 p0">
                   <div class="col-md-12 col-sm-12 col-xs-12 p0">
                     <a>
                       <button type="button" class="btn btn-default mb0 btn_so" data-dismiss="modal">
@@ -52,12 +52,12 @@
                       Consult a coach
                     </h1>           
                   </div>
-                </div>
+                </div> -->
                 
-                <div class="col-md-3 col-sm-3 col-xs-3 p0">
+                <div class="col-md-4 col-sm-4 col-xs-4 p0">
                   <a class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <div class="col-md-12 col-sm-12 col-xs-12 p0">
-                      <button (click)="shareIndex()" type="button" class="btn btn-default mb0 btn_so">
+                      <button  id="btnShare" type="button" class="btn btn-default mb0 btn_so">
                         <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/session_end_share.svg" alt="">
                       </button>
                     </div>
@@ -111,7 +111,7 @@
 
               <div class="row plr25px pt20px">
                 <div class="col-md-12 col-sm-12 col-xs-12 tcenter">
-                  <button (click)="proceed()" type="button" class="btn btn-success mb0 btn_se" data-dismiss="modal">Continue to the next session</button>
+                  <button type="button" class="btn btn-success mb0 btn_se" data-dismiss="modal">Continue to the next session</button>
                 </div>
               </div>
 

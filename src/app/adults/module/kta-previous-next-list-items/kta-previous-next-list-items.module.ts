@@ -8,12 +8,15 @@ import { KtaPreviousNextListItemsPageRoutingModule } from './kta-previous-next-l
 
 import { KtaPreviousNextListItemsPage } from './kta-previous-next-list-items.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    KtaPreviousNextListItemsPageRoutingModule
+    KtaPreviousNextListItemsPageRoutingModule,
+    SharedModule
   ],
   declarations: [KtaPreviousNextListItemsPage]
 })

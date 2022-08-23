@@ -1,32 +1,52 @@
-<div class="right_col" #screen [ngClass]="bg" role="main">				
+<div class="right_col mc_01">				
   <!-- Class -->  
-  <div class="cw100p dabsolute_01">
+  <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-        <div class="x_panel xpanel_01">
-          <div class="x_content tcenter">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 teal_w1">
+        <div class="x_panel p0">
+          <div class="x_content p0">
             <form class="">
 
-              <h1 class="txt1 tcenter">
-                {{title}}
-              </h1>             
-
-              
-
-              <!-- angular audio player plugin  -->                
-              <!-- <ngx-circular-player></ngx-circular-player>   -->
+              <!-- angular audio player plugin -->  
               <div class="row tcenter">
                 <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
-                  <ngx-circular-player id="aud1" [strokeColor]="yellow" [source]="audioLink" (click)="getTime()" #audio ></ngx-circular-player>                  
+                  <ngx-circular-player id="aud1" strokeColor="#FFC455" source=""></ngx-circular-player>                  
                 </div>
               </div>
               <!-- /angular audio player plugin -->     
 
-              <h3 *ngFor="let l of list;let i = index"class="txt8 oneliner_txt_pointer">
-                  {{i+1}}. {{l}}
+              <h3 class="txt8 oneliner_txt_pointer">
+                1. Conditioning
               </h3>
-          
+
+              <h3 class="txt8 oneliner_txt_pointer">
+                2. Comparison
+              </h3>
               
+              <h3 class="txt8 oneliner_txt_pointer">
+                3. Our emotional needs
+              </h3>
+              
+              <h3 class="txt8 oneliner_txt_pointer">
+                4. Our self-interest
+              </h3>
+
+              <h3 class="txt8 oneliner_txt_pointer">
+                5. Our need for power
+              </h3>
+
+              <h3 class="txt8 oneliner_txt_pointer">
+                6. Our fears and insecurities
+              </h3>
+              
+              <h3 class="txt8 oneliner_txt_pointer">
+                7. Our images of ourselves
+              </h3>
+              
+              <h3 class="txt8 oneliner_txt_pointer">
+                8. Our inner boredom
+              </h3>
+
             </form>            
           </div>
         </div>

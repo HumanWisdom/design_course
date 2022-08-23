@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-five-circles',
@@ -6,6 +6,7 @@ import { Component, OnInit, Input} from '@angular/core';
   styleUrls: ['./five-circles.component.scss'],
 })
 export class FiveCirclesComponent implements OnInit {
+
   @Input() colours: any;
   @Input() text: any;
   c1:any
@@ -18,7 +19,6 @@ export class FiveCirclesComponent implements OnInit {
   t3:any
   t4:any
   t5:any
-
 
   constructor() { }
 

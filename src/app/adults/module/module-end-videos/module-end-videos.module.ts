@@ -8,8 +8,7 @@ import { ModuleEndVideosPageRoutingModule } from './module-end-videos-routing.mo
 
 import { ModuleEndVideosPage } from './module-end-videos.page';
 
-import {SharedModule} from '../../shared/shared.module';
-
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,

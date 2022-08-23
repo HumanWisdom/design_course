@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StressImgAudioRcPage implements OnInit {
 
-  bg="stress_overlay3"  
-  // title="Exploring anger" 
-  mediaAudio=JSON.parse(localStorage.getItem("mediaAudio"))
-  audioLink=this.mediaAudio+'/anger/audios/anger+1.1.mp3'
+  bg_tn="bg_teal"
+  bg_cft="bg_teal"
+  bg="teal_w1"
+
+  title="Anger directed at yourself"
+  audioLink=""
 
   constructor() { }
 

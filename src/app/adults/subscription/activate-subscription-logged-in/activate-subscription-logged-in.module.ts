@@ -8,12 +8,14 @@ import { ActivateSubscriptionLoggedInPageRoutingModule } from './activate-subscr
 
 import { ActivateSubscriptionLoggedInPage } from './activate-subscription-logged-in.page';
 
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionLoggedInPageRoutingModule
+    ActivateSubscriptionLoggedInPageRoutingModule,
+    SharedModule,
   ],
   declarations: [ActivateSubscriptionLoggedInPage]
 })

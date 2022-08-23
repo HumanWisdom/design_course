@@ -1,33 +1,31 @@
 <div class="prelative">
 
-  <div [ngClass]="base"></div>
-  <div [ngClass]="overlay"></div>
+  <div class="anger_base1"></div>
+  <div class="anger_overlay1"></div>
 
   <!-- page content -->
-  <div class="right_col ml0 cright_col zi3 mh100vh" #screen role="main">				
-    <!-- Class --> 
-    <div class="cw100p cabsolute">
+  <div class="right_col mc_01">				
+    <!-- Class -->  
+    <div class="cw100p">
       <div class="row center_flex">
-        <div class="col-md-6 col-sm-8 col-xs-12 p0">
-          <div class="x_panel cxpanel center_flex">            
-            <div class="x_content c_white fwunset tcenter p0">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01">
+          <div class="x_panel p0">
+            <div class="x_content p0">
               <form>
 
                 <h1 class="txt1 tcenter">
-                  {{title}}
+                  Conditioning
                 </h1>           
             
                 <!-- audio  -->                
-                <!-- angular audio player plugin  -->                 
-                  <div class="row tcenter">
-                    <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
-                     
-                      <ngx-circular-player id="aud1"  [strokeColor]="yellow" [source]="audioLink" (click)="getTime()" #audio ></ngx-circular-player>
-                    </div>
+                <!-- angular audio player plugin -->  
+                <div class="row tcenter">
+                  <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
+                    <ngx-circular-player id="aud1" strokeColor="#FFC455" source=""></ngx-circular-player>                  
                   </div>
-                <!-- /angular audio player plugin  -->   
+                </div>
+                <!-- /angular audio player plugin -->    
                 <!-- /audio --> 
-                               
                 
               </form>
             </div>

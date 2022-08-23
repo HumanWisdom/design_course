@@ -1,11 +1,12 @@
 <!-- page content -->
-<div class="right_col ml0 bg_login_signup" role="main">				
+<div class="right_col mc_03">				
   <!-- Class -->  
-  <div class="cw100p cw100_01">
-    <div class="row center_flex mrl0px">
-      <div class="col-md-6 col-sm-8 col-xs-12 p0">
-        <div class="x_panel">  
-          <div class="x_content c_white fwunset mt0px">
+  <div class="cw100p">
+    <div class="row center_flex">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 bg_login_signup">
+        <div class="x_panel p0">
+          <div class="x_content p0">
+            <form>  
 
               <div class="container">
 
@@ -24,7 +25,7 @@
           
                 <div class="tab-content mt40px">
                   <div id="tab1" class="tab-pane fade">
-                    <form  [formGroup]="registrationForm">
+                    <form>
                       <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                           <label for="fullname" class="txt189 mt0px">Full Name*</label>
@@ -153,46 +154,48 @@
                   </div>
                 </div>
           
-              </div>              
+              </div>             
 
               <div class="ls_pagebreak"></div>
+
+            </form>  
           </div>
         </div>
       </div>
     </div>
   </div>
-  <!--/Class -->
+  <!--/Class --> 
 
   <!-- footer  -->
   <div class="ls_position">
     <div class="prelative">
 
-      <div class="row mt20px ls-row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
+      <div class="row mt20px center_flex">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0">
           <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/background/login_signup/footer.png" class="img-responsive ls_footer_img">
         </div>
       </div>
     
       <div class="row absolute_center_ls_footer">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
           <div class="row mt20px center_flex">
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12">
-              <h4 class="txt191">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h4 class="txt191 tcenter">
                 OR CONNECT WITH
               </h4>
             </div>
           </div>
     
           <div class="row mt15px center_flex">
-            <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 p0">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <button type="submit" class="btn btn-warning w100 btn_login_signup tcenter">
-                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/facebook_ls.svg" alt="" class="img-responsive">                            
+                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/facebook_ls.png" alt="" class="img-responsive">                            
                 </button>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                 <button type="submit" class="btn btn-warning w100 btn_login_signup tcenter">
-                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/google_ls.svg" alt="" class="img-responsive">                            
+                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/google_ls.png" alt="" class="img-responsive">                            
                 </button>
               </div>
             </div>
@@ -205,52 +208,3 @@
   <!-- /footer -->
 </div>
 <!-- /page content -->
-
-
-<!-- popup modal -->
-<div class="modal fade" id="modal_popup" tabindex="-1" data-backdrop="static" data-keyboard="false" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered  modal_free_limit" role="document">
-    <div class="">  
-      <div class="modal-header b0">        
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12 p0">
-            <button type="button" #closemodal class="btn_popup_close m0px" data-dismiss="modal" aria-label="Close">              
-              <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/modal_close_01.svg" alt="" class="img-responsive fright">
-            </button>
-          </div>
-        </div>        
-      </div>    
-      <div class="modal-body pt0px">
-        <!-- modal content -->          
-        <div class="row center_flex">
-          <div class="col-md-12 col-sm-12 col-xs-12 p0">
-            <h4 class="txt59 tcenter boldi">
-              You do not have an Active Subcription
-            </h4>  
-            <!-- <h4 class="txt59 tcenter">
-              Please <a (click)="getrenew()" style="color: blue;">Click</a> Here to renew or <a style="color: blue;" (click)="getfreeuser()">Click</a> Here to proceed as a free user
-            </h4>   -->
-            <h4 class="txt59 tcenter">
-              Click here to <a (click)="getrenew()" style="color: blue;" class="italic">Subscribe</a> 
-            </h4>
-            <h4 class="txt59 tcenter">
-              <span class="">OR</span>
-            </h4>
-            <h4 class="txt59 tcenter">
-              Click here to <a (click)="getrenew()" style="color: blue;" class="italic">Use Your Subscription Code</a> 
-            </h4>
-            <h4 class="txt59 tcenter">
-              <span class="">OR</span>
-            </h4>
-            <h4 class="txt59 tcenter">
-              Click Here to proceed as a <a style="color: blue;" (click)="getfreeuser()" class="italic">Free User</a>
-            </h4>  
-          </div>
-        </div>
-        <!-- /modal content -->  
-      </div>       
-    </div>
-  </div>
-</div>
-<!-- /popup modal -->
-<span #enablemodal data-toggle="modal" data-target="#modal_popup"></span>

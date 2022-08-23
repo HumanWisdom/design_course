@@ -8,12 +8,15 @@ import { SubscriptionS08V02PageRoutingModule } from './subscription-s08-v02-rout
 
 import { SubscriptionS08V02Page } from './subscription-s08-v02.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SubscriptionS08V02PageRoutingModule
+    SubscriptionS08V02PageRoutingModule,
+    SharedModule
   ],
   declarations: [SubscriptionS08V02Page]
 })

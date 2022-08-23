@@ -1,35 +1,24 @@
-<app-audio-header [toc]="toc" [bookmark]="bookmark" (sendBookmark)="receiveBookmark($event)" [path]="path" [transcriptPage]="transcriptPage"></app-audio-header>
+<app-audio-header [bg_tn]="bg_tn"></app-audio-header>
 
-<!-- page content -->
-<div class="right_col ml0 cright_col stress_overlay3" role="main">
-  <!-- Class -->
-  <div class="cw100p cabsolute">
-    <div class="row center_flex mrl0px">
-      <div class="col-md-6 col-sm-8 col-xs-12 p0">        
-        <div class="x_panel cxpanel center_flex">
-          <div class="x_content c_white fwunset tcenter pt0px mt0px">
-            <form>            
-              
-              <h1 class="txt1 tcenter">
-                {{title}}
-              </h1>
-             
-              <!-- angular audio player plugin  -->            
-              <div class="row tcenter">
-                <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
-                  <ngx-circular-player id="aud1" innerStroke="transparent"  [innerStrokeColor]="transparent" [strokeColor]="yellow" [source]="audioLink" (click)="getTime()" #audio ></ngx-circular-player>
-                </div>
-              </div>
-              <!-- /angular audio player plugin  -->   
+<app-image-text base="anger_base2" overlay="anger_overlay2">
+  <form>
 
-            </form>
-          </div>
+    <h1 class="txt1 tcenter">
+      Anger comes from conditioning
+    </h1>           
+
+    <!-- audio  -->                
+    <!-- angular audio player plugin  -->                 
+      <div class="row tcenter">
+        <div class="col-md-12 col-sm-12 col-xs-12 p7rem">         
+          <ngx-circular-player id="aud1" strokeColor="#FFC455" source="audioLink" #audio ></ngx-circular-player>
         </div>
       </div>
-    </div>
-  </div>
-  <!--/Class -->
-</div>
-<!-- /page content -->
+    <!-- /angular audio player plugin  -->   
+    <!-- /audio --> 
+                   
+    
+  </form>
+</app-image-text>
 
-<app-course-footer (nextEmitter)="submitProgress()" (previousEmitter)="prev()"></app-course-footer>
+<app-course-footer [bg_cft]="bg_cft"></app-course-footer>

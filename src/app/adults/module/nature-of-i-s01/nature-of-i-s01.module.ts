@@ -10,13 +10,16 @@ import { NatureOfIS01Page } from './nature-of-i-s01.page';
 
 import {SharedModule} from '../../shared/shared.module';
 
+import { NgxCircularPlayerModule } from 'ngx-circular-player';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
     NatureOfIS01PageRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxCircularPlayerModule
   ],
   declarations: [NatureOfIS01Page]
 })

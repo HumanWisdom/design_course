@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KtaPreviousDonePage implements OnInit {
 
+  bg_tn="bg_green"
+  bg_cft="bg_green"
+
   constructor() { }
 
   ngOnInit() {

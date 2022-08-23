@@ -6,7 +6,6 @@ import { TnEditBookmarkShareComponent } from '../shared/component/tn-edit-bookma
 import { FtPrevNextComponent } from '../shared/component/ft-prev-next/ft-prev-next.component'
 import { FtPrevComponent } from '../shared/component/ft-prev/ft-prev.component'
 import { TnTranscriptListenComponent } from '../shared/component/tn-transcript-listen/tn-transcript-listen.component'
-import { BotnavComponent } from './component/botnav/botnav.component'
 import { TextComponent } from './component/text/text.component'
 import { ReflectionComponent } from './component/reflection/reflection.component'
 import { CourseHeaderComponent } from './component/course-header/course-header.component'
@@ -30,7 +29,6 @@ import { AudioContentComponent } from './component/audio-content/audio-content.c
 import { TranscriptHeaderComponent } from  './component/transcript-header/transcript-header.component'
 import { TranscriptContentComponent } from  './component/transcript-content/transcript-content.component'
 import { PyramidContentComponent } from  './component/pyramid-content/pyramid-content.component'
-import { YesnoComponent } from './component/yesno/yesno.component'
 import { SingleSelectComponent } from './component/single-select/single-select.component'
 import { MultiSelectComponent } from './component/multi-select/multi-select.component'
 import { FeedbackQuestionComponent } from './component/feedback-question/feedback-question.component'
@@ -79,7 +77,6 @@ import { TnCloseComponent } from './component/tn-close/tn-close.component';
     FtPrevNextComponent,
     FtPrevComponent,
     TnTranscriptListenComponent,
-    BotnavComponent,
     TextComponent,
     ReflectionComponent,
     CourseHeaderComponent,   
@@ -102,7 +99,6 @@ import { TnCloseComponent } from './component/tn-close/tn-close.component';
     TranscriptHeaderComponent,
     TranscriptContentComponent,
     PyramidContentComponent,
-    YesnoComponent,
     SingleSelectComponent,
     MultiSelectComponent,
     FeedbackQuestionComponent,
@@ -168,7 +164,6 @@ import { TnCloseComponent } from './component/tn-close/tn-close.component';
     FtPrevNextComponent,
     FtPrevComponent,
     TnTranscriptListenComponent,
-    BotnavComponent,
     TextComponent,
     ReflectionComponent,
     CourseHeaderComponent,
@@ -191,7 +186,6 @@ import { TnCloseComponent } from './component/tn-close/tn-close.component';
     TranscriptHeaderComponent,
     TranscriptContentComponent,
     PyramidContentComponent,
-    YesnoComponent,
     SingleSelectComponent,
     MultiSelectComponent,
     FeedbackQuestionComponent,

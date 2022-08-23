@@ -1,62 +1,15 @@
-<!-- top navigation -->
-<nav class="navbar navbar-default navbar-static-top cnavbar-default">
-  <div class="black_div"></div>
-  <div class="container ncenter_flex pt1rem">
-    <div class="navbar-header nh center_flex subscription_nav">
-      <button type="button" class="navbar-toggle collapsed unhide_ntbtn" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="cimg" href="#">
-        <!-- <img src="assets/images/logo/logo_transparent.png" class="img-responsive clogo" alt=""> -->
-        <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/logo/logo_transparent.png" class="img-responsive clogo" alt="">
-      </a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse hide_nav">      
-      <ul class="nav navbar-nav navbar-right">        
-        <ul class="nav navbar-nav cnavbar-nav mr-20px pb1rem">          
-          <li class="libr"><a href="https://humanwisdom.me/Course/#/onboarding/login">Login</a></li>                    
-          <li class="libr"><a href="https://humanwisdom.me/Course/#/onboarding/signup">Register</a></li>
-          <li class="libr"><a href="https://humanwisdom.me/hwp/webpages/help.php">Help</a></li>
-          <li class=""><a href="https://humanwisdom.me/hwp/webpages/profile.php">My Profile</a></li>          
-          <li role="separator" class="divider"></li>
-        </ul>
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">        
-        <ul class="nav navbar-nav cnavbar-nav">          
-          <li><a href="">About</a></li>          
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Our Programs <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="https://humanwisdom.me/hwp/webpages/wp_childrens.php">Children</a></li>
-              <li><a href="https://humanwisdom.me/hwp/webpages/wp_teenagers.php">Teenager</a></li>
-              <li><a href="https://humanwisdom.me/hwp/webpages/wp_adults.php">Adults</a></li>
-              <li><a href="https://humanwisdom.me/hwp/webpages/wp_parents.php">Parents</a></li>
-            </ul>
-          </li>
-          <li class="active"><a href="https://humanwisdom.me/hwp/webpages/wisdom_community.php">Community</a></li>
-          <li><a href="">Wisdom Survey</a></li>
-          <li><a href="">Wisdom Journal</a></li>
-          <li><a href="https://humanwisdom.me/Course/#/onboarding/addcart">Subscribe</a></li>
-          <li><a href="https://humanwisdom.me/hwp/webpages/testimonials.php">Testimonials</a></li>
-        </ul>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- /top navigation -->
+<!-- header -->
+<app-toc-topnav></app-toc-topnav>
+<!-- /header -->
 
 <!-- page content -->
-<div class="right_col ml0 bg_blur mt145px" role="main">				
-  <!-- Class -->  
-  <div class="">
-    <div class="row center_flex">
-      <div class="col-md-6 col-sm-8 col-xs-12 p0">
+<div class="right_col mc_01">
+  <!-- class -->
+  <div class="cw100p">
+    <div class="row flex_jc_center">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0 sc_01 bg_white">
         <div class="x_panel p0">
-          <div class="x_content fwunset p0">
+          <div class="x_content p0">
             <form>
               <div class="row">
                 <div class="col-md-6 col-sm-6 col-xs-6">
@@ -127,7 +80,7 @@
 
               <div class="row mt10px">
                 <div class="col-md-12 col-sm-12 col-xs-12 center_flex">
-                  <div class="col-lg-6 col-md-8 col-sm-6 col-xs-12 center_flex">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 center_flex">
                     <div id="annual_monthly" class="btn-group" data-toggle="buttons">
                       <label class="btn btn-primary btn_annually" data-toggle-class="btn-primary" data-toggle-passive-class="btn-default">
                         <input type="radio" name="annual_monthly" value="annual"> &nbsp; Annual &nbsp;
@@ -175,10 +128,10 @@
 
               <div class="pagebreak"></div>
 
-              <div class="row mt40px row_vc">
-                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 tcenter p0">                    
+              <div class="row mt40px row_vc bg_black">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-xs-12 tcenter p0 row_vc">                    
                   <a>
-                    <button type="button" class="btn btn-warning btn_view_cart w100" data-dismiss="modal">View Cart</button>
+                    <button type="button" class="btn btn-warning mb0 proceed_cart w100" data-dismiss="modal">View Cart</button>
                   </a>
                 </div>
               </div>
@@ -219,10 +172,10 @@
           <div class="row center_flex">
             <div class="col-md-6 col-sm-12 col-xs-12">
               <div class="col-md-8 col-sm-8 col-xs-8 p0">     
-                <input type="text" id="" class="cfc9" value="{{activationCode}}" (keyup)="getcode($event.target.value)" placeholder="Enter Subscription Code">
+                <input type="text" id="" class="cfc9" value="activationCode" placeholder="Enter Subscription Code">
               </div>
               <div class="col-md-4 col-sm-4 col-xs-4 pr0px">     
-                <button  type="button" class="btn btn-warning btn_ms_submit" [disabled]="activationCode === ''" (click)="submitcode()">
+                <button  type="button" class="btn btn-warning btn_ms_submit">
                   Submit
                 </button>
               </div>

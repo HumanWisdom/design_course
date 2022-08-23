@@ -8,12 +8,14 @@ import { ActivateSubscriptionOtpPageRoutingModule } from './activate-subscriptio
 
 import { ActivateSubscriptionOtpPage } from './activate-subscription-otp.page';
 
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionOtpPageRoutingModule
+    ActivateSubscriptionOtpPageRoutingModule,
+    SharedModule,
   ],
   declarations: [ActivateSubscriptionOtpPage]
 })

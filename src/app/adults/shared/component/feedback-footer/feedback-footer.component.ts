@@ -1,4 +1,4 @@
-import { Component, OnInit,Input,Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-feedback-footer',
   templateUrl: './feedback-footer.component.html',
@@ -6,24 +6,9 @@ import { Component, OnInit,Input,Output, EventEmitter } from '@angular/core';
 })
 export class FeedbackFooterComponent implements OnInit {
 
-  @Output() nextEmitter = new EventEmitter<string>();
-  @Output() previousEmitter = new EventEmitter<string>();
-  @Input() bg: string;
-
-
   constructor() { }
 
-  ngOnInit() {}
-
-  next(){
-    this.nextEmitter.emit()
-
+  ngOnInit() {
   }
-
-  previous(){
-    this.previousEmitter.emit()
-
-  }
-
 
 }

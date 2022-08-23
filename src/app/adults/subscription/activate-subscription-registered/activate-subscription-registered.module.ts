@@ -8,12 +8,14 @@ import { ActivateSubscriptionRegisteredPageRoutingModule } from './activate-subs
 
 import { ActivateSubscriptionRegisteredPage } from './activate-subscription-registered.page';
 
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionRegisteredPageRoutingModule
+    ActivateSubscriptionRegisteredPageRoutingModule,
+    SharedModule,
   ],
   declarations: [ActivateSubscriptionRegisteredPage]
 })

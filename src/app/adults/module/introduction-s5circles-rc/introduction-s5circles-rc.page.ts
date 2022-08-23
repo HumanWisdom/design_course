@@ -7,12 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntroductionS5circlesRcPage implements OnInit {
 
-  bg="purple_blue_w9"  
-  mediaAudio=JSON.parse(localStorage.getItem("mediaAudio"))
-  audioLink=this.mediaAudio+'/conditioning/audios/con+3.1.mp3'
-  title="5 circles of wisdom"
-  colours=["btn_5circles_01"," btn_5circles_02"," btn_5circles_03"," btn_5circles_04"," btn_5circles_05 disabled"]
-  text=["A","B","C","D","E"]
+  bg_tn="bg_teal"
+  bg_cft="bg_teal"
+  bg="teal_w1"
+  title="Exploring anger"
+  audioLink="/anger/audios/anger+1.1.mp3"
+  colours=[
+            "btn_5circles_01",
+            "btn_5circles_02",
+            "btn_5circles_03",
+            "btn_5circles_04",
+            "btn_5circles_05"
+          ]
+  text=[
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ]
 
   constructor() { }
 

@@ -1,27 +1,4 @@
-<!-- top navigation -->
-<div class="top_nav ml0 tcenter inav">
-  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/background/toc/anger.png" alt="" class="img-responsive iw100">
-  <div class="nav_menu absolute_top p20px">
-      <nav>          
-          <ul class="nav navbar-nav navbar_left cnav inavbar flex_align">
-            <li class="">                    
-                <a (click)="goBack()" class="cuser-profile dropdown-toggle c_silver_chalice " data-toggle="dropdown" aria-expanded="false">                        
-                  <h4 class="btn_back_white">
-                    Back
-                  </h4> 
-                </a>                  
-            </li>   
-            
-            <li class="lishare">                    
-              <a href="javascript:;" class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">                                        
-                <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/share_white.svg" alt="" class="p0">
-              </a>                  
-            </li>
-          </ul>
-      </nav>
-  </div>
-</div>
-<!-- /top navigation -->
+<app-toc-header [tocImage]="tocImage" [tocColor]="tocColor"></app-toc-header>
 
 <app-index-content>
 
@@ -45,24 +22,15 @@
     <br>
 
     <div class="row center_flex">
-      <div class="col-md-12 col-sm-12 col-xs-12 tcenter">                    
-        <a routerLink="/adults/anger/s162">
-          <button type="button" class="btn btn-success mb0 btn_begin_here bg_red_pink" data-dismiss="modal">
-            Continue where you left
-          </button>
+      <div class="col-md-12 col-sm-12 col-xs-12 tcenter">                        
+        <a>
+          <button type="button" class="btn btn-success mb0 btn_begin_here bg_green_yellow" data-dismiss="modal">Continue where you left</button>
+        </a>
+        <a>
+          <button type="button" class="btn btn_default mb0 txt_green_yellow" data-dismiss="modal">Start from the beginning</button>
         </a>
       </div>
-    </div>   
-    
-    <div class="row center_flex">      
-      <div class="col-md-12 col-sm-12 col-xs-12 tcenter">                    
-        <a routerLink="/adults/anger/s162">
-          <button type="button" class="btn btn-sfb mb0 btn_begin_here txt_green_yellow" data-dismiss="modal">
-            Start from the beginning
-          </button>
-        </a>
-      </div>
-    </div>       
+    </div>                    
 
     <br>
 
@@ -74,7 +42,7 @@
       </div>
     </div>
 
-    <a routerLink="/adults/anger/s162">
+    <a>
       <div class="row crow box bg_red_pink session_visited">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <h6 class="session_no mtb0px">
@@ -96,7 +64,7 @@
       </div>
     </a>                
 
-    <a routerLink="/adults/anger/s179">
+    <a>
       <div class="row crow box bg_red_pink">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <h6 class="session_no mtb0px">
@@ -118,7 +86,7 @@
       </div>
     </a>
 
-    <a routerLink="/adults/anger/s199">
+    <a>
       <div class="row crow box bg_red_pink">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <h6 class="session_no mtb0px">

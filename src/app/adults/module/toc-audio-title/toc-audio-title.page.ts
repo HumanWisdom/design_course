@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TocAudioTitlePage implements OnInit {
 
+  tocImage="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/background/toc/nature.jpg"
+  tocColor="white"
+
   constructor() { }
 
   ngOnInit() {

@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'dashboard-module-transcript',
     loadChildren: () => import('./dashboard-module-transcript/dashboard-module-transcript.module').then( m => m.DashboardModuleTranscriptPageModule)
   },
+  {
+    path: 'dashboard-we',
+    loadChildren: () => import('./dashboard-we/dashboard-we.module').then( m => m.DashboardWePageModule)
+  },
 ];
 
 @NgModule({

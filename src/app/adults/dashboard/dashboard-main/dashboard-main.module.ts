@@ -8,7 +8,7 @@ import { DashboardMainPageRoutingModule } from './dashboard-main-routing.module'
 
 import { DashboardMainPage } from './dashboard-main.page';
 
-import {SharedModule} from '../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

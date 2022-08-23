@@ -8,7 +8,7 @@ import { ModuleEndRelatedModulesPageRoutingModule } from './module-end-related-m
 
 import { ModuleEndRelatedModulesPage } from './module-end-related-modules.page';
 
-import {SharedModule} from '../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

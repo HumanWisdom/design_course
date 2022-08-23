@@ -8,7 +8,7 @@ import { IntroductionS5circlesRcPageRoutingModule } from './introduction-s5circl
 
 import { IntroductionS5circlesRcPage } from './introduction-s5circles-rc.page';
 
-import {SharedModule} from '../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

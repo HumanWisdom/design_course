@@ -8,12 +8,15 @@ import { KtaPreviousDonePageRoutingModule } from './kta-previous-done-routing.mo
 
 import { KtaPreviousDonePage } from './kta-previous-done.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    KtaPreviousDonePageRoutingModule
+    KtaPreviousDonePageRoutingModule,
+    SharedModule
   ],
   declarations: [KtaPreviousDonePage]
 })

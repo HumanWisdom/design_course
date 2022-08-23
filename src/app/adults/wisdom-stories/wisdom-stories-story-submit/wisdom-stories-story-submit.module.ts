@@ -8,7 +8,7 @@ import { WisdomStoriesStorySubmitPageRoutingModule } from './wisdom-stories-stor
 
 import { WisdomStoriesStorySubmitPage } from './wisdom-stories-story-submit.page';
 
-import {SharedModule} from '../../shared/shared.module'
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

@@ -364,6 +364,11 @@
         /* margin: 0 0 0 0.2rem; */
     }
 
+    .wediv::-webkit-scrollbar-track
+    {
+        margin: 0 0 0 0 !important;
+    }
+
     .cp0_01
     {
         padding: 0;

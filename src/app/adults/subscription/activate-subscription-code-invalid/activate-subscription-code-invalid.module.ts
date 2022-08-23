@@ -8,12 +8,15 @@ import { ActivateSubscriptionCodeInvalidPageRoutingModule } from './activate-sub
 
 import { ActivateSubscriptionCodeInvalidPage } from './activate-subscription-code-invalid.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionCodeInvalidPageRoutingModule
+    ActivateSubscriptionCodeInvalidPageRoutingModule,
+    SharedModule
   ],
   declarations: [ActivateSubscriptionCodeInvalidPage]
 })

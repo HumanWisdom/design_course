@@ -1,124 +1,19 @@
-import { Component, OnInit,OnDestroy } from '@angular/core';
-import {AdultsService} from "../../adults.service"
-import { Router } from '@angular/router';
-import {Location } from '@angular/common'
-
+import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-video',
   templateUrl: './video.page.html',
   styleUrls: ['./video.page.scss'],
 })
-export class VideoPage implements OnInit,OnDestroy {
+export class VideoPage implements OnInit {
 
-  bg="dark_blue_w1"
-  mediaVideo=JSON.parse(localStorage.getItem("mediaVideo"))
-  videoLink='https://humanwisdoms3.s3.eu-west-2.amazonaws.com/get-support-now/videos/1.1.mp4'  
-  title="Stress"
-  poster="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/video_posters/get_support_now/get_support_now_01.jpg"
-  toc=""
-  userId:any
-  saveUsername=JSON.parse(localStorage.getItem("saveUsername"))
+  title="What is the root cause of anger?"
+  poster="https://d1tenzemoxuh75.cloudfront.net/assets/images/tiles/video_posters/anger/anger_01.jpg"
+  bg="teal_w1"
+  videoLink="/anger/videos/1.1.mp4"
 
-  screenType=localStorage.getItem("video")
-  moduleId=localStorage.getItem("moduleId")
-  screenNumber=71001
-  startTime:any
-  endTime:any
-  totalTime:any  
- 
-  
-  // toc="/get-support-now/s71001"
-  bookmark=0
-  path=this.router.url
-  avDuration:any
+  constructor() { }
 
-  bookmarkList=JSON.parse(localStorage.getItem("bookmarkList"))
-  
-  
- 
-  constructor(
-    private router: Router,
-    private service:AdultsService,
-    private location:Location
-  ) { }
-ngOnInit() {
-    //localStorage.removeItem("bookmarkList")
-    this.createScreen()
-    
-    if(this.saveUsername==false)
-      {this.userId=JSON.parse(sessionStorage.getItem("userId"))}
-  else
-    {this.userId=JSON.parse(localStorage.getItem("userId"))}
-    this.startTime = Date.now();
-  
-    this.startTime = Date.now();
-    console.log("session bookmark",JSON.parse(sessionStorage.getItem("bookmark71001")))
-    if(JSON.parse(sessionStorage.getItem("bookmark71001"))==0)
-      this.bookmark=0
-    else if(this.bookmarkList.includes(this.screenNumber)||JSON.parse(sessionStorage.getItem("bookmark71001"))==1)
-      this.bookmark=1
-   
-   
- 
- 
-    
+  ngOnInit() {
   }
-  receiveBookmark(e)
-  {
-    console.log(e)
-   if(e==true)
-    this.bookmark=1
-    else
-      this.bookmark=0
-    sessionStorage.setItem("bookmark71001",JSON.stringify(this.bookmark))
-  }
-createScreen(){
-    this.service.createScreen({
-      "ScrId":0,
-      "ModuleId":this.moduleId,
-      "GSetID":this.screenType,
-      "ScreenNo":this.screenNumber
-    }).subscribe(res=>
-      {
-        
-      })
-    
- 
-  }
- 
-
-  submitProgress(){
-   
-    this.endTime = Date.now();
-    this.totalTime = this.endTime - this.startTime;
-
-    this.service.submitProgressAv({
-      "ScrNumber":this.screenNumber,
-      "UserId":this.userId,
-      "BookMark":this.bookmark,
-      "ModuleId":this.moduleId,
-      "screenType":this.screenType,
-      "timeSpent":this.totalTime,
-      "avDuration":this.avDuration
-    }).subscribe(res=>
-      {
-        
-        this.bookmarkList=res.GetBkMrkScr.map(a=>parseInt(a.ScrNo))
-        localStorage.setItem("bookmarkList",JSON.stringify(this.bookmarkList))
-      })
-    
-    this.router.navigate(['/get-support-now/s71001p1'])
-   
-
-  }
-  prev(){
-    this.router.navigate(['/adults/adult-dashboard/'])
-
-
-  }
-  ngOnDestroy(){
-
-  }
-
 
 }

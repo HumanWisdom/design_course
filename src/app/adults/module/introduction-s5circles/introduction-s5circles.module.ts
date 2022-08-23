@@ -8,7 +8,9 @@ import { IntroductionS5circlesPageRoutingModule } from './introduction-s5circles
 
 import { IntroductionS5circlesPage } from './introduction-s5circles.page';
 
-import {SharedModule} from '../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
+
+import { NgxCircularPlayerModule } from 'ngx-circular-player';
 
 @NgModule({
   imports: [
@@ -16,7 +18,8 @@ import {SharedModule} from '../../shared/shared.module';
     FormsModule,
     IonicModule,
     IntroductionS5circlesPageRoutingModule,
-    SharedModule
+    SharedModule,
+    NgxCircularPlayerModule
   ],
   declarations: [IntroductionS5circlesPage]
 })

@@ -8,7 +8,7 @@ import { TestPageRoutingModule } from './test-routing.module';
 
 import { TestPage } from './test.page';
 
-import {SharedModule} from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   imports: [

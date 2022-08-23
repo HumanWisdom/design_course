@@ -1,19 +1,17 @@
-
-
 <!-- page content -->
-<div class="right_col purple_blue_w9" #screen role="main">				
+<div class="right_col mc_01">				
   <!-- Class -->  
-  <div class="cw100p dabsolute_01">
+  <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 p0 h100p">
-        <div class="x_panel xpanel_01 p0">            
-          <div class="x_content tcenter p0">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 p0 teal_w1">
+        <div class="x_panel p0">            
+          <div class="x_content p0">
 
             <form>             
-              <div class="row program_content_title center_flex">
+              <div class="row program_content_title">
                 <div class="col-md-8 col-sm-8 col-xs-12 p0">
                   <h6 class="txt55">
-                  {{title}}
+                    Nurture a quiet mind - 5 modules 
                   </h6>
                 </div>
               </div>
@@ -24,17 +22,17 @@
                 <div class="col-md-12 col-sm-12 col-xs-12 p0">
 
                   <!-- 1 -->
-                  <div *ngFor="let c of content" class="panel-group" id="accordion">                  
+                  <div class="panel-group" id="accordion">                  
                     <div class="panel panel-default pc_panel">
                       <div class="panel-heading">
                         <h4 class="panel-title dpaneltitle">
-                          <a data-toggle="collapse" data-parent="#accordion" href="#{{c.no}}" aria-expanded="false">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#a1" aria-expanded="false">
                             
                             <div class="row">
                               <div class="col-md-12 col-sm-12 col-xs-12 p0">
                                 <div class="">
                                   <h4 class="txt56 mtb0px tleft">
-                                    {{c.no}}. {{c.heading}}
+                                    Nature
                                   </h4>                                  
                                 </div>                              
                               </div>
@@ -45,13 +43,13 @@
 
                       <hr class="pc_hr"> 
 
-                      <div id="{{c.no}}" class="panel-collapse collapse">
+                      <div id="a1" class="panel-collapse collapse">
                         <div class="panel-body">
   
                           <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12 p0">
                               <p class="tleft txt57">
-                                {{c.text}}
+                                We have a series of 11 meditations in nature which can inspire your own journeys and help your mind quieten, and help you connect to nature in a new way. This brings many other benefits, including stress reduction.
                               </p> 
                               <!-- <a *ngIf="c.link" routerLink="{{c.link}}">
                                 <h6 class="tleft txt58">
@@ -70,7 +68,9 @@
                          
 
                 </div>
-              </div>              
+              </div>  
+              
+              <div class="pagebreak"></div>
             </form> 
 
           </div>

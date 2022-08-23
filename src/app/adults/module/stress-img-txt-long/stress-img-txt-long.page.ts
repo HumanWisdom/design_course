@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StressImgTxtLongPage implements OnInit {
 
-  bg="stress_overlay2"
+  bg_tn="bg_teal"
+  bg_cft="bg_teal"
+  bg=""
 
   constructor() { }
 

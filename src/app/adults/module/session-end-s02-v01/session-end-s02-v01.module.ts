@@ -8,7 +8,7 @@ import { SessionEndS02V01PageRoutingModule } from './session-end-s02-v01-routing
 
 import { SessionEndS02V01Page } from './session-end-s02-v01.page';
 
-import {SharedModule} from '../../shared/shared.module'
+import { SharedModule } from '../../shared/shared.module';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
 

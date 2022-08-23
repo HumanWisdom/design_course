@@ -1,19 +1,19 @@
-<app-audio-header [toc]="toc" [bookmark]="bookmark" (sendBookmark)="receiveBookmark($event)" [path]="path" [transcriptPage]="transcriptPage"></app-audio-header>
+<app-audio-header [bg_tn]="bg_tn"></app-audio-header>
 
 <!-- page content -->
-<div class="right_col ml0 purple_blue_w9" role="main">				
+<div class="right_col mc_01">
   <!-- Class -->  
-  <div class="cw100p cabsolutet">
+  <div class="cw100p">
     <div class="row center_flex">
-      <div class="col-md-12 col-sm-12 col-xs-12 p0">
-        <div class="x_panel dflexblock_transcript p0">            
-          <div class="x_content c_white fwunset tcenter pt0px mt0px p0">
+      <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sc_01 p0 teal_w1">
+        <div class="x_panel p0">            
+          <div class="x_content p0">
 
             <form>             
-              <div class="row program_content_title center_flex">
-                <div class="col-md-6 col-sm-8 col-xs-12 p0">
+              <div class="row program_content_title">
+                <div class="col-md-8 col-sm-8 col-xs-12 p0">
                   <h6 class="txt55">
-                    Nurture a Quiet Mind
+                    Nurture a quiet mind - 5 modules 
                   </h6>
                 </div>
               </div>
@@ -21,7 +21,7 @@
               <br>
 
               <div class="row center_flex">
-                <div class="col-md-6 col-sm-8 col-xs-12 p0">
+                <div class="col-md-12 col-sm-12 col-xs-12 p0">
 
                   <!-- 1 -->
                   <div class="panel-group" id="accordion">                  
@@ -223,7 +223,9 @@
                   <!-- /5 -->                  
 
                 </div>
-              </div>              
+              </div>  
+              
+              <div class="pagebreak"></div>
             </form> 
 
           </div>
@@ -235,4 +237,6 @@
 </div>
 <!-- /page content -->
 
-<app-course-footer (nextEmitter)="submitProgress()" (previousEmitter)="prev()"></app-course-footer>
+<!-- <app-program-content></app-program-content> -->
+
+<app-course-footer [bg_cft]="bg_cft"></app-course-footer>

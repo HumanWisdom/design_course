@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScreenProgressBarPage implements OnInit {
 
-  bg="pink_orange_w1" 
+  bg="teal_w1"
+  bg_cft="bg_teal" 
 
   constructor() { }
 

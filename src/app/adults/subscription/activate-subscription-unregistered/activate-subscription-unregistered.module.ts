@@ -7,12 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { ActivateSubscriptionUnregisteredPageRoutingModule } from './activate-subscription-unregistered-routing.module';
 
 import { ActivateSubscriptionUnregisteredPage } from './activate-subscription-unregistered.page';
+
+import { SharedModule } from '../../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionUnregisteredPageRoutingModule
+    ActivateSubscriptionUnregisteredPageRoutingModule,
+    SharedModule,
   ],
   declarations: [ActivateSubscriptionUnregisteredPage]
 })

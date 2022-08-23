@@ -8,12 +8,15 @@ import { ActivateSubscriptionLoggedInCodePageRoutingModule } from './activate-su
 
 import { ActivateSubscriptionLoggedInCodePage } from './activate-subscription-logged-in-code.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ActivateSubscriptionLoggedInCodePageRoutingModule
+    ActivateSubscriptionLoggedInCodePageRoutingModule,
+    SharedModule,
   ],
   declarations: [ActivateSubscriptionLoggedInCodePage]
 })

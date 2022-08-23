@@ -176,17 +176,17 @@
               <form>
 
                 <!-- unsubscribed -->
-                <div class="row p0 mt29px mb27px center_flex" *ngIf="Subscriber === '0'">
+                <div class="row p0 mt29px mb27px center_flex">
                   <div class="col-md-9 col-sm-9 col-xs-9 plr0" >
                     <a>
-                      <button type="button" (click)="subscribenow()" class="btn btn-warning mb0 btn_subscribe_now w100" data-dismiss="modal">
+                      <button type="button"class="btn btn-warning mb0 btn_subscribe_now w100" data-dismiss="modal">
                         Subscribe now
                       </button>
                     </a>
                   </div>
                   
                   <div class="col-md-3 col-sm-3 col-xs-3 pr0px">
-                    <a (click)="routeGuide(0)">
+                    <a>
                       <button type="button" class="btn btn-warning mb0 btn_user_guide w100" data-dismiss="modal">
                         User Guide
                       </button>
@@ -196,13 +196,13 @@
                 <!-- /unsubscribed -->
 
                 <!-- subscribed -->
-                <div class="row p10px mb27px center_flex mlr-10px_01 bg_01" *ngIf="Subscriber === '1'">
+                <div class="row p10px mb27px center_flex mlr-10px_01 bg_01">
                   <div class="col-md-12 col-sm-12 col-xs-12 plr0 flex_ai">
                     <div class="col-md-2 col-sm-2 col-xs-2">
                       <div class="prelative center_flex">
                         <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_points_circle.svg" alt="" class="prelative">
                         <h6 class="txt142 wpts_count">
-                          {{points}}
+                          points
                         </h6>
                       </div>
                     </div>
@@ -315,7 +315,7 @@
                       <div class="prelative center_flex">
                         <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/wisdom_points_circle.svg" alt="" class="prelative">
                         <h6 class="txt66 wpts_count">
-                         {{points}}
+                         points
                         </h6>
                       </div>
                     </div>
@@ -329,7 +329,7 @@
                   <div class="col-md-7 col-sm-7 col-xs-7 progress_details">
                     <div class="col-md-12 col-sm-12 col-xs-12 p0">
                       <div class="progress m0px absolute_center_progress">
-                        <div class="progress-bar jc_flexend" [style.width]="percentage + '%'">{{percentage}} %</div>
+                        <div class="progress-bar jc_flexend" style="width: 25%;">percentage %</div>
                       </div>
                     </div> -->
                     <!-- <div class="col-md-12 col-sm-12 col-xs-12 p0 center_flex absolute_center_progress_title">
@@ -349,7 +349,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 prelative hpt10px">
 
                       <div class="progress owl_progress">
-                        <div class="progress-bar jc_flexend" [style.width]="points + '%'">{{points}}</div>
+                        <div class="progress-bar jc_flexend" style="width: 25%;">points</div>
                       </div>
 
                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/body/owl.png" alt="" class="owl_img">
@@ -362,7 +362,7 @@
 
                       <div class="col-md-12 col-sm-12 col-xs-12 center_flex">
                         <h4 class="txt34 fw_bold wp">
-                          Wisdom Points {{points}}
+                          Wisdom Points points
                         </h4>
 
                       </div>
@@ -483,15 +483,15 @@
                             <div class="row">
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
-                                <div *ngFor="let r of resume;; let i = index"class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeResume(r)">
-                                  <img [src]="r.imgPath" alt="" class="ctimg">
+                                <div class="col-md-3 col-sm-6 col-xs-6 prelative">
+                                  <a >
+                                  <img src="imgpath" alt="" class="ctimg">
                                   <!--<h4 class="tcenter txt30 atsrno">
                                     {{i+1}}
                                   </h4>-->
-                                  <h4 class="tcenter txt31 attitle">{{r.Module}}</h4>
+                                  <h4 class="tcenter txt31 attitle">Module</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="r.Percentage + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -539,66 +539,66 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeGuide(0)">
+                                  <a>
                                   <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/05.png" alt="" class="ctimg">
                                   <h4 class="tcenter txt30 atsrno">
                                     01
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">User Guide</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="guideP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeDiscoveringWisdom(0)">
+                                  <a>
                                   <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/01.png" alt="" class="ctimg">
                                   <h4 class="tcenter txt30 atsrno">
                                     02
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Discovering Wisdom</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="discoveringP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeBenefits(0)">
+                                  <a>
                                   <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/02.png" alt="" class="ctimg">
                                   <h4 class="tcenter txt30 atsrno">
                                     03
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Benefits of Wisdom</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="benefitsWisdomP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeCircles(0)">
+                                  <a>
                                   <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/03.png" alt="" class="ctimg">
                                   <h4 class="tcenter txt30 atsrno">
                                     04
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">5 Circles of Wisdom</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="fiveCirclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;"aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeIdeas(0)">
+                                  <a>
                                   <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/introduction/04.png" alt="" class="ctimg">
                                   <h4 class="tcenter txt30 atsrno">
                                     05
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Key Ideas</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="keyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -765,7 +765,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeNature(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/06.png" alt="" class="ctimg">
                                   </div>
@@ -774,13 +774,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Nature</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="natureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeBreathing(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/07.png" alt="" class="ctimg">
                                   </div>
@@ -789,13 +789,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Breathing</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="breathingP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeNoticingThoughts(0)">
+                                  <a >
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/08.png" alt="" class="ctimg">
                                   </div>
@@ -804,13 +804,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Noticing Thoughts</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="ntP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeGuidedMeditation(0)">
+                                  <a >
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/10.png" alt="" class="ctimg">
                                   </div>
@@ -819,13 +819,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Guided Audio Meditation</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="gamP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeMeditation(0)">
+                                  <a >
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/09.png" alt="" class="ctimg">
                                   </div>
@@ -834,7 +834,7 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Meditation</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="meditationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -869,7 +869,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeBenefitsEnquiry(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/11.png" alt="" class="ctimg">
                                   </div>
@@ -878,13 +878,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Benefits of Enquiry</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="benefitsEnquiryP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeHowToBegin(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/12.png" alt="" class="ctimg">
                                   </div>
@@ -893,13 +893,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">How to begin?</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="beginP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeThreeSteps(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/13.png" alt="" class="ctimg">
                                   </div>
@@ -908,13 +908,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Three Steps to Enquiry</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="threeStepsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeInsights(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/14.png" alt="" class="ctimg">
                                   </div>
@@ -923,13 +923,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Insight</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="insightP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeAwareness(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/15.png" alt="" class="ctimg">
                                   </div>
@@ -938,13 +938,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Awareness</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="awarenessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeNoJudgement(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/16.png" alt="" class="ctimg">
                                   </div>
@@ -953,13 +953,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">No Judgement</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="noJudgementP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeQuestionsAreKey(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/17.png" alt="" class="ctimg">
                                   </div>
@@ -968,13 +968,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Questions are Key</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="questionsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeLookWithoutLanguage(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/18.png" alt="" class="ctimg">
                                   </div>
@@ -983,13 +983,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Look without Language</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="withoutLanguageP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeObstacles(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/19.png" alt="" class="ctimg">
                                   </div>
@@ -998,7 +998,7 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Obstacles to Enquiry</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="obstaclesP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -1033,7 +1033,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeConditioning(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/20.png" alt="" class="ctimg">
                                     </div>
@@ -1042,14 +1042,14 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Conditioning</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="conditioningP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
                                   <!-- <a routerLink="/adults/comparison/s0"> -->
-                                  <a (click)="routeComparison(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/21.png" alt="" class="ctimg">
                                     </div>
@@ -1059,13 +1059,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Comparison & Envy</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="comparisonP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeReactiveMind(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/22.png" alt="" class="ctimg">
                                   </div>
@@ -1074,13 +1074,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Reactive Mind</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="rmP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeSelfImage(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/23.png" alt="" class="ctimg">
                                   </div>
@@ -1089,13 +1089,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Self Image</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="siP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeSelfInterest(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/24.png" alt="" class="ctimg">
                                   </div>
@@ -1104,13 +1104,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Self Interest</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="sinP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeIdentity(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/25.png" alt="" class="ctimg">
                                     </div>
@@ -1119,13 +1119,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Identity</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="identityP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeEmotionalNeeds(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/26.png" alt="" class="ctimg">
                                   </div>
@@ -1134,13 +1134,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Emotional Needs</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="enP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeInnerBoredom(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/27.png" alt="" class="ctimg">
                                   </div>
@@ -1149,13 +1149,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Inner Boredom</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="ibP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeNatureOfI(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/28.png" alt="" class="ctimg">
                                   </div>
@@ -1164,7 +1164,7 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">The Nature of the ‘I’</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="niP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -1200,7 +1200,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeFearAnxiety(0)" >
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/29.png" alt="" class="ctimg">
                                   </div>
@@ -1210,13 +1210,13 @@
                                   <h4 class="tcenter txt31 attitle">Fear & Anxiety</h4>
 
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="fearP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routePleasure(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/30.png" alt="" class="ctimg">
                                   </div>
@@ -1225,13 +1225,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Pleasure</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="pleasureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                 </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeSorrowandLoss(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/31.png" alt="" class="ctimg">
                                   </div>
@@ -1240,13 +1240,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Sorrow and Loss</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="sorrowandlossP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeLoneliness(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/32.png" alt="" class="ctimg">
                                     </div>
@@ -1255,13 +1255,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Loneliness</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="lonelinessP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeAnger(0)">
+                                  <a>
                                   <!-- <a routerLink="/adults/anger/s162p0"> -->
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/33.png" alt="" class="ctimg">
@@ -1271,9 +1271,9 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Anger</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="angerP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                       <!-- <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                      <div class="progress-bar jc_flexend" [style.width]="points + '%'">{{points}}</div> -->
+                                      <div class="progress-bar jc_flexend" style="width: 25%;">points</div> -->
                                     </div>
                                   </a>
                                 </div>
@@ -1308,7 +1308,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeStress(0)">
+                                  <a >
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/34.png" alt="" class="ctimg">
                                   </div>
@@ -1317,14 +1317,14 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Stress</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="stressP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeRelationships(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/35.png" alt="" class="ctimg">
                                   </div>
@@ -1333,13 +1333,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Relationships</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="relationshipsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeLove(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/36.png" alt="" class="ctimg">
                                     </div>
@@ -1348,13 +1348,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Love</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="loveP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeCriticism(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/37.png" alt="" class="ctimg">
                                     </div>
@@ -1363,13 +1363,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Criticism</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="criticismP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeSelfEsteem(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/38.png" alt="" class="ctimg">
                                   </div>
@@ -1378,13 +1378,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Self-Esteem</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="seP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeLivingWithPeace(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/39.png" alt="" class="ctimg">
                                     </div>
@@ -1393,13 +1393,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Living with Peace</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="livingwithpeaceP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeDealingWithDeath(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/40.png" alt="" class="ctimg">
                                     </div>
@@ -1408,7 +1408,7 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Dealing with Death</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="dealingwithdeathP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
@@ -1444,7 +1444,7 @@
                               <div class="col-md-12 col-sm-12 col-xs-12 odiv p0">
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeHappiness(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/41.png" alt="" class="ctimg">
                                     </div>
@@ -1453,13 +1453,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Happiness</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeCommunication(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/42.png" alt="" class="ctimg">
                                   </div>
@@ -1468,13 +1468,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Communication</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="communicationP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeOpinionsAndBeliefs(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/43.png" alt="" class="ctimg">
                                     </div>
@@ -1483,13 +1483,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Opinions and Beliefs</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="opinionsandbeliefsP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeSuccessAndFailure(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/44.png" alt="" class="ctimg">
                                     </div>
@@ -1498,13 +1498,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Success and Failure</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="successandfailureP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeAddiction(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/45.png" alt="" class="ctimg">
                                     </div>
@@ -1513,13 +1513,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Addiction</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="addictionP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeFood(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/46.png" alt="" class="ctimg">
                                     </div>
@@ -1528,13 +1528,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Food</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="foodP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeMoney(0)">
+                                  <a>
                                     <div class="img-gradient">
                                       <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/47.png" alt="" class="ctimg">
                                     </div>
@@ -1543,13 +1543,13 @@
                                     </h4>
                                     <h4 class="tcenter txt31 attitle">Money</h4>
                                     <div class="progress dprogress">
-                                      <div class="progress-bar" role="progressbar" [style.width]="moneyP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                      <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeWork(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/54.png" alt="" class="ctimg">
                                   </div>
@@ -1558,13 +1558,13 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Work</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="wP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
 
                                 <div class="col-md-3 col-sm-6 col-xs-6 prelative">
-                                  <a (click)="routeLeadership(0)">
+                                  <a>
                                   <div class="img-gradient">
                                     <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/dashboard/the_full_program/48.png" alt="" class="ctimg">
                                   </div>
@@ -1573,7 +1573,7 @@
                                   </h4>
                                   <h4 class="tcenter txt31 attitle">Leadership</h4>
                                   <div class="progress dprogress">
-                                    <div class="progress-bar" role="progressbar" [style.width]="lP + '%'" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                   </div>
                                   </a>
                                 </div>
@@ -1717,7 +1717,7 @@
       <div class="modal-header b0">        
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 p0">
-            <button type="button" #closerefermodal class="btn_popup_close m0px" data-dismiss="modal" aria-label="Close" (click)="closerefer()">              
+            <button type="button" #closerefermodal class="btn_popup_close m0px" data-dismiss="modal" aria-label="Close" >              
               <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/modal_close_01.svg" alt="" class="img-responsive fright">
             </button>
           </div>
@@ -1730,19 +1730,19 @@
             <h4 class="txt59 tcenter">
               <div class="row mt30px">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <input type="text" id="first-name" class="form-control cfc7" (keyup)="friendName($event.target.value)" placeholder="Friend’s Name">
+                  <input type="text" id="first-name" class="form-control cfc7" >
                 </div>
               </div>
 
               <div class="row mt10px">
                 <div class="col-md-12 col-sm-12 col-xs-12">
-                  <input type="text" id="first-name" class="form-control cfc7" (keyup)="friendEmail($event.target.value)"  placeholder="Friend’s E-mail">
+                  <input type="text" id="first-name" class="form-control cfc7" >
                 </div>
               </div>
 
               <div class="row mt30px pb40px center_flex"> 
                 <div class="col-md-6 col-sm-6 col-xs-6">
-                  <button type="submit" class="btn btn-warning btn_raf_submit w100" [disabled]="friendemail === '' || friendname === '' || friendname.length < 3" (click)="submitrefer()">
+                  <button type="submit" class="btn btn-warning btn_raf_submit w100" >
                     Submit
                   </button>  
                 </div>
@@ -1775,7 +1775,7 @@
         <div class="row center_flex">
           <div class="col-md-12 col-sm-12 col-xs-12 p0">
             <h4 class="txt183 tcenter">
-              {{alertMsg}}
+              alertMsg
             </h4>  
           </div>
         </div>        
@@ -1795,7 +1795,7 @@
       <div class="modal-header b0">        
         <div class="row">
           <div class="col-md-12 col-sm-12 col-xs-12 p0">
-            <button type="button" class="btn_popup_close m0px" #closecookiemodal data-dismiss="modal" aria-label="Close" (click)="closeEvent()">              
+            <button type="button" class="btn_popup_close m0px" #closecookiemodal data-dismiss="modal" aria-label="Close" >              
               <!-- <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/close_white.svg" alt="" class="img-responsive fright"> -->
             </button>
           </div>
@@ -1809,7 +1809,7 @@
               This website uses cookies
             </h4>            
             <h4 class="txt59 italici">
-              By continuing to browse you are agreeing to our use of cookies as explained in our &nbsp;<a class="italic txt_white underline" (click)="opennewTab()">Cookie Policy.</a>
+              By continuing to browse you are agreeing to our use of cookies as explained in our &nbsp;<a class="italic txt_white underline" >Cookie Policy.</a>
             </h4>  
           </div>
         </div>
@@ -1817,10 +1817,10 @@
       </div>    
       <div class="modal-footer b0">
         <!-- <button type="button" class="btn btn-secondary cblack" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" (click)="acceptCookies()">Accept all cookies</button> -->
+        <button type="button" class="btn btn-primary" >Accept all cookies</button> -->
 
         <button type="button" class="btn btn-warning mb0 btn_cookies_close" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-warning mb0pxi mr0px ml10pxi btn_accept_cookies" (click)="acceptCookies()">Accept all cookies</button>
+        <button type="button" class="btn btn-warning mb0pxi mr0px ml10pxi btn_accept_cookies" >Accept all cookies</button>
       </div>  
     </div>
   </div>

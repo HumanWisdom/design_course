@@ -1,17 +1,23 @@
 <div class="prelative">
 
-  <div [ngClass]="base"></div>
-  <div [ngClass]="overlay"></div>
+  <div class="anger_base1"></div>
+  <div class="anger_overlay1"></div>
 
   <!-- page content -->
-  <div class="right_col ml0 cright_col zi3 mh100vh" #screen role="main">				
+  <div class="right_col ml0 cright_col zi3 mh100vh">				
     <!-- Class -->  
     <div class="cw100p cabsolute">
       <div class="row center_flex mrl0px">
         <div class="col-md-6 col-sm-8 col-xs-12 p0">
           <div class="x_panel cxpanel center_flex">                                    
             <div class="x_content c_white fwunset tcenter pt0px mt0px">
-              <ng-content></ng-content>
+              <!-- angular audio player plugin -->  
+              <div class="row tcenter">
+                <div class="col-md-12 col-sm-12 col-xs-12 p7rem">
+                  <ngx-circular-player id="aud1" strokeColor="#FFC455" source=""></ngx-circular-player>                  
+                </div>
+              </div>
+              <!-- /angular audio player plugin -->  
             </div>
           </div>
         </div>

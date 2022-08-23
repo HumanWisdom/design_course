@@ -8,7 +8,7 @@ import { IndexWisdomStoriesTilesPageRoutingModule } from './index-wisdom-stories
 
 import { IndexWisdomStoriesTilesPage } from './index-wisdom-stories-tiles.page';
 
-import {SharedModule} from '../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [

@@ -8,12 +8,15 @@ import { KtaPreviousNextPageRoutingModule } from './kta-previous-next-routing.mo
 
 import { KtaPreviousNextPage } from './kta-previous-next.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    KtaPreviousNextPageRoutingModule
+    KtaPreviousNextPageRoutingModule,
+    SharedModule
   ],
   declarations: [KtaPreviousNextPage]
 })

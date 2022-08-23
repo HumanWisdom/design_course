@@ -8,7 +8,9 @@ import { StressImgAudioPageRoutingModule } from './stress-img-audio-routing.modu
 
 import { StressImgAudioPage } from './stress-img-audio.page';
 
-import {SharedModule} from '../../shared/shared.module'
+import { SharedModule } from '../../shared/shared.module';
+
+import { NgxCircularPlayerModule } from 'ngx-circular-player';
 
 @NgModule({
   imports: [
@@ -17,6 +19,7 @@ import {SharedModule} from '../../shared/shared.module'
     IonicModule,
     StressImgAudioPageRoutingModule,
     SharedModule,
+    NgxCircularPlayerModule
   ],
   declarations: [StressImgAudioPage]
 })
