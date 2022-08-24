@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-feature-header',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./feature-header.component.scss'],
 })
 export class FeatureHeaderComponent implements OnInit {
+
+  @Input() title: string;
 
   constructor() { }
 

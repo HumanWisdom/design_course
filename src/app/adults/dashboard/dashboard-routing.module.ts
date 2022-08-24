@@ -4,23 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: "",
-    loadChildren: () => import("./dashboard-v01/dashboard-v01.module").then( m => m.DashboardV01PageModule)
-  },
-  {
-    path: "hamburger",
-    loadChildren: () => import("./hamburger/hamburger.module").then( m => m.HamburgerPageModule)
-  },
-  {
-    path: "dashboard-v01",
-    loadChildren: () => import("./dashboard-v01/dashboard-v01.module").then( m => m.DashboardV01PageModule)
-  },
-  {
-    path: "dashboard-v02",
-    loadChildren: () => import("./dashboard-v02/dashboard-v02.module").then( m => m.DashboardV02PageModule)
-  },
-  {
-    path: "dashboard-resume",
-    loadChildren: () => import("./dashboard-resume/dashboard-resume.module").then( m => m.DashboardResumePageModule)
+    loadChildren: () => import('./dashboard-main-v1/dashboard-main-v1.module').then( m => m.DashboardMainV1PageModule)
   },
   {
     path: 'dashboard-main',

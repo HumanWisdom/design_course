@@ -1,24 +1,5 @@
 <!-- top navigation -->
-<div class="top_nav ml0 tcenter inav">
-  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/podcast/01_a.jpg" alt="" class="img-responsive iw100">
-  <div class="nav_menu absolute_top p20px">
-    <nav>          
-      <ul class="nav navbar-nav navbar_left cnav inavbar flex_align">
-        <li class="">                    
-          <a class="cuser-profile dropdown-toggle c_silver_chalice " data-toggle="dropdown" aria-expanded="false">
-            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/back_white.svg" alt="" class="p0">
-          </a>                  
-        </li>   
-        
-        <li class="lishare">                    
-          <a href="javascript:;" class="cuser-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-            <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/share_white.svg" alt="" class="p0">
-          </a>                  
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
+<app-toc-header [tocImage]="tocImage" [tocColor]="tocColor"></app-toc-header>
 <!-- /top navigation -->
 
 <!-- page content -->
@@ -68,7 +49,7 @@
           
               <br>
           
-              <div class="toc_podcast">
+              <div class="toc_podcast m0px">
                 <div class="row pt30px pb10px">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                     <h4 class="txt158 plr10px">

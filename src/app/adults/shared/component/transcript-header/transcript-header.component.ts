@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 @Component({
   selector: 'app-transcript-header',
   templateUrl: './transcript-header.component.html',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TranscriptHeaderComponent implements OnInit {
 
+  @Input() toc:string;
+  
   constructor() { }
 
   ngOnInit() {

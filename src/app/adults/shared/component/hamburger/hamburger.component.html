@@ -12,15 +12,15 @@
         <div class="col-md-12 col-sm-12 col-xs-12 flex_ai">
           <div class="col-lg-2 col-md-2 col-sm-3 col-xs-3 p0 tleft">
             <img
-              src="{{url === '' || url === undefined ? 'https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/user/profile_default.svg'  : 'https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/tiles/UsersAvatar/' + url}}"
+              src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/user/profile_default.svg"
               alt="" class="img_profile">
           </div>
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 ws_nowrap">
             <h4 class="txt187 mtb0px tleft">
-              {{name}}
+              Hellen Boothman
             </h4>
             <a routerLink="/onboarding/user-profile">
-              <h4 class="txt158 mt5pxi mb0px tleft underline" *ngIf="isloggedIn">
+              <h4 class="txt158 mt5pxi mb0px tleft underline">
                 View Profile
               </h4>
             </a>
@@ -157,7 +157,7 @@
                   class="img-responsive">
               </div>
               <div class="col-md-10 col-sm-10 col-xs-10 p0">
-                <h4 class="txt188 mtb0px" (click)="giftwisdom()">
+                <h4 class="txt188 mtb0px">
                   Give the gift of Wisdom
                 </h4>
               </div>

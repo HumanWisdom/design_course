@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WisdomPointsRewardRedeemPage implements OnInit {
 
+  tocImage="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/tiles/wisdom_points/wisdom_points_redeem_hwp_02.svg"
+  tocColor="grey"
+
   constructor() { }
 
   ngOnInit() {

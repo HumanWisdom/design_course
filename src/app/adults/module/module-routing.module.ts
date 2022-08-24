@@ -102,6 +102,10 @@ const routes: Routes = [
     path: 'video',
     loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   },
+  {
+    path: 'feedback-survey-index',
+    loadChildren: () => import('./feedback-survey-index/feedback-survey-index.module').then( m => m.FeedbackSurveyIndexPageModule)
+  },
 ];
 
 @NgModule({

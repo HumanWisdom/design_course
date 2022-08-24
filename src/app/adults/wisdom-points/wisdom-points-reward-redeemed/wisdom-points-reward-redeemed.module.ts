@@ -8,12 +8,15 @@ import { WisdomPointsRewardRedeemedPageRoutingModule } from './wisdom-points-rew
 
 import { WisdomPointsRewardRedeemedPage } from './wisdom-points-reward-redeemed.page';
 
+import { SharedModule } from '../../shared/shared.module';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    WisdomPointsRewardRedeemedPageRoutingModule
+    WisdomPointsRewardRedeemedPageRoutingModule,
+    SharedModule
   ],
   declarations: [WisdomPointsRewardRedeemedPage]
 })

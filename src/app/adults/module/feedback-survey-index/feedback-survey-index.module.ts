@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { WisdomPointsRewardRedeemPageRoutingModule } from './wisdom-points-reward-redeem-routing.module';
+import { FeedbackSurveyIndexPageRoutingModule } from './feedback-survey-index-routing.module';
 
-import { WisdomPointsRewardRedeemPage } from './wisdom-points-reward-redeem.page';
+import { FeedbackSurveyIndexPage } from './feedback-survey-index.page';
 
 import { SharedModule } from '../../shared/shared.module';
 
@@ -15,9 +15,9 @@ import { SharedModule } from '../../shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    WisdomPointsRewardRedeemPageRoutingModule,
+    FeedbackSurveyIndexPageRoutingModule,
     SharedModule
   ],
-  declarations: [WisdomPointsRewardRedeemPage]
+  declarations: [FeedbackSurveyIndexPage]
 })
-export class WisdomPointsRewardRedeemPageModule {}
+export class FeedbackSurveyIndexPageModule {}

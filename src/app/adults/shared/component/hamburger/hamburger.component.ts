@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Platform } from '@angular/cdk/platform';
 
 @Component({
   selector: 'app-hamburger',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HamburgerComponent implements OnInit {
 
-  constructor() { }
+  isloggedIn = false;
+  subscriber = false;
+  ios = false
+  roleid = 0
+
+  constructor(public platform: Platform) { }
 
   ngOnInit() {}
 
