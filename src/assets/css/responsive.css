@@ -941,3 +941,11 @@
         margin-top: -15%;
     }
 }
+
+@media (max-width: 1366px)
+{
+    .flex_ai_imp
+    {
+        display: flex !important;
+    }
+}
