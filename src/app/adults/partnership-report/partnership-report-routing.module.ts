@@ -18,6 +18,18 @@ const routes: Routes = [
     path: 'tree-plantation-report',
     loadChildren: () => import('./tree-plantation-report/tree-plantation-report.module').then( m => m.TreePlantationReportPageModule)
   },
+  {
+    path: 'no-partner',
+    loadChildren: () => import('./no-partner/no-partner.module').then( m => m.NoPartnerPageModule)
+  },
+  {
+    path: 'tree-partner',
+    loadChildren: () => import('./tree-partner/tree-partner.module').then( m => m.TreePartnerPageModule)
+  },
+  {
+    path: 'income-partner',
+    loadChildren: () => import('./income-partner/income-partner.module').then( m => m.IncomePartnerPageModule)
+  },
 ];
 
 @NgModule({
