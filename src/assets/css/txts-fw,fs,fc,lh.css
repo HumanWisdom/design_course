@@ -2390,3 +2390,116 @@
     line-height: 140%;
     color: #1092A7;
 }
+
+/* font weight */
+.fw_400 
+{
+    font-weight: 400;
+}
+
+.fw_500 
+{
+    font-weight: 500;
+}
+
+.fw_700 
+{
+    font-weight: 700;
+}
+/* /font weight */
+
+/* font size */
+.fs_12px
+{
+    font-size: 12px;
+}
+
+.fs_14px
+{
+    font-size: 14px;
+}
+
+.fs_15px
+{
+    font-size: 15px;
+}
+
+.fs_18px
+{
+    font-size: 18px;
+}
+
+.fs_21px
+{
+    font-size: 24px;
+}
+
+.fs_24px
+{
+    font-size: 24px;
+}
+
+.fs_33px 
+{
+    font-size: 33px;
+}
+/* /font size */
+
+/* line height */
+.lh_120p 
+{
+    line-height: 120%;
+}
+
+.lh_130p 
+{
+    line-height: 130%;
+}
+
+.lh_140p 
+{
+    line-height: 140%;
+}
+
+.lh_18px
+{
+    line-height: 18px;
+}
+
+.lh_21px
+{
+    line-height: 21px;
+}
+
+.lh_39px
+{
+    line-height: 39px;
+}
+/* /line height */
+
+/* font colour */
+.fc_ffffff
+{
+    color: #FFFFFF;
+}
+
+.fc_000000 
+{
+    color: #000000;
+}
+
+.fc_1092a7
+{
+    color: #1092A7;
+}
+
+.fc_5d5d5d
+{
+    color: #5D5D5D;
+}
+
+.fc_59595b
+{
+    color: #59595B;
+}
+/* /font colour */
