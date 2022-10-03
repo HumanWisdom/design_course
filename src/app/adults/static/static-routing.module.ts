@@ -42,6 +42,18 @@ const routes: Routes = [
     path: 'adverts',
     loadChildren: () => import('./adverts/adverts.module').then( m => m.AdvertsPageModule)
   },
+  {
+    path: 'adverts-hwp',
+    loadChildren: () => import('./adverts-hwp/adverts-hwp.module').then( m => m.AdvertsHwpPageModule)
+  },
+  {
+    path: 'adverts-hwp-app',
+    loadChildren: () => import('./adverts-hwp-app/adverts-hwp-app.module').then( m => m.AdvertsHwpAppPageModule)
+  },
+  {
+    path: 'adverts-about',
+    loadChildren: () => import('./adverts-about/adverts-about.module').then( m => m.AdvertsAboutPageModule)
+  },
 ];
 
 @NgModule({

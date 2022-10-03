@@ -30525,3 +30525,124 @@ svg path
 {
   color: #adadad !important;
 }
+
+/* adverts v1 */
+.bg_adverts_01 
+{
+  background: url(https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/tiles/adverts/bg_02.svg) no-repeat center center;
+  background-size: cover;
+  margin: 0 -10px;
+  padding: 50px 10px 40px 10px;
+}
+/* /adverts v1 */
+
+/* background with linear gradient */
+.bg_lg_ffc4f5_01
+{
+  background: linear-gradient(180deg, #FFC455 0%, #FFC455 100%);
+}
+/* /background with linear gradient */
+
+/* box shadow */
+.bs_01 
+{
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+}
+/* /box shadow */
+
+/* border radius */
+.br_30px 
+{
+  border-radius: 30px;
+}
+/* /border radius */
+
+#panel_adverts .panel-title > a:after
+{
+  content: "\f067";
+  color: #5D5D5D;
+}
+
+#panel_adverts .panel-title > a[aria-expanded="true"]:after
+{
+  content: "\f068";
+}
+
+#panel_adverts.panel-group .panel
+{
+  background: none;
+  border: 0;
+  box-shadow: none;
+}
+
+#panel_adverts.panel-group .panel-heading
+{
+  background: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border-bottom: 1px solid #5D5D5D;
+}
+
+#panel_adverts .panel-default>.panel-heading+.panel-collapse>.panel-body
+{
+  padding: 0 !important;
+}
+
+#panel_adverts .panel-title
+{
+  margin-bottom: 15px;
+}
+
+.advert_ft_ul
+{
+  list-style-type: none !important;
+  padding: 0;
+}
+
+.advert_ft_ul li 
+{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #5D5D5D;
+  margin-bottom:  10px;
+}
+
+.mb50px 
+{
+  margin-bottom: 50px;
+}
+
+.mb60px 
+{
+  margin-bottom: 60px;
+}
+
+.adverts_ft_social_btns
+{
+  background: #F5F5F5;
+  margin: 70px -10px 0 -10px;
+  padding: 40px 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9;
+}
+
+.pb_30rem 
+{
+  padding-bottom: 30rem;
+}
+
+.advert_ul_01
+{
+  padding: 0 25px;
+  margin: 10px 0 0 0;
+}
+
+.advert_ul_01 li 
+{
+  margin-top: 5px;  
+}
