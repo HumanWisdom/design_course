@@ -24735,7 +24735,7 @@ a
   padding: 20px 20px 70px 20px;
   /* min-height: 500px; */
 
-  height: 70rem;
+  /* height: 70rem; */
   overflow-y: overlay;
 }
 
@@ -30754,4 +30754,9 @@ svg path
 .hr_style_19 
 {
   border: 1px solid #5D5D5D;
+}
+
+.display_webkit_inline_box
+{
+  display: -webkit-inline-box;
 }
