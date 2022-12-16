@@ -123,6 +123,10 @@ const routes: Routes = [
     path: 'wisdom-exercise',
     loadChildren: () => import('./wisdom-exercise/wisdom-exercise.module').then( m => m.WisdomExerciseModule)
   },
+  {
+    path: 'give-the-gift-of-wisdom',
+    loadChildren: () => import('./give-the-gift-of-wisdom/give-the-gift-of-wisdom.module').then( m => m.GiveTheGiftOfWisdomPageModule)
+  },
 ];
 
 @NgModule({

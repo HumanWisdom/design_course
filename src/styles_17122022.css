@@ -12281,7 +12281,6 @@ h1.module_title
   color: #6D6D6D;
 }
 
-.btn_grp.txt12.active,
 .txt12.active.focus,
 .txt12:hover
 {
@@ -12292,33 +12291,10 @@ h1.module_title
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
+  /* identical to box height */
   text-align: center;
   color: #000000;
-  filter: unset !important;
 }
-
-.txt12_label
-{
-  background-color: #FFC455 !important;
-  box-shadow: unset !important;
-  border: 0;
-  filter: unset;
-}
-
-.txt12_btn 
-{
-  background: unset !important;
-  border: 0 !important;
-  box-shadow: unset !important;
-  /* color: #000; */
-  filter: unset !important;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-}
-
 .selected_objective{
   background-color: #FFC455;
   border: 0;
@@ -26335,8 +26311,7 @@ h1
 .lww 
 {
   display: grid;
-  grid-template-columns: repeat(6,42%);
-  /* grid-template-columns: repeat(8,42%); */
+  grid-template-columns: repeat(8,42%);
   /* grid-gap: 10px; */
   grid-gap: 7px 0px;
 }
@@ -26382,8 +26357,7 @@ h1
 
   .lww 
   {
-    /* grid-template-columns: repeat(9,30%); */
-    grid-template-columns: repeat(6,30%);
+    grid-template-columns: repeat(9,30%);
   }
 }
 

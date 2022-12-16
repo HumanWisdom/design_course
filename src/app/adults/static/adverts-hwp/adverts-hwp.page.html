@@ -84,72 +84,108 @@
                                     </div>
                                   </div>
                                 </div>
-            
+
                                 <div class="panel-body p0">
                                   <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12 p0">
-                                      <button type="submit" class="btn btn_subscription_options">
-                                        <h4 class="fw_500 fs_18px lh_21px fc_ffffff mtb0px mb5px">
+                                      <button type="submit" [disabled]="isSubscriber" (click)="routedashboard('Yearly')"
+                                        class="btn btn_subscription_options">
+                                        <h4 class="fw_500 fs_18px lh_21px mtb0px mb5px">
                                           Yearly - 14 day free trial
                                         </h4>
-                                        <h4 class="fw_400 fs_18px lh_21px fc_ffffff mtb0px">
+                                        <h4 class="fw_400 fs_18px lh_21px mtb0px">
                                           £72.00/year - Save 25%
                                         </h4>
-                                      </button> 
+                                      </button>
                                     </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
                           </div>
-            
-                          <div class="row">
+
+                          <div class="row mb10px">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                              <button type="submit" class="btn btn_subscription_options">
-                                <h4 class="fw_500 fs_18px lh_21px fc_ffffff mtb0px mb5px">
+                              <button type="submit" [disabled]="isSubscriber" (click)="routedashboard('Monthly')"
+                                class="btn btn_subscription_options">
+                                <h4 class="fw_500 fs_18px lh_21px mtb0px mb5px">
                                   Monthly - 14 day free trial
                                 </h4>
-                                <h4 class="fw_400 fs_18px lh_21px fc_ffffff mtb0px">
+                                <h4 class="fw_400 fs_18px lh_21px mtb0px">
                                   £7.99/month
                                 </h4>
-                              </button> 
+                              </button>
                             </div>
                           </div>
 
-                          <div class="row center_flex">
+                          <!-- <div class="row center_flex">
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
-                              <h4 class="fw_400 fs_15px lh_130p fc_ffffff tcenter mt20px mb30px">
+                              <h4 class="fw_400 fs_15px lh_130p fc_ffffff tcenter mt20px mb20px">
                                 Don’t worry, you can cancel your free trial within 14 days
                               </h4>
+                            </div>
+                          </div> -->
+
+                          <!-- <div class="row center_flex">
+                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 tcenter mb30px">
+                              <a class="fw_700 fs_15px lh_130p fc_ffffff mt0px underline" data-toggle="modal"
+                                data-target="#activate_subscription">
+                                Redeem subscription code
+                              </a>
+                            </div>
+                          </div> -->
+
+                          <div class="row mb10px">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <button type="submit" class="btn btn_subscription_options h60pxi flex_ai">
+                                <h4 class="fw_500 fs_18px lh_21px mtb0px">
+                                  Redeem subscription code
+                                </h4>
+                              </button>
+                            </div>
+                          </div>
+
+                          <div class="row mb30px">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                              <button type="submit" class="btn btn_subscription_options h60pxi flex_ai">
+                                <h4 class="fw_500 fs_18px lh_21px mtb0px flex_ai">
+                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/svgs/icons/like_ffc455.svg" class="img-responsive mr10px">
+                                  Give the gift of wisdom
+                                </h4>
+                              </button>
                             </div>
                           </div>
 
                           <div class="row">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                               <a>
-                                <button type="button" class="btn h60px bg_lg_ffc4f5_01 bs_01 br_30px m0px fw_500 fs_18px lh_21px fc_000000 w100">
+                                <button type="button" (click)="routedashboard('free')"
+                                  class="btn h60px bg_lg_ffc4f5_01 bs_01 br_30px m0px fw_500 fs_18px lh_21px fc_000000 w100">
+                                  <!-- Go to App -->
                                   Try for free
                                 </button>
                               </a>
                             </div>
-                          </div> 
+                          </div>
 
                           <div class="row mt60px mb60px">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p0 center_flex">
                               <!-- desktop playstore -->
                               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a (click)="clickbanner('https://play.google.com/store/apps/details?id=io.humanwisdom.me&hl=en&gl=US')">
-                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/playstore_white.svg" alt=""
-                                    class="img-responsive w100">
+                                <a>
+                                  <img
+                                    src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/playstore_white.svg"
+                                    alt="" class="img-responsive w100">
                                 </a>
                               </div>
                               <!-- /desktop playstore -->
-          
+
                               <!-- desktop appstore -->
                               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                <a (click)="clickbanner('https://apps.apple.com/in/app/humanwisdom/id1588535567')">
-                                  <img src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/appstore_white.svg" alt=""
-                                    class="img-responsive w100">
+                                <a>
+                                  <img
+                                    src="https://humanwisdoms3.s3.eu-west-2.amazonaws.com/assets/images/icons/appstore_white.svg"
+                                    alt="" class="img-responsive w100">
                                 </a>
                               </div>
                               <!-- /desktop appstore -->
