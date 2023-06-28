@@ -59,7 +59,7 @@
                 "inject": true
               },
               {
-                "input": "src/styles.css",
+                "input": "src/assets/css/custom.css",
                 "inject": true
               },
               {

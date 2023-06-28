@@ -379,6 +379,17 @@
         margin: 0 0 0 0 !important;
     }
 
+    .odiv_pathway::-webkit-scrollbar-track
+    {
+        margin: 0 40px 0 0 !important;
+    }
+
+
+    .odiv_wfgi::-webkit-scrollbar-track
+    {
+        margin: 0 20px 0 0 !important;
+    }
+
     .cp0_01
     {
         padding: 0;
@@ -992,5 +1003,10 @@
         overflow: overlay;
         height: 75%;
         z-index: 99;
+    }
+
+    .box_v3_04
+    {
+        height: 210px;
     }
 }
