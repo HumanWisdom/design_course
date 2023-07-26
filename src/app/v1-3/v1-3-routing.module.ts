@@ -38,6 +38,18 @@ const routes: Routes = [
     path: 'curated',
     loadChildren: () => import('./curated/curated.module').then( m => m.CuratedModule)
   },
+  {
+    path: 'find-answers-questions',
+    loadChildren: () => import('./find-answers-questions/find-answers-questions.module').then( m => m.FindAnswersQuestionsPageModule)
+  },
+  {
+    path: 'find-answers-answers',
+    loadChildren: () => import('./find-answers-answers/find-answers-answers.module').then( m => m.FindAnswersAnswersPageModule)
+  },
+  {
+    path: 'change-topic',
+    loadChildren: () => import('./change-topic/change-topic.module').then( m => m.ChangeTopicPageModule)
+  },
 ];
 
 @NgModule({
