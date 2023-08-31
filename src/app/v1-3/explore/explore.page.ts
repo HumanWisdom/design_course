@@ -11,5 +11,7 @@ export class ExplorePage implements OnInit {
 
   ngOnInit() {
   }
+  routeHappiness(x){
 
+  }
 }

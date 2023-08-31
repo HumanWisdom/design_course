@@ -11,5 +11,7 @@ export class ContactCoachPage implements OnInit {
 
   ngOnInit() {
   }
-
+  goBack(){
+    
+  }
 }

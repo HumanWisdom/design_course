@@ -11,5 +11,7 @@ export class IndexPage implements OnInit {
 
   ngOnInit() {
   }
+  routeHappiness(x){
 
+  }
 }

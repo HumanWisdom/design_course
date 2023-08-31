@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { AdultsRoutingModule } from './adults-routing.module';
 import {TokenInterceptorService} from '../token-interceptor.service'
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
-import {ShareButtonsModule} from 'ngx-sharebuttons/buttons'
 
 @NgModule({
   declarations: [],
@@ -13,9 +12,9 @@ import {ShareButtonsModule} from 'ngx-sharebuttons/buttons'
     //ComparisonModule,
     AdultsRoutingModule,  
     HttpClientModule,
-    ShareButtonsModule.withConfig({
-        debug:true
-       }),
+    // ShareButtonsModule.withConfig({
+    //     debug:true
+    //    }),
   ],
   providers: [
     {

@@ -12,4 +12,10 @@ export class AdvertsHwpStudentPage implements OnInit {
   ngOnInit() {
   }
 
+  clickbanner(url = '') {
+    
+  }
+
+  routedashboard() {
+  }
 }

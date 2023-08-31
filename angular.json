@@ -35,10 +35,6 @@
             ],
             "styles": [
               {
-                "input": "node_modules/font-awesome/css/font-awesome.css",
-                "inject": true
-              },
-              {
                 "input": "node_modules/bootstrap/dist/css/bootstrap.min.css",
                 "inject": true
               },
@@ -104,8 +100,7 @@
               "node_modules/popper.js/dist/umd/popper.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.min.js",
               "node_modules/propellerkit-range-slider/node_modules/nouislider/distribute/nouislider.js",
-              "node_modules/propellerkit-range-slider/node_modules/wnumb/wNumb.js",
-              "node_modules/html2canvas/dist/html2canvas.min.js"
+              "node_modules/propellerkit-range-slider/node_modules/wnumb/wNumb.js"
             ]
           },
           "configurations": {

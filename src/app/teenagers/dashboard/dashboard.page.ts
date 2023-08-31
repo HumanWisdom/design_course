@@ -11,5 +11,7 @@ export class DashboardPage implements OnInit {
 
   ngOnInit() {
   }
+  RouteToWisdomExercise(x){
 
+  }
 }

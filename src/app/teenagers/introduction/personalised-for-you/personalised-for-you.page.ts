@@ -11,5 +11,10 @@ export class PersonalisedForYouPage implements OnInit {
 
   ngOnInit() {
   }
+  goDashboard(){
 
+  }
+  RouteToWisdomExercise(x){
+    
+  }
 }

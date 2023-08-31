@@ -11,5 +11,10 @@ export class AdvertsHwpWorkPage implements OnInit {
 
   ngOnInit() {
   }
+  clickbanner(x){
 
+  }
+  routedashboard(){
+    
+  }
 }

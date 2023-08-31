@@ -11,5 +11,7 @@ export class CarouselPage implements OnInit {
 
   ngOnInit() {
   }
-
+  onLoad(){
+    
+  }
 }

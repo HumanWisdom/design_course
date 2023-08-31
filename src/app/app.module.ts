@@ -29,7 +29,7 @@ import { authLoginGuard } from './auth-login.guard';
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
-    AdultsModule,
+    // AdultsModule,
      //OnboardingModule,
      FormsModule,
     HttpClientModule,

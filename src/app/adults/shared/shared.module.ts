@@ -48,8 +48,6 @@ import { FiveCirclesComponent } from './component/five-circles/five-circles.comp
 import { SessionEndComponent } from './component/session-end/session-end.component'
 import { ModuleEndComponent } from './component/module-end/module-end.component'
 import { TxtOverlayTopComponent } from './component/txt-overlay-top/txt-overlay-top.component'
-import { ShareButtonsModule } from 'ngx-sharebuttons/buttons';
-import { ShareIconsModule } from 'ngx-sharebuttons/icons'
 import { EndHeaderComponent } from './component/end-header/end-header.component'
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { FeatureHeaderComponent } from './component/feature-header/feature-header.component';
@@ -141,10 +139,10 @@ import { TnCloseComponent } from './component/tn-close/tn-close.component';
     NgxCircularPlayerModule,
     NgxSliderModule,
     RouterModule,
-    ShareButtonsModule.withConfig({
-      debug:true
-     }),
-    ShareIconsModule,
+    // ShareButtonsModule.withConfig({
+    //   debug:true
+    //  }),
+    // ShareIconsModule,
     NgCircleProgressModule.forRoot({
     "radius": 75,
     "space": -5,
