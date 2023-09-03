@@ -50,6 +50,10 @@ const routes: Routes = [
     path: 'change-topic',
     loadChildren: () => import('./change-topic/change-topic.module').then( m => m.ChangeTopicPageModule)
   },
+  {
+    path: 'subscription',
+    loadChildren: () => import('./subscription/subscription.module').then( m => m.SubscriptionModule)
+  },
 ];
 
 @NgModule({
