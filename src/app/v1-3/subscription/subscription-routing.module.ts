@@ -26,6 +26,14 @@ const routes: Routes = [
     path: "free-trial",
     loadChildren: () => import("./free-trial/free-trial.module").then(m => m.FreeTrialPageModule)
   },
+  {
+    path: 'start-your-free-trial',
+    loadChildren: () => import('./start-your-free-trial/start-your-free-trial.module').then( m => m.StartYourFreeTrialPageModule)
+  },
+  {
+    path: 'try-free-and-subscribe',
+    loadChildren: () => import('./try-free-and-subscribe/try-free-and-subscribe.module').then( m => m.TryFreeAndSubscribePageModule)
+  },
 ];
 
 @NgModule({

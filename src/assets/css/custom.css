@@ -34040,6 +34040,11 @@ label.chkb_post_anonymously > input[type="checkbox"]:checked + *
   padding: 20px;
 }
 
+.div_monthly_ext
+{
+  border: 1px solid #E58D82;
+}
+
 .v1_3_sfooter 
 {
   height: 110px;
@@ -34050,7 +34055,7 @@ label.chkb_post_anonymously > input[type="checkbox"]:checked + *
 
 .v1_3_sfooter_ext
 {
-  background: transparent;
+  background: #292D56;
   box-shadow: unset;
 }
 
@@ -34117,5 +34122,40 @@ label.chkb_post_anonymously > input[type="checkbox"]:checked + *
   font-size: 15px;
   font-weight: 600;
   line-height: 150%;
+}
+
+.fc_img
+{
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_connect_with 
+{
+  width: 101px;
+  height: 52px;
+  border-radius: 12px;
+  background: #120F40;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mregister .sp_fc 
+{
+  padding: 13px 50px 13px 20px;
+}
+
+.mregister .sp_fc.active::-webkit-input-placeholder
+{
+  color: #FFF;
 }
 /* /version - 03 */
