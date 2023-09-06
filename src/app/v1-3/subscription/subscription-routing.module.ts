@@ -34,6 +34,10 @@ const routes: Routes = [
     path: 'try-free-and-subscribe',
     loadChildren: () => import('./try-free-and-subscribe/try-free-and-subscribe.module').then( m => m.TryFreeAndSubscribePageModule)
   },
+  {
+    path: 'redeem-activate-now',
+    loadChildren: () => import('./redeem-activate-now/redeem-activate-now.module').then( m => m.RedeemActivateNowPageModule)
+  },
 ];
 
 @NgModule({
