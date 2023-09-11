@@ -38,6 +38,14 @@ const routes: Routes = [
     path: 'redeem-activate-now',
     loadChildren: () => import('./redeem-activate-now/redeem-activate-now.module').then( m => m.RedeemActivateNowPageModule)
   },
+  {
+    path: 'gift-a-friend',
+    loadChildren: () => import('./gift-a-friend/gift-a-friend.module').then( m => m.GiftAFriendPageModule)
+  },
+  {
+    path: 'cart',
+    loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+  },
 ];
 
 @NgModule({
