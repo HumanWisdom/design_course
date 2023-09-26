@@ -46,6 +46,26 @@ const routes: Routes = [
     path: 'cart',
     loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
   },
+  {
+    path: 'my-subscription',
+    loadChildren: () => import('./my-subscription/my-subscription.module').then( m => m.MySubscriptionPageModule)
+  },
+  {
+    path: 'manage-subscription',
+    loadChildren: () => import('./manage-subscription/manage-subscription.module').then( m => m.ManageSubscriptionPageModule)
+  },
+  {
+    path: 'update-payment',
+    loadChildren: () => import('./update-payment/update-payment.module').then( m => m.UpdatePaymentPageModule)
+  },
+  {
+    path: 'cancel-subscription-reason',
+    loadChildren: () => import('./cancel-subscription-reason/cancel-subscription-reason.module').then( m => m.CancelSubscriptionReasonPageModule)
+  },
+  {
+    path: 'cancelled',
+    loadChildren: () => import('./cancelled/cancelled.module').then( m => m.CancelledPageModule)
+  },
 ];
 
 @NgModule({

@@ -220,6 +220,23 @@
     {
         left: 5% !important;
     }
+    
+    #bgd_video > video,
+    .bg_adverts_hwp
+    {
+        display: none;
+    }
+
+    .right_col
+    {
+        background-color: #000000 !important;
+        background-image: none !important;
+    }
+
+    .pfy_search
+    {
+        padding-left: 55px !important;
+    }
 }
 
 @media (min-width: 768px)
@@ -370,8 +387,10 @@
     .odiv::-webkit-scrollbar-track,
     .ghn::-webkit-scrollbar-track
     {
-        margin: 0 0 0 1rem;
+        /* margin: 0 0 0 1rem; */
         /* margin: 0 0 0 0.2rem; */
+        /* margin: 0 20px 0 20px; */
+        margin: 0 20px 0 0px;
     }
 
     .wediv::-webkit-scrollbar-track
@@ -379,15 +398,10 @@
         margin: 0 0 0 0 !important;
     }
 
-    .odiv_pathway::-webkit-scrollbar-track
+    .oxdiv::-webkit-scrollbar-track,
+    .oxdiv_ae::-webkit-scrollbar-track
     {
-        margin: 0 40px 0 0 !important;
-    }
-
-
-    .odiv_wfgi::-webkit-scrollbar-track
-    {
-        margin: 0 20px 0 0 !important;
+        margin: 0 0 0 20px !important;
     }
 
     .cp0_01
@@ -410,10 +424,10 @@
         margin: 0;
     }
 
-    .dpanel_01 .panel-body
+    /* .dpanel_01 .panel-body
     {
         margin-right: -10px;
-    }
+    } */
 
     .cp20px
     {
@@ -616,6 +630,11 @@
     .ad_search_icon
     {
         left: 7% !important;
+    }
+
+    .odiv_user > [class^="col-"]
+    {
+        width: 60%;
     }
 }
 
@@ -928,6 +947,11 @@
     {
         padding: 0 10px;
     }
+
+    .tts 
+    {
+        padding-top: 2%;
+    }
 }
 
 @media (min-width: 1024px) and (max-width: 1200px)
@@ -935,6 +959,12 @@
     .textarea_02 
     {
         height: 155px;
+    }
+
+    .modal.fade.in .lab-modal-body
+    {
+        overflow-y: overlay !important;
+        height: 100%;
     }
 }
 
@@ -1004,9 +1034,28 @@
         height: 75%;
         z-index: 99;
     }
+}
 
-    .box_v3_04
+@media (min-width: 1366px) and (max-width: 1367px)
+{
+    .session_title
     {
-        height: 210px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) 
+{
+  .safari_dblock
+  {
+    display: block;
+  }
+}
+
+@media (min-width: 1281px)
+{
+    .box_v3_03 
+    {
+        height: 430px;
     }
 }
