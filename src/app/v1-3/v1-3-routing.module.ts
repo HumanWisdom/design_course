@@ -58,6 +58,10 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfileModule)
   },
+  {
+    path: 'intro-carousel',
+    loadChildren: () => import('./intro-carousel/intro-carousel.module').then( m => m.IntroCarouselPageModule)
+  },
 ];
 
 @NgModule({
