@@ -62,6 +62,10 @@ const routes: Routes = [
     path: 'intro-carousel',
     loadChildren: () => import('./intro-carousel/intro-carousel.module').then( m => m.IntroCarouselPageModule)
   },
+  {
+    path: 'authentication',
+    loadChildren: () => import('./authentication/authentication.module').then( m => m.AuthenticationModule)
+  },
 ];
 
 @NgModule({
