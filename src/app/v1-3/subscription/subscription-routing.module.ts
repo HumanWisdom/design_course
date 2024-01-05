@@ -66,6 +66,10 @@ const routes: Routes = [
     path: 'cancelled',
     loadChildren: () => import('./cancelled/cancelled.module').then( m => m.CancelledPageModule)
   },
+  {
+    path: 'redeem-subscription-landing',
+    loadChildren: () => import('./redeem-subscription-landing/redeem-subscription-landing.module').then( m => m.RedeemSubscriptionLandingPageModule)
+  },
 ];
 
 @NgModule({
