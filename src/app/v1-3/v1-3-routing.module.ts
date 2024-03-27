@@ -70,6 +70,10 @@ const routes: Routes = [
     path: 'cafe',
     loadChildren: () => import('./cafe/cafe.module').then( m => m.CafeModule)
   },
+  {
+    path: 'coach',
+    loadChildren: () => import('./coach/coach.module').then( m => m.CoachModule)
+  },
 ];
 
 @NgModule({
